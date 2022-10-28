@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingConstraints">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="204dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="327dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:id="@+id/featuring_1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/rectangle_5_ek1"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:contentDescription="rectangle_5_ek1"
+                    android:src="@drawable/rectangle_5_ek1" />
+
+                <TextView
+                    android:id="@+id/batu_caves"
+                    android:layout_width="match_parent"
+                    android:layout_height="25.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/batu_caves_string"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/___color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/featuring_2"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/rectangle_6_ek1"
+                    android:layout_width="match_parent"
+                    android:layout_height="204dp"
+                    android:contentDescription="rectangle_6_ek1"
+                    android:src="@drawable/rectangle_6_ek1" />
+
+                <TextView
+                    android:id="@+id/federal_mosque"
+                    android:layout_width="match_parent"
+                    android:layout_height="25.5dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/federal_mosque_string"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/___color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/featuring_3"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/rectangle_7_ek1"
+                    android:layout_width="match_parent"
+                    android:layout_height="204dp"
+                    android:contentDescription="rectangle_7_ek1"
+                    android:src="@drawable/rectangle_5_ek1" />
+
+                <TextView
+                    android:id="@+id/petaling_street_ek1"
+                    android:layout_width="match_parent"
+                    android:layout_height="25.5dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="175dp"
+                    android:fontFamily="Montserrat"
+                    android:text="@string/petaling_street_ek1_string"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/___color"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

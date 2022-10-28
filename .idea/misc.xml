@@ -3,13 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-nodpi/_bg__calendar_activity__ek2_shape.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable-nodpi/_bg__homescreen_ek2_shape.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable-nodpi/backdrop_ek2_shape.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable-nodpi/ellipse_2_ek2_shape.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable-nodpi/ic_launcher_foreground.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable-nodpi/rectangle_3_ek6_shape.xml" value="0.1655" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/agendaScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/agenda_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/calendar.xml" value="0.15625" />
         <entry key="app/src/main/res/layout/calendarScreen.xml" value="0.2477355072463768" />
+        <entry key="app/src/main/res/layout/calendar_activity_.xml" value="0.21778259277343748" />
+        <entry key="app/src/main/res/layout/community.xml" value="0.15625" />
         <entry key="app/src/main/res/layout/communityScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/homeScreen.xml" value="0.2477355072463768" />
+        <entry key="app/src/main/res/layout/home_screen.xml" value="0.17119565217391305" />
+        <entry key="app/src/main/res/layout/homescreen.xml" value="0.335" />
         <entry key="app/src/main/res/layout/loginScreen.xml" value="0.2477355072463768" />
+        <entry key="app/src/main/res/layout/test.xml" value="0.335" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1655" />
       </map>
     </option>
   </component>
