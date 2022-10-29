@@ -37,7 +37,7 @@
 	<string name="title_string">The ultimate Langkawi to-do list</string>
 	<string name="likes_ek1_string">341</string>
 	<string name="username_ek1_string">@travelwithtom</string>
-	<string name="title_ek1_string">Diving on the Perhentian islands</string>
+	<string name="title_ek1_string">Perhentian islands</string>
 	<string name="likes_ek2_string">755</string>
 	<string name="username_ek2_string">@localtravel</string>
 	<string name="title_ek2_string">8 best local experiences in Penang</string>
@@ -58,4 +58,35 @@
 	<string name="batu_caves_string">Batu Caves</string>
 	<string name="federal_mosque_string">Federal Mosque</string>
 	<string name="petaling_street_ek1_string">Petaling Street</string>
+
+
+	<string name="penang____string">Penang...</string>
+	<string name="penang_hill_string">Penang Hill</string>
+	<string name="kek_lok_si_temple_string">Kek Lok Si Temple</string>
+	<string name="gurney_drive_string">Gurney Drive</string>
+	<string name="batu_ferringhi_string">Batu Ferringhi</string>
+
+	<string name="restaurants_string">Restaurants</string>
+	<string name="party_string">Party</string>
+	<string name="culture_string">Culture</string>
+	<string name="outdoor_string">Outdoor</string>
+	<string name="_4_8_string">4.8</string>
+
+	<string name="adress">Adress: </string>
+	<string name="operating_hours">Operating hours: </string>
+	<string name="price_range">Price range: </string>
+	<string name="transport_options">Transport options: </string>
+
+	<string name="information_ek1_string">Information</string>
+	<string name="information_ek2_string">Convenient to the top #penanghill</string>
+	<string name="information_ek3_string">What I did at #penanghill</string>
+	<string name="information_ek4_string">Traveller Thoughts</string>
+	<string name="articles_string">Articles</string>
+	<string name="states_string">States</string>
+	<string name="best_instagrammable_cafes_in_kuala_lumpur_string">Best instagrammable cafes in Kuala Lumpur</string>
+	<string name="top_7_places_in_pahang_string">Top 7 Places in Pahang</string>
+	<string name="sabah_string">Sabah</string>
+	<string name="selangor_string">Selangor</string>
+	<string name="malacca_string">Malacca</string>
+	<string name="penang____ek1_string">Penang...</string>
 </resources>
