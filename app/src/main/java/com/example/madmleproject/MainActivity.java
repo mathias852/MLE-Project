@@ -209,7 +209,5 @@ public class MainActivity extends AppCompatActivity {
 
         //Uncomment to see database while app's running
         DatabaseManager.getInstance().openDatabase();
-
-main
     }
 }
