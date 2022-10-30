@@ -24,4 +24,18 @@
 	<color name="rectangle_3_ek5_color">#9FC7D4</color>
 	<color name="hello__oliver__ek2_color">#000000</color>
 	<color name="hi_oliver__where_do_you_want_to_go__color">#999797</color>
+
+	<color name="_bg__search_page_ek2_color">#6A95A3</color>
+	<color name="rectangle_4_color">#D9D9D9</color>
+	<color name="penang____color">#999797</color>
+	<color name="penang_hill_color">#000000</color>
+	<color name="hello__oliver__color">#FFFFFF</color>
+	<color name="subtitle_color">#00C1FF</color>
+	<color name="create_new_trip_color">#000000</color>
+
+
+	<color name="_bg__trip_overview_ek2_color">#6A95A3</color>
+	<color name="_3___5_september_2022_color">#FFF5F5</color>
+
+
 </resources>

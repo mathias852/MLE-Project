@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.trip_overview);
+
         setContentView(R.layout.homescreen);
 
         insertSampleData();
@@ -208,5 +210,6 @@ public class MainActivity extends AppCompatActivity {
         //Uncomment to see database while app's running
         DatabaseManager.getInstance().openDatabase();
 
+main
     }
 }
