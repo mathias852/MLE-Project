@@ -5,12 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.madmleproject.data.DatabaseManager;
+import com.example.madmleproject.data.model.ArticleComments;
+import com.example.madmleproject.data.model.Articles;
 import com.example.madmleproject.data.model.Trips;
 import com.example.madmleproject.data.model.Bookmarks;
 import com.example.madmleproject.data.model.Itineraries;
 import com.example.madmleproject.data.model.LandmarkRatings;
 import com.example.madmleproject.data.model.Landmarks;
 import com.example.madmleproject.data.model.Users;
+import com.example.madmleproject.data.repo.ArticleCommentsRepo;
+import com.example.madmleproject.data.repo.ArticlesRepo;
 import com.example.madmleproject.data.repo.TripsRepo;
 import com.example.madmleproject.data.repo.BookmarksRepo;
 import com.example.madmleproject.data.repo.ItinerariesRepo;
@@ -36,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         BookmarksRepo bookmarksRepo = new BookmarksRepo();
         TripsRepo tripsRepo = new TripsRepo();
         ItinerariesRepo itinerariesRepo = new ItinerariesRepo();
+        ArticlesRepo articlesRepo = new ArticlesRepo();
+        ArticleCommentsRepo articleCommentsRepo = new ArticleCommentsRepo();
 
         usersRepo.delete();
         landmarksRepo.delete();
@@ -43,12 +49,19 @@ public class MainActivity extends AppCompatActivity {
         bookmarksRepo.delete();
         tripsRepo.delete();
         itinerariesRepo.delete();
+        articlesRepo.delete();
+        articleCommentsRepo.delete();
 
         //Insert Users
         Users user = new Users();
         user.setUsername("Matthijs");
         user.setPassword("123");
         user.setName("Matthijs van der Zaag");
+        usersRepo.insert(user);
+
+        user.setUsername("Mathias");
+        user.setPassword("1234");
+        user.setName("Mathias Jeppesen Engmark");
         usersRepo.insert(user);
 
         //Insert Landmarks
@@ -159,6 +172,38 @@ public class MainActivity extends AppCompatActivity {
         itinerary.setLandmarkId(5);
         itinerary.setDay(2);
         itinerariesRepo.insert(itinerary);
+
+        //Insert Articles
+        Articles article = new Articles();
+        article.setLandmarkId(1);
+        article.setUserId(1);
+        article.setArticleText("Phasellus odio eros, suscipit non ante non, mollis blandit est. Fusce pharetra sem est, in sodales dolor convallis et. Aenean ac varius dui, vel volutpat diam. Ut ipsum leo, aliquet sed velit et, imperdiet porttitor tellus. Nulla blandit ipsum ac consectetur elementum. Maecenas eu erat tempus, interdum ipsum et, dictum leo. Cras at dictum justo, id fringilla nisi. Nunc interdum accumsan dictum. Suspendisse fermentum nulla mi, vel lacinia nisi varius sed. Aliquam lectus erat, dapibus a felis semper, feugiat semper ligula. Nunc iaculis urna lorem, et pellentesque arcu vulputate id. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque nec elementum sapien, a tincidunt massa. Nam eget mauris a erat semper sagittis. Mauris pellentesque at nunc nec commodo.\n" +
+                "\n" +
+                "Praesent sed nisi ex. Aenean id rutrum risus, vitae pretium sapien. Vivamus pharetra enim ex, nec maximus justo auctor a. Donec quam risus, pellentesque vel aliquet sit amet, convallis in nulla. Praesent rhoncus ex at placerat viverra. Quisque blandit est ligula, ut efficitur odio facilisis vel. Nulla viverra vestibulum venenatis.\n" +
+                "\n" +
+                "In aliquam pharetra dui ullamcorper semper. Etiam faucibus odio diam, eget sodales urna fermentum id. Ut et mattis nunc. Donec id bibendum tortor. Quisque id convallis turpis. Vestibulum vestibulum velit in felis vulputate, eu aliquet augue congue. Donec aliquam volutpat semper. Nunc vitae magna libero. Sed blandit ligula nec erat sagittis aliquet.\n" +
+                "\n" +
+                "Nullam fermentum sem lectus, nec ullamcorper erat pretium in. Nulla nec maximus neque, nec tempus ante. Praesent sodales neque nulla, in posuere lorem rutrum sed. Sed semper odio non rhoncus mattis. Cras id erat lectus. Vivamus tincidunt diam ut fermentum tincidunt. Curabitur et nibh lorem. Quisque tincidunt leo eu hendrerit scelerisque. In quis dolor posuere, euismod quam a, suscipit quam. Nullam commodo imperdiet sollicitudin. Nunc sit amet neque libero.");
+        article.setPicturePath("Unknown");
+        article.setTitle("Must know about Petronas Towers");
+        article.setLikes(0);
+        article.setCommentAmount(0);
+        articlesRepo.insert(article, landmarksRepo.getLandmarkArticleAmountFromId(article.getLandmarkId()));
+
+        //Insert Article Comment
+        ArticleComments articleComment = new ArticleComments();
+        articleComment.setArticleId(1);
+        articleComment.setUserId(2);
+        articleComment.setComment("In consectetur malesuada nunc, ac vehicula ipsum commodo nec. Proin nec commodo nulla. Sed in porta urna, sit amet volutpat turpis. Ut eget placerat ligula. Mauris metus nisi, dignissim quis ipsum et, auctor lobortis quam. Nam posuere justo posuere, blandit elit id, porttitor dui. Praesent vitae ornare tellus. Maecenas sed scelerisque arcu.");
+        articleComment.setLikes(0);
+        articleCommentsRepo.insert(articleComment, articlesRepo.getArticleCommentAmountFromId(articleComment.getArticleId()));
+
+        //Update Article Comments likes
+        articleCommentsRepo.updateLikesBasedOnArticleCommentId(1);
+        articleCommentsRepo.updateLikesBasedOnArticleCommentId(1);
+        articleCommentsRepo.updateLikesBasedOnArticleCommentId(1);
+        articleCommentsRepo.updateLikesBasedOnArticleCommentId(1);
+
 
         //Uncomment to see database while app's running
         DatabaseManager.getInstance().openDatabase();

@@ -75,4 +75,22 @@ public class LandmarksRepo {
 
         return landmark;
     }
+
+    @SuppressLint("Range")
+    public Landmarks getLandmarkArticleAmountFromId(int id){
+        Landmarks landmark = new Landmarks();
+        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT " + Landmarks.COLUMN_PK_ID + ", "
+                + Landmarks.COLUMN_ARTICLE_AMOUNT + " FROM " + Landmarks.TABLE
+                + " WHERE " + Landmarks.COLUMN_PK_ID + " = ?", new String[] {String.valueOf(id)});
+        cursor.moveToFirst();
+
+        //We only need the ID and Average rating of the landmark for this operation
+        landmark.setLandmarkId(cursor.getInt(cursor.getColumnIndex(Landmarks.COLUMN_PK_ID)));
+        landmark.setArticleAmount(cursor.getInt(cursor.getColumnIndex(Landmarks.COLUMN_ARTICLE_AMOUNT)));
+        DatabaseManager.getInstance().closeDatabase();
+
+        return landmark;
+    }
 }

@@ -1,6 +1,8 @@
 package com.example.madmleproject.data.repo;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.madmleproject.data.DatabaseManager;
@@ -34,20 +36,23 @@ public class ArticlesRepo {
                 + ");";
     }
 
-    public int insert(Articles articles){
+    public int insert(Articles articles, Landmarks landmark){
         int articleID;
         SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
         ContentValues values = new ContentValues();
-        values.put(Articles.COLUMN_FK_LANDMARK_ID, articles.getArticleId());
+        values.put(Articles.COLUMN_FK_LANDMARK_ID, articles.getLandmarkId());
         values.put(Articles.COLUMN_FK_USER_ID, articles.getUserId());
-        values.put(Articles.COLUMN_ARTICLE_TEXT, articles.getArticle());
+        values.put(Articles.COLUMN_ARTICLE_TEXT, articles.getArticleText());
         values.put(Articles.COLUMN_PICTURE_PATH, articles.getPicturePath());
         values.put(Articles.COLUMN_TITLE, articles.getTitle());
         values.put(Articles.COLUMN_LIKES, articles.getLikes());
         values.put(Articles.COLUMN_COMMENT_AMOUNT, articles.getCommentAmount());
 
+        articleID = (int) db.insert(Articles.TABLE, null, values);
 
-        articleID = (int) db.insert(Users.TABLE, null, values);
+        int newArticleAmount = landmark.getArticleAmount() + 1;
+        updateArticleAmountForSpecificLandmark(landmark.getLandmarkId(), newArticleAmount);
+
         DatabaseManager.getInstance().closeDatabase();
         return articleID;
     }
@@ -58,7 +63,7 @@ public class ArticlesRepo {
         DatabaseManager.getInstance().closeDatabase();
     }
 
-    public void updateArticleAmountForSpecificLandmark(int landmarkId, double newArticleAmount){
+    public void updateArticleAmountForSpecificLandmark(int landmarkId, int newArticleAmount){
         SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
 
         ContentValues values = new ContentValues();
@@ -66,6 +71,23 @@ public class ArticlesRepo {
         String whereClause = Landmarks.COLUMN_PK_ID + " = ?";
         String[] whereArgs = {String.valueOf(landmarkId)};
         db.update(Landmarks.TABLE, values, whereClause, whereArgs);
+    }
 
+    @SuppressLint("Range")
+    public Articles getArticleCommentAmountFromId(int id){
+        Articles article = new Articles();
+        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT " + Articles.COLUMN_PK_ID + ", "
+                + Articles.COLUMN_COMMENT_AMOUNT + " FROM " + Articles.TABLE
+                + " WHERE " + Articles.COLUMN_PK_ID + " = ?", new String[] {String.valueOf(id)});
+        cursor.moveToFirst();
+
+        //We only need the ID and Average rating of the landmark for this operation
+        article.setArticleId(cursor.getInt(cursor.getColumnIndex(Articles.COLUMN_PK_ID)));
+        article.setCommentAmount(cursor.getInt(cursor.getColumnIndex(Articles.COLUMN_COMMENT_AMOUNT)));
+        DatabaseManager.getInstance().closeDatabase();
+
+        return article;
     }
 }

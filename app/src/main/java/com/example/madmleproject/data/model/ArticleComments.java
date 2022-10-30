@@ -11,29 +11,30 @@ public class ArticleComments {
     public static final String COLUMN_COMMENT_TEXT = "COMMENT";
     public static final String COLUMN_LIKES = "LIKES";
 
-    private String articleCommentId, articleId, userId, comment, likes;
+    private int articleCommentId, articleId, userId, likes;
+    private String comment;
 
-    public String getArticleCommentId() {
+    public int getArticleCommentId() {
         return articleCommentId;
     }
 
-    public void setArticleCommentId(String articleCommentId) {
+    public void setArticleCommentId(int articleCommentId) {
         this.articleCommentId = articleCommentId;
     }
 
-    public String getArticleId() {
+    public int getArticleId() {
         return articleId;
     }
 
-    public void setArticleId(String articleId) {
+    public void setArticleId(int articleId) {
         this.articleId = articleId;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -45,11 +46,11 @@ public class ArticleComments {
         this.comment = comment;
     }
 
-    public String getLikes() {
+    public int getLikes() {
         return likes;
     }
 
-    public void setLikes(String likes) {
+    public void setLikes(int likes) {
         this.likes = likes;
     }
 }

@@ -14,38 +14,39 @@ public class Articles {
     public static final String COLUMN_LIKES = "Likes";
     public static final String COLUMN_COMMENT_AMOUNT = "CommentAmount";
 
-    private String articleId, landmarkId, userId, article, picturePath, title, likes, commentAmount;
+    private String articleText, picturePath, title;
+    private int articleId, landmarkId, userId, likes, commentAmount;
 
-    public String getArticleId() {
+    public int getArticleId() {
         return articleId;
     }
 
-    public void setArticleId(String articleId) {
+    public void setArticleId(int articleId) {
         this.articleId = articleId;
     }
 
-    public String getLandmarkId() {
+    public int getLandmarkId() {
         return landmarkId;
     }
 
-    public void setLandmarkId(String landmarkId) {
+    public void setLandmarkId(int landmarkId) {
         this.landmarkId = landmarkId;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
-    public String getArticle() {
-        return article;
+    public String getArticleText() {
+        return articleText;
     }
 
-    public void setArticle(String article) {
-        this.article = article;
+    public void setArticleText(String articleText) {
+        this.articleText = articleText;
     }
 
     public String getPicturePath() {
@@ -64,19 +65,19 @@ public class Articles {
         this.title = title;
     }
 
-    public String getLikes() {
+    public int getLikes() {
         return likes;
     }
 
-    public void setLikes(String likes) {
+    public void setLikes(int likes) {
         this.likes = likes;
     }
 
-    public String getCommentAmount() {
+    public int getCommentAmount() {
         return commentAmount;
     }
 
-    public void setCommentAmount(String commentAmount) {
+    public void setCommentAmount(int commentAmount) {
         this.commentAmount = commentAmount;
     }
 }

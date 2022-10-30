@@ -82,6 +82,7 @@ public class LandmarkRatingsRepo {
         String whereClause = Landmarks.COLUMN_PK_ID + " = ?";
         String[] whereArgs = {String.valueOf(landmarkId)};
         db.update(Landmarks.TABLE, values, whereClause, whereArgs);
+        DatabaseManager.getInstance().closeDatabase();
 
     }
 }
