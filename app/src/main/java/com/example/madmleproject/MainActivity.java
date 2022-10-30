@@ -123,6 +123,8 @@ public class MainActivity extends AppCompatActivity {
         bookmark.setUserId(1);
         bookmarksRepo.insert(bookmark);
 
+        //bookmarksRepo.deleteSingleEntry(2, 1);
+
         //Insert Trips
         Trips trip = new Trips();
         trip.setUserId(1);

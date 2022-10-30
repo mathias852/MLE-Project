@@ -49,4 +49,13 @@ public class BookmarksRepo {
         DatabaseManager.getInstance().closeDatabase();
     }
 
+    public void deleteSingleEntry(int landmarkId, int userId){
+        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        String whereClause = Bookmarks.COLUMN_PK_FK_USER_ID + " = ? AND " + Bookmarks.COLUMN_PK_FK_LANDMARK_ID + " = ?";
+        String[] whereArgs = {String.valueOf(userId), String.valueOf(landmarkId)};
+
+        db.delete(Bookmarks.TABLE, whereClause, whereArgs);
+
+    }
+
 }
