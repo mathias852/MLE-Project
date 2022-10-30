@@ -32,4 +32,10 @@
 	<color name="hello__oliver__color">#FFFFFF</color>
 	<color name="subtitle_color">#00C1FF</color>
 	<color name="create_new_trip_color">#000000</color>
+
+
+	<color name="_bg__trip_overview_ek2_color">#6A95A3</color>
+	<color name="_3___5_september_2022_color">#FFF5F5</color>
+
+
 </resources>
