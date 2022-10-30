@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.madmleproject.data.DatabaseManager;
+import com.example.madmleproject.data.model.Trips;
 import com.example.madmleproject.data.model.Bookmarks;
+import com.example.madmleproject.data.model.Itineraries;
 import com.example.madmleproject.data.model.LandmarkRatings;
 import com.example.madmleproject.data.model.Landmarks;
 import com.example.madmleproject.data.model.Users;
+import com.example.madmleproject.data.repo.TripsRepo;
 import com.example.madmleproject.data.repo.BookmarksRepo;
+import com.example.madmleproject.data.repo.ItinerariesRepo;
 import com.example.madmleproject.data.repo.LandmarkRatingsRepo;
 import com.example.madmleproject.data.repo.LandmarksRepo;
 import com.example.madmleproject.data.repo.UsersRepo;
@@ -30,11 +34,15 @@ public class MainActivity extends AppCompatActivity {
         LandmarksRepo landmarksRepo = new LandmarksRepo();
         LandmarkRatingsRepo landmarkRatingsRepo = new LandmarkRatingsRepo();
         BookmarksRepo bookmarksRepo = new BookmarksRepo();
+        TripsRepo tripsRepo = new TripsRepo();
+        ItinerariesRepo itinerariesRepo = new ItinerariesRepo();
 
         usersRepo.delete();
         landmarksRepo.delete();
         landmarkRatingsRepo.delete();
         bookmarksRepo.delete();
+        tripsRepo.delete();
+        itinerariesRepo.delete();
 
         //Insert Users
         Users user = new Users();
@@ -75,6 +83,26 @@ public class MainActivity extends AppCompatActivity {
         landmark.setArticleAmount(0);
         landmarksRepo.insert(landmark);
 
+        landmark.setName("Kubang Badak Mangrove Reserve");
+        landmark.setState("Perlis");
+        landmark.setCity("Kedah");
+        landmark.setAddress("Unnamed Road, Kampung Kelubi, 07000 Langkawi, Kedah");
+        landmark.setDescription("Maecenas ipsum risus, varius eget eleifend sit amet, venenatis nec urna. Phasellus sit amet justo eu lacus fermentum vestibulum quis sed massa. Sed pharetra vitae nisl quis vestibulum. Nulla viverra erat eget quam pretium, in iaculis tellus bibendum. Maecenas posuere facilisis tellus, at facilisis mauris fringilla blandit. Donec placerat cursus quam in varius. Vivamus nec diam sed arcu sagittis gravida ac vel odio. Cras purus augue, mollis sed turpis id, lobortis sodales leo. Fusce sit amet erat metus. Phasellus non mattis est. Morbi non dapibus dolor. Curabitur tincidunt euismod lectus et mollis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce dapibus erat nec magna laoreet pulvinar. Curabitur quis pretium sem. Nulla facilisi.");
+        landmark.setOperatingHours("ALL DAY");
+        landmark.setPriceEntrance(0);
+        landmark.setArticleAmount(0);
+        landmarksRepo.insert(landmark);
+
+        landmark.setName("Malacca Sand Dunes");
+        landmark.setState("Melaka");
+        landmark.setCity("Melaka Raya");
+        landmark.setAddress("Malacca Sand Dunes Carpark, 75200 Klebang, Malacca");
+        landmark.setDescription("In consectetur malesuada nunc, ac vehicula ipsum commodo nec. Proin nec commodo nulla. Sed in porta urna, sit amet volutpat turpis. Ut eget placerat ligula. Mauris metus nisi, dignissim quis ipsum et, auctor lobortis quam. Nam posuere justo posuere, blandit elit id, porttitor dui. Praesent vitae ornare tellus. Maecenas sed scelerisque arcu.");
+        landmark.setOperatingHours("ALL DAY");
+        landmark.setPriceEntrance(0);
+        landmark.setArticleAmount(0);
+        landmarksRepo.insert(landmark);
+
         //Insert Landmark Ratings
         LandmarkRatings landmarkRating = new LandmarkRatings();
         landmarkRating.setLandmarkId(1);
@@ -90,6 +118,45 @@ public class MainActivity extends AppCompatActivity {
         bookmark.setLandmarkId(1);
         bookmark.setUserId(1);
         bookmarksRepo.insert(bookmark);
+
+        bookmark.setLandmarkId(2);
+        bookmark.setUserId(1);
+        bookmarksRepo.insert(bookmark);
+
+        //Insert Trips
+        Trips trip = new Trips();
+        trip.setUserId(1);
+        trip.setState("Perlis");
+        trip.setDateRange("01-01-2022, 10-01-2022");
+        tripsRepo.insert(trip);
+
+        trip.setUserId(1);
+        trip.setState("Melaka");
+        trip.setDateRange("20-02-2022, 30-02-2022");
+        tripsRepo.insert(trip);
+
+        //Insert for Itinerary 1
+        Itineraries itinerary = new Itineraries();
+        itinerary.setTripId(1);
+        itinerary.setLandmarkId(3);
+        itinerary.setDay(1);
+        itinerariesRepo.insert(itinerary);
+
+        itinerary.setTripId(1);
+        itinerary.setLandmarkId(4);
+        itinerary.setDay(2);
+        itinerariesRepo.insert(itinerary);
+
+        //Insert for Itinerary 2
+        itinerary.setTripId(2);
+        itinerary.setLandmarkId(2);
+        itinerary.setDay(1);
+        itinerariesRepo.insert(itinerary);
+
+        itinerary.setTripId(2);
+        itinerary.setLandmarkId(5);
+        itinerary.setDay(2);
+        itinerariesRepo.insert(itinerary);
 
         //Uncomment to see database while app's running
         DatabaseManager.getInstance().openDatabase();

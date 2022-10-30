@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.madmleproject.data.DatabaseManager;
-import com.example.madmleproject.data.model.Activities;
 import com.example.madmleproject.data.model.Articles;
 import com.example.madmleproject.data.model.Landmarks;
 import com.example.madmleproject.data.model.Users;

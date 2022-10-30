@@ -6,41 +6,41 @@ public class Itineraries {
 
     //Labels for table columns names
     public static final String COLUMN_PK_ID = "PK_ItineraryID";
-    public static final String COLUMN_FK_AGENDA_ID = "FK_AgendaID";
+    public static final String COLUMN_FK_TRIP_ID = "FK_TripID";
     public static final String COLUMN_FK_LANDMARK_ID = "FK_LandmarkID";
     public static final String COLUMN_DAY = "Day";
 
-    private String itineraryId, agendaId, landmarkId, day;
+    private int itineraryId, tripId, landmarkId, day;
 
-    public String getItineraryId() {
+    public int getItineraryId() {
         return itineraryId;
     }
 
-    public void setItineraryId(String itineraryId) {
+    public void setItineraryId(int itineraryId) {
         this.itineraryId = itineraryId;
     }
 
-    public String getAgendaId() {
-        return agendaId;
+    public int getTripId() {
+        return tripId;
     }
 
-    public void setAgendaId(String agendaId) {
-        this.agendaId = agendaId;
+    public void setTripId(int tripId) {
+        this.tripId = tripId;
     }
 
-    public String getLandmarkId() {
+    public int getLandmarkId() {
         return landmarkId;
     }
 
-    public void setLandmarkId(String landmarkId) {
+    public void setLandmarkId(int landmarkId) {
         this.landmarkId = landmarkId;
     }
 
-    public String getDay() {
+    public int getDay() {
         return day;
     }
 
-    public void setDay(String day) {
+    public void setDay(int day) {
         this.day = day;
     }
 }

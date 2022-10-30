@@ -1,8 +1,8 @@
 package com.example.madmleproject.data.model;
 
-public class Activities {
-    public static final String TAG = Activities.class.getSimpleName();
-    public static final String TABLE = "Activities";
+public class Trips {
+    public static final String TAG = Trips.class.getSimpleName();
+    public static final String TABLE = "Trips";
 
     //Labels for table columns names
     public static final String COLUMN_PK_ID = "PK_ActivityID";
@@ -10,21 +10,22 @@ public class Activities {
     public static final String COLUMN_STATE = "State";
     public static final String COLUMN_DATE_RANGE = "DateRange";
 
-    private String activityId, userId, state, dateRange;
+    private String state, dateRange;
+    private int activityId, userId;
 
-    public String getActivityId() {
+    public int getActivityId() {
         return activityId;
     }
 
-    public void setActivityId(String activityId) {
+    public void setActivityId(int activityId) {
         this.activityId = activityId;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 

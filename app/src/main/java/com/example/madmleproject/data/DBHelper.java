@@ -1,17 +1,11 @@
 package com.example.madmleproject.data;
 
-import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.os.Environment;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.example.madmleproject.app.App;
-import com.example.madmleproject.data.model.Activities;
-import com.example.madmleproject.data.model.Agendas;
+import com.example.madmleproject.data.model.Trips;
 import com.example.madmleproject.data.model.ArticleComments;
 import com.example.madmleproject.data.model.Articles;
 import com.example.madmleproject.data.model.Bookmarks;
@@ -19,8 +13,7 @@ import com.example.madmleproject.data.model.Itineraries;
 import com.example.madmleproject.data.model.LandmarkRatings;
 import com.example.madmleproject.data.model.Landmarks;
 import com.example.madmleproject.data.model.Users;
-import com.example.madmleproject.data.repo.ActivitiesRepo;
-import com.example.madmleproject.data.repo.AgendasRepo;
+import com.example.madmleproject.data.repo.TripsRepo;
 import com.example.madmleproject.data.repo.ArticleCommentsRepo;
 import com.example.madmleproject.data.repo.ArticlesRepo;
 import com.example.madmleproject.data.repo.BookmarksRepo;
@@ -28,8 +21,6 @@ import com.example.madmleproject.data.repo.ItinerariesRepo;
 import com.example.madmleproject.data.repo.LandmarkRatingsRepo;
 import com.example.madmleproject.data.repo.LandmarksRepo;
 import com.example.madmleproject.data.repo.UsersRepo;
-
-import java.io.File;
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -51,8 +42,7 @@ public class DBHelper extends SQLiteOpenHelper {
         db.execSQL(UsersRepo.createTable());
         db.execSQL(BookmarksRepo.createTable());
         db.execSQL(LandmarkRatingsRepo.createTable());
-        db.execSQL(ActivitiesRepo.createTable());
-        db.execSQL(AgendasRepo.createTable());
+        db.execSQL(TripsRepo.createTable());
         db.execSQL(ItinerariesRepo.createTable());
         db.execSQL(ArticlesRepo.createTable());
         db.execSQL(ArticleCommentsRepo.createTable());
@@ -74,8 +64,7 @@ public class DBHelper extends SQLiteOpenHelper {
         //Drop table if exists - NOTE ALL DATA WILL BE ERASED!!!
         db.execSQL("DROP TABLE IF EXISTS " + LandmarkRatings.TABLE);
         db.execSQL("DROP TABLE IF EXISTS " + Itineraries.TABLE);
-        db.execSQL("DROP TABLE IF EXISTS " + Agendas.TABLE);
-        db.execSQL("DROP TABLE IF EXISTS " + Activities.TABLE);
+        db.execSQL("DROP TABLE IF EXISTS " + Trips.TABLE);
         db.execSQL("DROP TABLE IF EXISTS " + Bookmarks.TABLE);
         db.execSQL("DROP TABLE IF EXISTS " + ArticleComments.TABLE);
         db.execSQL("DROP TABLE IF EXISTS " + Articles.TABLE);
