@@ -1,5 +1,6 @@
 package com.example.madmleproject.data.repo;
 
+import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.madmleproject.data.DatabaseManager;
@@ -28,6 +29,21 @@ public class ArticleCommentsRepo {
                 + Users.TABLE + "(" + Users.COLUMN_PK_ID + ") "
                 + "ON DELETE CASCADE "
                 + ");";
+    }
+
+    public int insert(ArticleComments articlesComment){
+        int articleCommentID;
+        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        ContentValues values = new ContentValues();
+        values.put(ArticleComments.COLUMN_FK_ARTICLE_ID, articlesComment.getArticleId());
+        values.put(ArticleComments.COLUMN_FK_USER_ID, articlesComment.getUserId());
+        values.put(ArticleComments.COLUMN_COMMENT_TEXT, articlesComment.getComment());
+        values.put(ArticleComments.COLUMN_LIKES, articlesComment.getLikes());
+
+
+        articleCommentID = (int) db.insert(Users.TABLE, null, values);
+        DatabaseManager.getInstance().closeDatabase();
+        return articleCommentID;
     }
 
     public void delete(){

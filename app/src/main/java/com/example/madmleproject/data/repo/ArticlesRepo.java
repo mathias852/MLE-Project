@@ -1,5 +1,6 @@
 package com.example.madmleproject.data.repo;
 
+import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.madmleproject.data.DatabaseManager;
@@ -34,7 +35,23 @@ public class ArticlesRepo {
                 + ");";
     }
 
+    public int insert(Articles articles){
+        int articleID;
+        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        ContentValues values = new ContentValues();
+        values.put(Articles.COLUMN_FK_LANDMARK_ID, articles.getArticleId());
+        values.put(Articles.COLUMN_FK_USER_ID, articles.getUserId());
+        values.put(Articles.COLUMN_ARTICLE_TEXT, articles.getArticle());
+        values.put(Articles.COLUMN_PICTURE_PATH, articles.getPicturePath());
+        values.put(Articles.COLUMN_TITLE, articles.getTitle());
+        values.put(Articles.COLUMN_LIKES, articles.getLikes());
+        values.put(Articles.COLUMN_COMMENT_AMOUNT, articles.getCommentAmount());
 
+
+        articleID = (int) db.insert(Users.TABLE, null, values);
+        DatabaseManager.getInstance().closeDatabase();
+        return articleID;
+    }
 
     public void delete(){
         SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
