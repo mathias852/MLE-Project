@@ -1,5 +1,8 @@
 package com.example.madmleproject.data.repo;
 
+import android.database.sqlite.SQLiteDatabase;
+
+import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.Activities;
 import com.example.madmleproject.data.model.Articles;
 import com.example.madmleproject.data.model.Landmarks;
@@ -29,5 +32,13 @@ public class ArticlesRepo {
                 + Users.TABLE + "(" + Users.COLUMN_PK_ID + ") "
                 + "ON DELETE CASCADE "
                 + ");";
+    }
+
+
+
+    public void delete(){
+        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        db.delete(Articles.TABLE, null, null);
+        DatabaseManager.getInstance().closeDatabase();
     }
 }

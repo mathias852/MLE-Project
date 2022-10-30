@@ -1,5 +1,8 @@
 package com.example.madmleproject.data.repo;
 
+import android.database.sqlite.SQLiteDatabase;
+
+import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.ArticleComments;
 import com.example.madmleproject.data.model.Articles;
 import com.example.madmleproject.data.model.Users;
@@ -27,4 +30,9 @@ public class ArticleCommentsRepo {
                 + ");";
     }
 
+    public void delete(){
+        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        db.delete(ArticleComments.TABLE, null, null);
+        DatabaseManager.getInstance().closeDatabase();
+    }
 }

@@ -17,14 +17,16 @@ public class Landmarks {
     public static final String COLUMN_ARTICLE_AMOUNT = "ArticleAmount";
 
     //Java variables
-    private String landmarkId, name, state, city, address, description, operatingHours, priceEntrance, averageRating, articleAmount;
+    private String name, state, city, address, description, operatingHours;
+    private int landmarkId, priceEntrance, articleAmount;
+    private double averageRating;
 
 
-    public String getLandmarkId() {
+    public int getLandmarkId() {
         return landmarkId;
     }
 
-    public void setLandmarkId(String landmarkId) {
+    public void setLandmarkId(int landmarkId) {
         this.landmarkId = landmarkId;
     }
 
@@ -76,27 +78,27 @@ public class Landmarks {
         this.operatingHours = operatingHours;
     }
 
-    public String getPriceEntrance() {
+    public int getPriceEntrance() {
         return priceEntrance;
     }
 
-    public void setPriceEntrance(String priceEntrance) {
+    public void setPriceEntrance(int priceEntrance) {
         this.priceEntrance = priceEntrance;
     }
 
-    public String getAverageRating() {
+    public double getAverageRating() {
         return averageRating;
     }
 
-    public void setAverageRating(String averageRating) {
+    public void setAverageRating(double averageRating) {
         this.averageRating = averageRating;
     }
 
-    public String getArticleAmount() {
+    public int getArticleAmount() {
         return articleAmount;
     }
 
-    public void setArticleAmount(String articleAmount) {
+    public void setArticleAmount(int articleAmount) {
         this.articleAmount = articleAmount;
     }
 }

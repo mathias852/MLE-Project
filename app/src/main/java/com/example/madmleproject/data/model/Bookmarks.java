@@ -8,21 +8,21 @@ public class Bookmarks {
     public static final String COLUMN_PK_FK_LANDMARK_ID = "PK_FK_LandmarkId";
     public static final String COLUMN_PK_FK_USER_ID = "PK_FK_UserId";
 
-    private String landmarkId, userId;
+    private int landmarkId, userId;
 
-    public String getLandmarkId() {
+    public int getLandmarkId() {
         return landmarkId;
     }
 
-    public void setLandmarkId(String landmarkId) {
+    public void setLandmarkId(int landmarkId) {
         this.landmarkId = landmarkId;
     }
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 }

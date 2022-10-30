@@ -9,29 +9,30 @@ public class LandmarkRatings {
     public static final String COLUMN_FK_LANDMARK_ID = "FK_LandmarkID";
     public static final String COLUMN_RATING = "Rating";
 
-    private String landmarkRatingId, landmarkId, rating;
+    private int landmarkRatingId, landmarkId;
+    private double rating;
 
-    public String getLandmarkRatingId() {
+    public int getLandmarkRatingId() {
         return landmarkRatingId;
     }
 
-    public void setLandmarkRatingId(String landmarkRatingId) {
+    public void setLandmarkRatingId(int landmarkRatingId) {
         this.landmarkRatingId = landmarkRatingId;
     }
 
-    public String getLandmarkId() {
+    public int getLandmarkId() {
         return landmarkId;
     }
 
-    public void setLandmarkId(String landmarkId) {
+    public void setLandmarkId(int landmarkId) {
         this.landmarkId = landmarkId;
     }
 
-    public String getRating() {
+    public double getRating() {
         return rating;
     }
 
-    public void setRating(String rating) {
+    public void setRating(double rating) {
         this.rating = rating;
     }
 }
