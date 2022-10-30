@@ -57,4 +57,15 @@ public class ArticlesRepo {
         db.delete(Articles.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }
+
+    public void updateArticleAmountForSpecificLandmark(int landmarkId, double newArticleAmount){
+        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(Landmarks.COLUMN_ARTICLE_AMOUNT, newArticleAmount);
+        String whereClause = Landmarks.COLUMN_PK_ID + " = ?";
+        String[] whereArgs = {String.valueOf(landmarkId)};
+        db.update(Landmarks.TABLE, values, whereClause, whereArgs);
+
+    }
 }
