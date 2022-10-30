@@ -24,8 +24,6 @@
                     android:id="@+id/_bg__homescreen_ek2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
                     android:background="@drawable/_bg__homescreen_ek2_shape" />
 
                 <ImageView
@@ -123,7 +121,7 @@
                         android:fontFamily="Montserrat"
                         android:text="Hello,"
                         android:textColor="@color/hello__oliver__color"
-                        android:textSize="10dp"/>
+                        android:textSize="10dp" />
 
                     <TextView
                         android:id="@+id/hello_username"

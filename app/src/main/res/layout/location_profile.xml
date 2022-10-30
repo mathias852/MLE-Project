@@ -200,7 +200,7 @@
                                 android:text="@string/operating_hours"
                                 android:textColor="@color/penang_hill_color"
                                 android:textSize="15sp" />
-<!--ADD A SECOND COLUMN TO INSERT THE DATA IN THIS IS RELATIVE TO THE RIGHT-->
+                            <!--ADD A SECOND COLUMN TO INSERT THE DATA IN THIS IS RELATIVE TO THE RIGHT-->
                             <TextView
                                 android:id="@+id/price_range"
                                 android:layout_width="match_parent"
