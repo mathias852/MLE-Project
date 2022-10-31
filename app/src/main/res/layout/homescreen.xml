@@ -38,7 +38,7 @@
                     android:src="@drawable/background" />
 
                 <ImageView
-                    android:id="@+id/profile_button_ek1"
+                    android:id="@+id/profileButton"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:layout_marginStart="331dp"
@@ -144,7 +144,7 @@
                     android:layout_marginTop="710dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek2"
+                        android:id="@+id/mainNavBarView"
                         android:layout_width="365dp"
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
@@ -152,7 +152,7 @@
                         android:background="@drawable/rectangle_3_ek2_shape" />
 
                     <ImageButton
-                        android:id="@+id/homescreenHomeButton"
+                        android:id="@+id/mainNavBarHomeButton"
                         android:layout_width="29dp"
                         android:layout_height="29dp"
                         android:layout_marginStart="24dp"
@@ -161,7 +161,7 @@
                         android:src="@drawable/active_home_img" />
 
                     <ImageButton
-                        android:id="@+id/homescreenSearchButton"
+                        android:id="@+id/mainNavBarSearchButton"
                         android:layout_width="29dp"
                         android:layout_height="29dp"
                         android:layout_marginStart="125dp"
@@ -170,7 +170,7 @@
                         android:src="@drawable/navbar_searchicon" />
 
                     <ImageButton
-                        android:id="@+id/homescreenSocialButton"
+                        android:id="@+id/mainNavBarSocialButton"
                         android:layout_width="29.91dp"
                         android:layout_height="17.04dp"
                         android:layout_marginStart="224dp"
@@ -179,7 +179,7 @@
                         android:src="@drawable/navbar_social_icon" />
 
                     <ImageButton
-                        android:id="@+id/vector_ek22"
+                        android:id="@+id/mainNavBarCalenderScreenButton"
                         android:layout_width="29dp"
                         android:layout_height="29dp"
                         android:layout_marginStart="312dp"
