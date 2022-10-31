@@ -75,7 +75,7 @@
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="17dp"
                         android:contentDescription="vector"
-                        android:src="@drawable/vector" />
+                        android:src="@drawable/navbar_social_icon" />
 
                     <ImageView
                         android:id="@+id/vector_ek1"

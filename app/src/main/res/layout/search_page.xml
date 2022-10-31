@@ -70,7 +70,7 @@
                         android:layout_marginTop="14dp"
 
                         android:contentDescription="vector"
-                        android:src="@drawable/vector" />
+                        android:src="@drawable/navbar_searchicon" />
 
                 </RelativeLayout>
 
@@ -109,7 +109,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
                             android:contentDescription="vector_ek5"
-                            android:src="@drawable/vector_ek5" />
+                            android:src="@drawable/bookmark_icon" />
 
                         <TextView
                             android:id="@+id/penang_hill"
@@ -149,7 +149,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
                             android:contentDescription="vector_ek6"
-                            android:src="@drawable/vector_ek6" />
+                            android:src="@drawable/bookmark_more_actions" />
 
                         <TextView
                             android:id="@+id/kek_lok_si_temple"
@@ -189,7 +189,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
                             android:contentDescription="vector_ek7"
-                            android:src="@drawable/vector_ek7" />
+                            android:src="@drawable/bookmark_more_actions" />
 
                         <TextView
                             android:id="@+id/gurney_drive"
@@ -229,7 +229,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
                             android:contentDescription="vector_ek8"
-                            android:src="@drawable/vector_ek8" />
+                            android:src="@drawable/bookmark_more_actions" />
 
                         <TextView
                             android:id="@+id/batu_ferringhi"

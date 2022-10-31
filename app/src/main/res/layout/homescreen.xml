@@ -137,7 +137,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/navbar_ek2"
+                    android:id="@+id/navbar_homescreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
@@ -151,41 +151,44 @@
                         android:layout_marginTop="0dp"
                         android:background="@drawable/rectangle_3_ek2_shape" />
 
-                    <ImageView
-                        android:id="@+id/vector_ek21"
+                    <ImageButton
+                        android:id="@+id/homescreenHomeButton"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:onClick="goToHome"
+                        android:src="@drawable/active_home_img" />
+
+                    <ImageButton
+                        android:id="@+id/homescreenSearchButton"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="125dp"
+                        android:layout_marginTop="16dp"
+                        android:onClick="goToSearch"
+                        android:src="@drawable/navbar_searchicon" />
+
+                    <ImageButton
+                        android:id="@+id/homescreenSocialButton"
                         android:layout_width="29.91dp"
                         android:layout_height="17.04dp"
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="17dp"
-                        android:contentDescription="vector_ek21"
-                        android:src="@drawable/vector_ek21" />
-
-                    <ImageView
-                        android:id="@+id/vector_ek22"
-                        android:layout_width="24dp"
-                        android:layout_height="23dp"
-                        android:layout_marginStart="312dp"
-                        android:layout_marginTop="14dp"
-                        android:contentDescription="vector_ek22"
-                        android:src="@drawable/vector_ek22" />
-
-                    <ImageView
-                        android:id="@+id/vector_ek23"
-                        android:layout_width="26dp"
-                        android:layout_height="21dp"
-                        android:layout_marginStart="125dp"
-                        android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek23"
-                        android:src="@drawable/vector_ek23" />
+                        android:onClick="goToSocial"
+                        android:src="@drawable/navbar_social_icon" />
 
                     <ImageButton
-                        android:id="@+id/vector_ek24"
+                        android:id="@+id/vector_ek22"
                         android:layout_width="29dp"
-                        android:layout_height="19dp"
-                        android:layout_marginStart="24dp"
-                        android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek24"
-                        android:src="@drawable/vector_ek24" />
+                        android:layout_height="29dp"
+                        android:layout_marginStart="312dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="goToCalendar"
+                        android:src="@drawable/navbar_calendar_icon"
+                        android:background="@null"
+                        />
+
 
                 </RelativeLayout>
 
@@ -221,10 +224,9 @@
                     android:id="@+id/article_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="610dp"
                     android:layout_centerHorizontal="true"
-                    >
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="610dp">
 
                     <ImageView
                         android:id="@+id/rectangle_5_ek7"

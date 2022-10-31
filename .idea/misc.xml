@@ -46,16 +46,17 @@
         <entry key="app/src/main/res/layout/communityScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/homeScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/home_screen.xml" value="0.17119565217391305" />
-        <entry key="app/src/main/res/layout/homescreen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/homescreen.xml" value="0.310546875" />
         <entry key="app/src/main/res/layout/location_bookmark_options.xml" value="0.375" />
         <entry key="app/src/main/res/layout/location_profile.xml" value="0.4046920821114369" />
         <entry key="app/src/main/res/layout/loginScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/newTest.xml" value="0.165" />
         <entry key="app/src/main/res/layout/newtest.xml" value="0.31703470031545744" />
         <entry key="app/src/main/res/layout/old_homescreen.xml" value="0.21927083333333333" />
-        <entry key="app/src/main/res/layout/search_page.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/search_page.xml" value="0.42168674698795183" />
         <entry key="app/src/main/res/layout/test.xml" value="0.29320831298828126" />
         <entry key="app/src/main/res/layout/trip_overview.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/trip_overview_bookmark.xml" value="0.32948608398437496" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1655" />
       </map>
     </option>

@@ -2,7 +2,11 @@ package com.example.madmleproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.ArticleComments;
@@ -24,15 +28,32 @@ import com.example.madmleproject.data.repo.UsersRepo;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
+    ImageButton homescreenHomeButton, homescreenSearchButton,homescreenSocialButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.trip_overview);
-
         setContentView(R.layout.homescreen);
-
+        homescreenHomeButton = findViewById(R.id.homescreenHomeButton);
+        homescreenSearchButton = findViewById(R.id.homescreenSearchButton);
         insertSampleData();
+    }
+
+    public void goToHome(View view){
+        System.out.println("THIS IS A TEST");
+    }
+
+    public void goToSearch(View view){
+        System.out.println("THIS IS A TEST");
+    }
+
+    public void goToSocial(View view){
+        System.out.println("THIS IS A TEST");
+    }
+
+    public void goToCalendar(View view){
+        System.out.println("THIS IS A TEST");
     }
 
     private void insertSampleData(){
@@ -210,4 +231,6 @@ public class MainActivity extends AppCompatActivity {
         //Uncomment to see database while app's running
         DatabaseManager.getInstance().openDatabase();
     }
+
+
 }
