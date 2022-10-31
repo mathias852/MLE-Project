@@ -175,7 +175,7 @@
                         android:layout_height="17.04dp"
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="17dp"
-                        android:onClick="goToSocial"
+                        android:onClick="goToCommunity"
                         android:src="@drawable/navbar_social_icon" />
 
                     <ImageButton

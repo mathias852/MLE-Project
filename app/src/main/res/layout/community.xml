@@ -2,21 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <!--
-    /*
-     *	This content is generated from the API File Info.
-     *	(Alt+Shift+Ctrl+I).
-     *
-     *	@desc
-     *	@file 		calendar
-     *	@date 		Saturday 29th of October 2022 08:21:15 AM
-     *	@title 		Page 1
-     *	@author
-     *	@keywords
-     *	@generator 	Export Kit v1.3.figma
-     *
-     */
-    -->
+
     <ScrollView
         android:id="@+id/community"
         android:layout_width="wrap_content"
@@ -129,6 +115,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:src="@drawable/rectangle_9" />
+
                     <TextView
                         android:id="@+id/title_ek1"
                         android:layout_width="match_parent"
@@ -256,13 +243,12 @@
                         android:src="@drawable/rectangle_6" />
 
 
-
-
                     <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="102dp"
-                        android:layout_marginLeft="11dp">
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginTop="102dp">
+
                         <TextView
                             android:id="@+id/title_ek3"
                             android:layout_width="157.5dp"
@@ -338,6 +324,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="302dp">
+
                         <TextView
                             android:id="@+id/username_ek3"
                             android:layout_width="105.36dp"
@@ -348,6 +335,7 @@
                             android:text="@string/username_ek3_string"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/likes_ek3"
                             android:layout_width="98.14dp"
@@ -457,12 +445,34 @@
                         android:background="@drawable/rectangle_3_ek2_shape" />
 
                     <ImageView
+                        android:id="@+id/vector_ek28"
+                        android:layout_width="29dp"
+                        android:layout_height="19dp"
+                        android:layout_marginStart="24dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/vector_ek32"
+                        android:onClick="goToHome"
+                        />
+
+                    <ImageView
+                        android:id="@+id/vector_ek27"
+                        android:layout_width="26dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="125dp"
+                        android:layout_marginTop="16dp"
+                        android:src="@drawable/vector_ek27"
+                        android:onClick="goToSearch"
+                        />
+
+                    <ImageView
                         android:id="@+id/vector_ek25"
                         android:layout_width="29.91dp"
                         android:layout_height="17.04dp"
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="17dp"
-                        android:src="@drawable/vector_ek29" />
+                        android:src="@drawable/vector_ek29"
+                        android:onClick="goToCommunity"
+                        />
 
                     <ImageView
                         android:id="@+id/vector_ek26"
@@ -471,25 +481,10 @@
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="14dp"
                         android:contentDescription="vector_ek26"
-                        android:src="@drawable/vector_ek30" />
+                        android:src="@drawable/vector_ek30"
+                        android:onClick="goToCalendar"
+                        />
 
-                    <ImageView
-                        android:id="@+id/vector_ek27"
-                        android:layout_width="26dp"
-                        android:layout_height="21dp"
-                        android:layout_marginStart="125dp"
-                        android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek27"
-                        android:src="@drawable/vector_ek27" />
-
-                    <ImageView
-                        android:id="@+id/vector_ek28"
-                        android:layout_width="29dp"
-                        android:layout_height="19dp"
-                        android:layout_marginStart="24dp"
-                        android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek28"
-                        android:src="@drawable/vector_ek32" />
 
                 </RelativeLayout>
 

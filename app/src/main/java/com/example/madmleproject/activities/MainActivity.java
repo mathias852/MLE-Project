@@ -1,13 +1,14 @@
-package com.example.madmleproject;
+package com.example.madmleproject.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
+import com.example.madmleproject.R;
 import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.ArticleComments;
 import com.example.madmleproject.data.model.Articles;
@@ -35,25 +36,28 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.homescreen);
-        homescreenHomeButton = findViewById(R.id.homescreenHomeButton);
-        homescreenSearchButton = findViewById(R.id.homescreenSearchButton);
         insertSampleData();
     }
 
     public void goToHome(View view){
-        System.out.println("THIS IS A TEST");
+        Toast toast = Toast.makeText(this, "You are already here" , Toast.LENGTH_LONG);
+        toast.show();
     }
 
     public void goToSearch(View view){
-        System.out.println("THIS IS A TEST");
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
     }
 
-    public void goToSocial(View view){
-        System.out.println("THIS IS A TEST");
+
+    public void goToCommunity(View view){
+        Intent intent = new Intent(this, CommunityActivity.class);
+        startActivity(intent);
     }
 
     public void goToCalendar(View view){
-        System.out.println("THIS IS A TEST");
+        Intent intent = new Intent(this, CalendarActivity.class);
+        startActivity(intent);
     }
 
     private void insertSampleData(){

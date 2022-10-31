@@ -381,7 +381,7 @@
                         android:layout_height="35dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="10dp"
-                        android:contentDescription="vector_ek4"
+                        android:onClick="goToHome"
                         android:src="@drawable/vector_ek4" />
 
 
@@ -391,8 +391,8 @@
                         android:layout_height="35dp"
                         android:layout_marginStart="125dp"
                         android:layout_marginTop="12dp"
-                        android:src="@drawable/vector_ek26"
-                        android:background="@android:color/transparent"/>
+                        android:onClick="goToSearch"
+                        android:src="@drawable/vector_ek26" />
 
                     <ImageButton
                         android:id="@+id/vector_ek1"
@@ -400,9 +400,8 @@
                         android:layout_height="35dp"
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek1"
-                        android:src="@drawable/vector_ek3"
-                        android:background="@android:color/transparent" />
+                        android:onClick="goToCommunity"
+                        android:src="@drawable/vector_ek3" />
 
                     <ImageButton
                         android:id="@+id/vector_ek2"
@@ -410,7 +409,7 @@
                         android:layout_height="35dp"
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="15dp"
-                        android:contentDescription="vector_ek2"
+                        android:onClick="goToCalendar"
                         android:src="@drawable/_vector_ek17" />
 
                 </RelativeLayout>
