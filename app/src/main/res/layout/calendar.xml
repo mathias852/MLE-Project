@@ -66,29 +66,29 @@
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_shape" />
+                        android:background="@drawable/navbarshape" />
 
                     <ImageView
-                        android:id="@+id/vector_ek3"
+                        android:id="@+id/mainNavBarHomeButton"
                         android:layout_width="29dp"
                         android:layout_height="19dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
                         android:onClick="goToHome"
-                        android:src="@drawable/vector_ek32" />
+                        android:src="@drawable/navbar_homescreen_icon" />
 
                     <ImageView
-                        android:id="@+id/vector_ek2"
+                        android:id="@+id/mainNavBarSearchButton"
                         android:layout_width="26dp"
                         android:layout_height="21dp"
                         android:layout_marginStart="125dp"
                         android:layout_marginTop="16dp"
                         android:onClick="goToSearch"
-                        android:src="@drawable/vector_ek2" />
+                        android:src="@drawable/navbar_search_icon" />
 
 
                     <ImageView
-                        android:id="@+id/vector"
+                        android:id="@+id/mainNavBarCommunityButton"
                         android:layout_width="29.91dp"
                         android:layout_height="17.04dp"
                         android:layout_marginStart="224dp"
@@ -97,13 +97,13 @@
                         android:src="@drawable/navbar_social_icon" />
 
                     <ImageView
-                        android:id="@+id/vector_ek1"
+                        android:id="@+id/mainNavBarCalenderScreenButton"
                         android:layout_width="24dp"
-                        android:layout_height="23dp"
+                        android:layout_height="20dp"
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="14dp"
                         android:onClick="goToCalendar"
-                        android:src="@drawable/vector_ek1" />
+                        android:src="@drawable/navbar_calendar_icon_active" />
 
 
                 </RelativeLayout>
@@ -123,7 +123,7 @@
                             android:id="@+id/rectangle_3_ek2"
                             android:layout_width="364.9dp"
                             android:layout_height="89dp"
-                            android:background="@drawable/rectangle_3_ek2_shape" />
+                            android:background="@drawable/navbarshape" />
 
                         <TextView
                             android:id="@+id/sabah_trip"

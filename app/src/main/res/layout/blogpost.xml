@@ -225,44 +225,44 @@
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_ek2_shape" />
+                        android:background="@drawable/navbarshape" />
 
-                    <ImageButton
+                    <ImageView
                         android:id="@+id/mainNavBarHomeButton"
                         android:layout_width="29dp"
-                        android:layout_height="29dp"
+                        android:layout_height="19dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
                         android:onClick="goToHome"
-                        android:src="@drawable/active_home_img" />
+                        android:src="@drawable/navbar_homescreen_icon" />
 
-                    <ImageButton
+                    <ImageView
                         android:id="@+id/mainNavBarSearchButton"
-                        android:layout_width="29dp"
-                        android:layout_height="29dp"
+                        android:layout_width="26dp"
+                        android:layout_height="21dp"
                         android:layout_marginStart="125dp"
                         android:layout_marginTop="16dp"
                         android:onClick="goToSearch"
-                        android:src="@drawable/navbar_searchicon" />
+                        android:src="@drawable/navbar_search_icon" />
 
-                    <ImageButton
-                        android:id="@+id/mainNavBarSocialButton"
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCommunityButton"
                         android:layout_width="29.91dp"
                         android:layout_height="17.04dp"
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="17dp"
-                        android:onClick="goToSocial"
+                        android:onClick="goToCommunity"
                         android:src="@drawable/navbar_social_icon" />
 
-                    <ImageButton
+                    <ImageView
                         android:id="@+id/mainNavBarCalenderScreenButton"
-                        android:layout_width="29dp"
-                        android:layout_height="29dp"
+                        android:layout_width="24dp"
+                        android:layout_height="20dp"
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="14dp"
                         android:onClick="goToCalendar"
-                        android:src="@drawable/navbar_calendar_icon"
-                        android:background="@null" />
+                        android:src="@drawable/navbar_calendar_icon_active" />
 
                 </RelativeLayout>
 

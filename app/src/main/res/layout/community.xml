@@ -442,49 +442,43 @@
                         android:id="@+id/rectangle_3_ek17"
                         android:layout_width="365dp"
                         android:layout_height="51dp"
-                        android:background="@drawable/rectangle_3_ek2_shape" />
-
+                        android:background="@drawable/navbarshape" />
                     <ImageView
-                        android:id="@+id/vector_ek28"
+                        android:id="@+id/mainNavBarHomeButton"
                         android:layout_width="29dp"
                         android:layout_height="19dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/vector_ek32"
                         android:onClick="goToHome"
-                        />
+                        android:src="@drawable/navbar_homescreen_icon" />
 
                     <ImageView
-                        android:id="@+id/vector_ek27"
+                        android:id="@+id/mainNavBarSearchButton"
                         android:layout_width="26dp"
                         android:layout_height="21dp"
                         android:layout_marginStart="125dp"
                         android:layout_marginTop="16dp"
-                        android:src="@drawable/vector_ek27"
                         android:onClick="goToSearch"
-                        />
+                        android:src="@drawable/navbar_search_icon" />
+
 
                     <ImageView
-                        android:id="@+id/vector_ek25"
+                        android:id="@+id/mainNavBarCommunityButton"
                         android:layout_width="29.91dp"
                         android:layout_height="17.04dp"
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="17dp"
-                        android:src="@drawable/vector_ek29"
                         android:onClick="goToCommunity"
-                        />
+                        android:src="@drawable/navbar_community_icon_active" />
 
                     <ImageView
-                        android:id="@+id/vector_ek26"
+                        android:id="@+id/mainNavBarCalenderScreenButton"
                         android:layout_width="24dp"
-                        android:layout_height="23dp"
+                        android:layout_height="20dp"
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="14dp"
-                        android:contentDescription="vector_ek26"
-                        android:src="@drawable/vector_ek30"
                         android:onClick="goToCalendar"
-                        />
-
+                        android:src="@drawable/navbar_calendar_icon" />
 
                 </RelativeLayout>
 
