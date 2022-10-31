@@ -63,7 +63,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/subtitle"
+                        android:id="@+id/titleText"
                         android:layout_width="332.5dp"
                         android:layout_height="58.5dp"
                         android:layout_marginLeft="24dp"
@@ -192,13 +192,13 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/article_1"
+                    android:id="@+id/article1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="520dp">
 
                     <ImageView
-                        android:id="@+id/rectangle_5_ek8"
+                        android:id="@+id/article1Image"
                         android:layout_width="match_parent"
                         android:layout_height="77dp"
                         android:layout_centerHorizontal="true"
@@ -206,7 +206,7 @@
                         android:src="@drawable/rectangle_5_ek8" />
 
                     <TextView
-                        android:id="@+id/top_7_places_in_pahang"
+                        android:id="@+id/article1Text"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_marginLeft="40dp"
@@ -220,7 +220,7 @@
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:id="@+id/article_2"
+                    android:id="@+id/article2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
@@ -228,15 +228,14 @@
                     android:layout_marginTop="610dp">
 
                     <ImageView
-                        android:id="@+id/rectangle_5_ek7"
+                        android:id="@+id/article2Image"
                         android:layout_width="match_parent"
                         android:layout_height="77dp"
                         android:layout_centerHorizontal="true"
-                        android:contentDescription="rectangle_5_ek8"
-                        android:src="@drawable/rectangle_5_ek7" />
+                        android:src="@drawable/insta_cafe_img" />
 
                     <TextView
-                        android:id="@+id/best_instagrammable_cafes_in_kuala_lumpur"
+                        android:id="@+id/article2Text"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
                         android:layout_marginLeft="40dp"
@@ -251,34 +250,32 @@
                 <HorizontalScrollView
                     android:layout_width="match_parent"
                     android:layout_height="145dp"
-                    android:layout_marginStart="0dp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="337dp"
-                    android:layout_weight="1"
                     android:orientation="horizontal"
                     tools:ignore="MissingConstraints">
 
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:layout_marginLeft="10dp"
                         android:orientation="horizontal">
 
                         <RelativeLayout
-                            android:id="@+id/state_1"
+                            android:id="@+id/state1"
                             android:layout_width="119dp"
                             android:layout_height="fill_parent"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginEnd="10dp"
                             android:orientation="vertical">
 
                             <ImageButton
-                                android:id="@+id/rectangle_1"
+                                android:id="@+id/state1Image"
                                 android:layout_width="match_parent"
                                 android:layout_height="fill_parent"
                                 android:contentDescription="rectangle_5_ek9"
                                 android:src="@drawable/rectangle_5_ek9" />
 
                             <TextView
-                                android:id="@+id/malacca"
+                                android:id="@+id/state1Text"
                                 android:layout_width="103.07dp"
                                 android:layout_height="21.16dp"
                                 android:layout_marginLeft="11dp"
@@ -292,20 +289,20 @@
                         </RelativeLayout>
 
                         <RelativeLayout
-                            android:id="@+id/state_2"
+                            android:id="@+id/state2"
                             android:layout_width="119dp"
                             android:layout_height="fill_parent"
                             android:layout_marginRight="10dp">
 
                             <ImageButton
-                                android:id="@+id/rectangle_2"
+                                android:id="@+id/state2Image"
                                 android:layout_width="119dp"
                                 android:layout_height="fill_parent"
                                 android:contentDescription="rectangle_6"
                                 android:src="@drawable/rectangle_6" />
 
                             <TextView
-                                android:id="@+id/selangor"
+                                android:id="@+id/state2Text"
                                 android:layout_width="125.74dp"
                                 android:layout_height="21.16dp"
                                 android:layout_marginLeft="9dp"
@@ -319,13 +316,13 @@
                         </RelativeLayout>
 
                         <RelativeLayout
-                            android:id="@+id/state_3"
+                            android:id="@+id/state3"
                             android:layout_width="119dp"
                             android:layout_height="fill_parent"
                             android:layout_marginRight="10dp">
 
                             <ImageButton
-                                android:id="@+id/rectangle_3"
+                                android:id="@+id/state3Image"
                                 android:layout_width="119dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginStart="0dp"
@@ -334,7 +331,7 @@
                                 android:src="@drawable/rectangle_7" />
 
                             <TextView
-                                android:id="@+id/sabah"
+                                android:id="@+id/state3Text"
                                 android:layout_width="125.74dp"
                                 android:layout_height="21.16dp"
                                 android:layout_marginLeft="12dp"
@@ -348,13 +345,13 @@
                         </RelativeLayout>
 
                         <RelativeLayout
-                            android:id="@+id/state_4"
+                            android:id="@+id/state4"
                             android:layout_width="119dp"
                             android:layout_height="fill_parent"
                             android:layout_marginRight="10dp">
 
                             <ImageButton
-                                android:id="@+id/rectangle_4"
+                                android:id="@+id/state4Image"
                                 android:layout_width="119dp"
                                 android:layout_height="match_parent"
                                 android:layout_marginStart="0dp"
@@ -363,65 +360,7 @@
                                 android:src="@drawable/rectangle_5_ek9" />
 
                             <TextView
-                                android:id="@+id/test"
-                                android:layout_width="125.74dp"
-                                android:layout_height="21.16dp"
-                                android:layout_marginLeft="12dp"
-                                android:layout_marginTop="124dp"
-                                android:fontFamily="Montserrat"
-                                android:text="@string/sabah_string"
-                                android:textColor="@color/hello__oliver__color"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:id="@+id/state_5"
-                            android:layout_width="119dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginRight="10dp">
-
-                            <ImageButton
-                                android:id="@+id/rectangle_5"
-                                android:layout_width="119dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="0dp"
-                                android:layout_marginTop="0dp"
-                                android:contentDescription="rectangle_7"
-                                android:src="@drawable/rectangle_5_ek9" />
-
-                            <TextView
-                                android:id="@+id/test2"
-                                android:layout_width="125.74dp"
-                                android:layout_height="21.16dp"
-                                android:layout_marginLeft="12dp"
-                                android:layout_marginTop="124dp"
-                                android:fontFamily="Montserrat"
-                                android:text="@string/sabah_string"
-                                android:textColor="@color/hello__oliver__color"
-                                android:textSize="15sp"
-                                android:textStyle="bold" />
-
-                        </RelativeLayout>
-
-                        <RelativeLayout
-                            android:id="@+id/state_6"
-                            android:layout_width="119dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginRight="10dp">
-
-                            <ImageButton
-                                android:id="@+id/rectangle_6"
-                                android:layout_width="119dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="0dp"
-                                android:layout_marginTop="0dp"
-                                android:contentDescription="rectangle_7"
-                                android:src="@drawable/rectangle_5_ek9" />
-
-                            <TextView
-                                android:id="@+id/test1"
+                                android:id="@+id/state4Text"
                                 android:layout_width="125.74dp"
                                 android:layout_height="21.16dp"
                                 android:layout_marginLeft="12dp"
@@ -454,7 +393,7 @@
 
 
                     <EditText
-                        android:id="@+id/penang____ek1"
+                        android:id="@+id/searchTextInput"
                         android:layout_width="256.3dp"
                         android:layout_height="50dp"
                         android:layout_marginLeft="57dp"
