@@ -66,43 +66,45 @@
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_shape" />
+                        android:background="@drawable/navbarshape" />
 
                     <ImageView
-                        android:id="@+id/vector"
-                        android:layout_width="29.91dp"
-                        android:layout_height="17.04dp"
-                        android:layout_marginStart="224dp"
-                        android:layout_marginTop="17dp"
-                        android:contentDescription="vector"
-                        android:src="@drawable/vector" />
-
-                    <ImageView
-                        android:id="@+id/vector_ek1"
-                        android:layout_width="24dp"
-                        android:layout_height="23dp"
-                        android:layout_marginStart="312dp"
-                        android:layout_marginTop="14dp"
-                        android:contentDescription="vector_ek1"
-                        android:src="@drawable/vector_ek1" />
-
-                    <ImageView
-                        android:id="@+id/vector_ek2"
-                        android:layout_width="26dp"
-                        android:layout_height="21dp"
-                        android:layout_marginStart="125dp"
-                        android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek2"
-                        android:src="@drawable/vector_ek2" />
-
-                    <ImageView
-                        android:id="@+id/vector_ek3"
+                        android:id="@+id/mainNavBarHomeButton"
                         android:layout_width="29dp"
                         android:layout_height="19dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek3"
-                        android:src="@drawable/vector_ek32" />
+                        android:onClick="goToHome"
+                        android:src="@drawable/navbar_homescreen_icon" />
+
+                    <ImageView
+                        android:id="@+id/mainNavBarSearchButton"
+                        android:layout_width="26dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="125dp"
+                        android:layout_marginTop="16dp"
+                        android:onClick="goToSearch"
+                        android:src="@drawable/navbar_search_icon" />
+
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCommunityButton"
+                        android:layout_width="29.91dp"
+                        android:layout_height="17.04dp"
+                        android:layout_marginStart="224dp"
+                        android:layout_marginTop="17dp"
+                        android:onClick="goToCommunity"
+                        android:src="@drawable/navbar_social_icon" />
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCalenderScreenButton"
+                        android:layout_width="24dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="312dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="goToCalendar"
+                        android:src="@drawable/navbar_calendar_icon_active" />
+
 
                 </RelativeLayout>
 
@@ -121,7 +123,7 @@
                             android:id="@+id/rectangle_3_ek2"
                             android:layout_width="364.9dp"
                             android:layout_height="89dp"
-                            android:background="@drawable/rectangle_3_ek2_shape" />
+                            android:background="@drawable/navbarshape" />
 
                         <TextView
                             android:id="@+id/sabah_trip"
@@ -158,8 +160,7 @@
                             android:layout_marginTop="89dp"
                             android:contentDescription="arrow_5"
                             android:src="@drawable/arrow_1"
-                            android:translationZ="1000dp"
-                            />
+                            android:translationZ="1000dp" />
                     </RelativeLayout>
 
                     <RelativeLayout
@@ -167,8 +168,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="13dp"
-                        android:layout_marginTop="219dp"
-                        >
+                        android:layout_marginTop="219dp">
 
                         <View
                             android:id="@+id/rectangle_3_ek5"
@@ -371,12 +371,6 @@
                 </RelativeLayout>
 
 
-
-
-
-
-
-
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
@@ -404,7 +398,6 @@
                         android:textSize="12dp"
                         android:textStyle="bold" />
                 </RelativeLayout>
-
 
 
             </RelativeLayout>

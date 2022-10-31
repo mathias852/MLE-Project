@@ -75,7 +75,7 @@
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="17dp"
                         android:contentDescription="vector"
-                        android:src="@drawable/vector" />
+                        android:src="@drawable/navbar_social_icon" />
 
                     <ImageView
                         android:id="@+id/vector_ek1"
@@ -84,7 +84,7 @@
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="14dp"
                         android:contentDescription="vector_ek1"
-                        android:src="@drawable/vector_ek1" />
+                        android:src="@drawable/navbar_calendar_icon_active" />
 
                     <ImageView
                         android:id="@+id/vector_ek2"
@@ -93,7 +93,7 @@
                         android:layout_marginStart="125dp"
                         android:layout_marginTop="16dp"
                         android:contentDescription="vector_ek2"
-                        android:src="@drawable/vector_ek2" />
+                        android:src="@drawable/navbar_search_icon" />
 
                     <ImageView
                         android:id="@+id/vector_ek3"

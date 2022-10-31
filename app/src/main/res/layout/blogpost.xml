@@ -136,14 +136,13 @@
                         android:id="@+id/__langkawi"
                         android:layout_width="104.5dp"
                         android:layout_height="23.5dp"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/__langkawi_string"
                         android:textColor="@color/create_new_trip_color"
-                        android:textSize="15sp"
-                        android:layout_centerHorizontal="true"
-                        />
+                        android:textSize="15sp" />
 
                 </RelativeLayout>
 
@@ -165,13 +164,13 @@
                         android:id="@+id/__weekendtrip"
                         android:layout_width="132.5dp"
                         android:layout_height="23.5dp"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="2dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/__weekendtrip_string"
                         android:textColor="@color/create_new_trip_color"
-                        android:textSize="15sp"
-                        android:layout_centerHorizontal="true"/>
+                        android:textSize="15sp" />
 
                 </RelativeLayout>
 
@@ -204,65 +203,66 @@
                 </RelativeLayout>
 
                 <ImageView
-                    android:id="@+id/profile_button_ek4"
+                    android:id="@+id/profileButton"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:layout_marginStart="331dp"
                     android:layout_marginTop="10dp"
-                    android:contentDescription="profile_button_ek4"
+                    android:contentDescription="profile_button_ek1"
                     android:src="@drawable/profile_button" />
 
 
                 <RelativeLayout
-                    android:id="@+id/navbar_ek5"
+                    android:id="@+id/navbarBlogpost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:layout_marginTop="710dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek18"
+                        android:id="@+id/mainNavBarView"
                         android:layout_width="365dp"
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_ek18_shape" />
+                        android:background="@drawable/navbarshape" />
 
-                    <ImageButton
-                        android:id="@+id/vector_ek29"
-                        android:layout_width="29.91dp"
-                        android:layout_height="17.04dp"
-                        android:layout_marginStart="224dp"
-                        android:layout_marginTop="17dp"
-                        android:contentDescription="vector_ek29"
-                        android:src="@drawable/vector_ek29" />
-
-                    <ImageButton
-                        android:id="@+id/vector_ek30"
-                        android:layout_width="24dp"
-                        android:layout_height="23dp"
-                        android:layout_marginStart="312dp"
-                        android:layout_marginTop="14dp"
-                        android:contentDescription="vector_ek30"
-                        android:src="@drawable/vector_ek30" />
-
-                    <ImageButton
-                        android:id="@+id/vector_ek31"
-                        android:layout_width="26dp"
-                        android:layout_height="21dp"
-                        android:layout_marginStart="125dp"
-                        android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek31"
-                        android:src="@drawable/vector_ek31" />
-
-                    <ImageButton
-                        android:id="@+id/vector_ek32"
+                    <ImageView
+                        android:id="@+id/mainNavBarHomeButton"
                         android:layout_width="29dp"
                         android:layout_height="19dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek32"
-                        android:src="@drawable/vector_ek32" />
+                        android:onClick="goToHome"
+                        android:src="@drawable/navbar_homescreen_icon" />
+
+                    <ImageView
+                        android:id="@+id/mainNavBarSearchButton"
+                        android:layout_width="26dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="125dp"
+                        android:layout_marginTop="16dp"
+                        android:onClick="goToSearch"
+                        android:src="@drawable/navbar_search_icon" />
+
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCommunityButton"
+                        android:layout_width="29.91dp"
+                        android:layout_height="17.04dp"
+                        android:layout_marginStart="224dp"
+                        android:layout_marginTop="17dp"
+                        android:onClick="goToCommunity"
+                        android:src="@drawable/navbar_social_icon" />
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCalenderScreenButton"
+                        android:layout_width="24dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="312dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="goToCalendar"
+                        android:src="@drawable/navbar_calendar_icon_active" />
 
                 </RelativeLayout>
 

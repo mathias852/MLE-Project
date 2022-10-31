@@ -138,7 +138,7 @@
                         android:layout_marginStart="263dp"
                         android:layout_marginTop="13dp"
                         android:contentDescription="_vector_ek25"
-                        android:src="@drawable/_vector_ek25" />
+                        android:src="@drawable/navbar_calendar_icon" />
 
                     <ImageView
                         android:id="@+id/vector_ek26"
@@ -147,7 +147,7 @@
                         android:layout_marginStart="34dp"
                         android:layout_marginTop="13dp"
                         android:contentDescription="vector_ek26"
-                        android:src="@drawable/vector_ek26" />
+                        android:src="@drawable/navbar_search_icon_active" />
 
                 </RelativeLayout>
 

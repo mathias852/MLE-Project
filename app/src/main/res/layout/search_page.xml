@@ -68,9 +68,7 @@
                         android:layout_height="19.48dp"
                         android:layout_marginStart="22dp"
                         android:layout_marginTop="14dp"
-
-                        android:contentDescription="vector"
-                        android:src="@drawable/vector" />
+                        android:src="@drawable/navbar_search_icon" />
 
                 </RelativeLayout>
 
@@ -109,7 +107,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
                             android:contentDescription="vector_ek5"
-                            android:src="@drawable/vector_ek5" />
+                            android:src="@drawable/bookmark_icon" />
 
                         <TextView
                             android:id="@+id/penang_hill"
@@ -149,7 +147,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
                             android:contentDescription="vector_ek6"
-                            android:src="@drawable/vector_ek6" />
+                            android:src="@drawable/bookmark_more_actions" />
 
                         <TextView
                             android:id="@+id/kek_lok_si_temple"
@@ -189,7 +187,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
                             android:contentDescription="vector_ek7"
-                            android:src="@drawable/vector_ek7" />
+                            android:src="@drawable/bookmark_more_actions" />
 
                         <TextView
                             android:id="@+id/gurney_drive"
@@ -229,7 +227,7 @@
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
                             android:contentDescription="vector_ek8"
-                            android:src="@drawable/vector_ek8" />
+                            android:src="@drawable/bookmark_more_actions" />
 
                         <TextView
                             android:id="@+id/batu_ferringhi"
@@ -373,45 +371,45 @@
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_shape" />
+                        android:background="@drawable/navbarshape" />
 
-                    <ImageButton
-                        android:id="@+id/vector_ek4"
-                        android:layout_width="30dp"
-                        android:layout_height="35dp"
+
+                    <ImageView
+                        android:id="@+id/mainNavBarHomeButton"
+                        android:layout_width="29dp"
+                        android:layout_height="19dp"
                         android:layout_marginStart="24dp"
-                        android:layout_marginTop="10dp"
-                        android:contentDescription="vector_ek4"
-                        android:src="@drawable/vector_ek4" />
-
-
-                    <ImageButton
-                        android:id="@+id/vector_ek3"
-                        android:layout_width="30dp"
-                        android:layout_height="35dp"
-                        android:layout_marginStart="125dp"
-                        android:layout_marginTop="12dp"
-                        android:src="@drawable/vector_ek26"
-                        android:background="@android:color/transparent"/>
-
-                    <ImageButton
-                        android:id="@+id/vector_ek1"
-                        android:layout_width="30dp"
-                        android:layout_height="35dp"
-                        android:layout_marginStart="224dp"
                         android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek1"
-                        android:src="@drawable/vector_ek3"
-                        android:background="@android:color/transparent" />
+                        android:onClick="goToHome"
+                        android:src="@drawable/navbar_homescreen_icon" />
 
-                    <ImageButton
-                        android:id="@+id/vector_ek2"
-                        android:layout_width="30dp"
-                        android:layout_height="35dp"
+                    <ImageView
+                        android:id="@+id/mainNavBarSearchButton"
+                        android:layout_width="26dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="125dp"
+                        android:layout_marginTop="16dp"
+                        android:onClick="goToSearch"
+                        android:src="@drawable/navbar_search_icon_active" />
+
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCommunityButton"
+                        android:layout_width="29.91dp"
+                        android:layout_height="17.04dp"
+                        android:layout_marginStart="224dp"
+                        android:layout_marginTop="17dp"
+                        android:onClick="goToCommunity"
+                        android:src="@drawable/navbar_social_icon" />
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCalenderScreenButton"
+                        android:layout_width="24dp"
+                        android:layout_height="20dp"
                         android:layout_marginStart="312dp"
-                        android:layout_marginTop="15dp"
-                        android:contentDescription="vector_ek2"
-                        android:src="@drawable/_vector_ek17" />
+                        android:layout_marginTop="14dp"
+                        android:onClick="goToCalendar"
+                        android:src="@drawable/navbar_calendar_icon" />
 
                 </RelativeLayout>
 

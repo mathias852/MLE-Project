@@ -299,7 +299,7 @@
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="14dp"
                         android:contentDescription="ek22"
-                        android:src="@drawable/vector_ek22" />
+                        android:src="@drawable/navbar_calendar_icon" />
 
                     <ImageButton
                         android:id="@+id/vector_ek11"

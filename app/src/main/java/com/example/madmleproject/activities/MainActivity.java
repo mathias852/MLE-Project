@@ -1,9 +1,14 @@
-package com.example.madmleproject;
+package com.example.madmleproject.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.Toast;
 
+import com.example.madmleproject.R;
 import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.ArticleComments;
 import com.example.madmleproject.data.model.Articles;
@@ -24,15 +29,35 @@ import com.example.madmleproject.data.repo.UsersRepo;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
+    ImageButton homescreenHomeButton, homescreenSearchButton,homescreenSocialButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.trip_overview);
-
         setContentView(R.layout.homescreen);
-
         insertSampleData();
+    }
+
+    public void goToHome(View view){
+        Toast toast = Toast.makeText(this, "You are already here" , Toast.LENGTH_LONG);
+        toast.show();
+    }
+
+    public void goToSearch(View view){
+        Intent intent = new Intent(this, SearchActivity.class);
+        startActivity(intent);
+    }
+
+
+    public void goToCommunity(View view){
+        Intent intent = new Intent(this, CommunityActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToCalendar(View view){
+        Intent intent = new Intent(this, CalendarActivity.class);
+        startActivity(intent);
     }
 
     private void insertSampleData(){
@@ -210,4 +235,6 @@ public class MainActivity extends AppCompatActivity {
         //Uncomment to see database while app's running
         DatabaseManager.getInstance().openDatabase();
     }
+
+
 }
