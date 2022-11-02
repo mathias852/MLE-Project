@@ -364,7 +364,7 @@
                             android:layout_marginTop="15dp"
                             android:fontFamily="Montserrat"
                             android:text="@string/___string"
-                            android:textColor="@color/___color"
+                            android:textColor="@color/white_color"
                             android:textSize="40sp" />
 
                     </RelativeLayout>

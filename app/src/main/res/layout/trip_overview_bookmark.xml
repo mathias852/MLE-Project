@@ -132,7 +132,7 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="Montserrat"
                     android:text="@string/hello__oliver__ek1_string"
-                    android:textColor="@color/___color"
+                    android:textColor="@color/white_color"
                     android:textStyle="bold" />
 
                 <TextView
@@ -255,7 +255,7 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="15dp"
                         android:contentDescription="vector_ek12"
-                        android:src="@drawable/vector_ek16" />
+                        android:src="@drawable/go_back_image" />
 
                     <TextView
                         android:id="@+id/penang_trip_ek2"
@@ -307,7 +307,7 @@
                             android:layout_marginTop="140dp"
                             android:fontFamily="Montserrat"
                             android:text="@string/bookmark_1_ek1_string"
-                            android:textColor="@color/___color"
+                            android:textColor="@color/white_color"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -338,7 +338,7 @@
                             android:layout_marginTop="140dp"
                             android:fontFamily="Montserrat"
                             android:text="@string/bookmark_2_ek1_string"
-                            android:textColor="@color/___color"
+                            android:textColor="@color/white_color"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -369,7 +369,7 @@
                             android:layout_marginTop="141dp"
                             android:fontFamily="Montserrat"
                             android:text="@string/bookmark_3_ek1_string"
-                            android:textColor="@color/___color"
+                            android:textColor="@color/white_color"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -400,7 +400,7 @@
                             android:layout_marginTop="141dp"
                             android:fontFamily="Montserrat"
                             android:text="@string/bookmark_4_ek1_string"
-                            android:textColor="@color/___color"
+                            android:textColor="@color/white_color"
                             android:textSize="15sp"
                             android:textStyle="bold" />
 
@@ -416,7 +416,7 @@
                         android:fontFamily="Montserrat"
                         android:text="@string/information_string"
                         android:textAlignment="center"
-                        android:textColor="@color/___color"
+                        android:textColor="@color/white_color"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 

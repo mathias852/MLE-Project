@@ -70,7 +70,7 @@
                     android:layout_marginTop="94dp"
                     android:fontFamily="Montserrat"
                     android:text="@string/title_ek5_string"
-                    android:textColor="@color/___color"
+                    android:textColor="@color/white_color"
                     android:textSize="45sp"
                     android:textStyle="bold" />
 
@@ -102,7 +102,7 @@
                     android:layout_marginTop="16dp"
                     android:fontFamily="Montserrat"
                     android:text="@string/hello__oliver__ek3_string"
-                    android:textColor="@color/___color"
+                    android:textColor="@color/white_color"
                     android:textSize="15dp"
                     android:textStyle="bold" />
 
@@ -185,7 +185,7 @@
                         android:layout_marginTop="30dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/petaling_street_string"
-                        android:textColor="@color/___color"
+                        android:textColor="@color/white_color"
                         android:textSize="11sp"
                         android:textStyle="bold" />
 
@@ -197,7 +197,7 @@
                         android:layout_marginTop="30dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/kuala_lumpur_string"
-                        android:textColor="@color/___color"
+                        android:textColor="@color/white_color"
                         android:textSize="11sp"
                         android:textStyle="bold" />
 
@@ -293,7 +293,7 @@
                                 android:fontFamily="Montserrat"
                                 android:text="@string/batu_caves_string"
                                 android:textAlignment="viewStart"
-                                android:textColor="@color/___color"
+                                android:textColor="@color/white_color"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
 
@@ -322,7 +322,7 @@
                                 android:fontFamily="Montserrat"
                                 android:text="@string/federal_mosque_string"
                                 android:textAlignment="viewStart"
-                                android:textColor="@color/___color"
+                                android:textColor="@color/white_color"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
 
@@ -351,7 +351,7 @@
                                 android:fontFamily="Montserrat"
                                 android:text="@string/petaling_street_ek1_string"
                                 android:textAlignment="viewStart"
-                                android:textColor="@color/___color"
+                                android:textColor="@color/white_color"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
 
@@ -378,7 +378,7 @@
                                 android:fontFamily="Montserrat"
                                 android:text="@string/petaling_street_ek1_string"
                                 android:textAlignment="viewStart"
-                                android:textColor="@color/___color"
+                                android:textColor="@color/white_color"
                                 android:textSize="15sp"
                                 android:textStyle="bold" />
 
