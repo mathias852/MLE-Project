@@ -32,7 +32,7 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:contentDescription="image_2_ek1"
-                    android:src="@drawable/image_2_ek1" />
+                    android:src="@drawable/image_background_location_bookmark_options" />
 
 
                 <RelativeLayout
@@ -96,7 +96,7 @@
                     android:layout_marginStart="17dp"
                     android:layout_marginTop="157dp"
                     android:contentDescription="vector_ek13"
-                    android:src="@drawable/vector_ek13" />
+                    android:src="@drawable/star_rating_image" />
 
                 <TextView
                     android:id="@+id/title_ek1"
@@ -129,7 +129,7 @@
                     android:layout_marginStart="353dp"
                     android:layout_marginTop="14dp"
                     android:contentDescription="vector_ek14"
-                    android:src="@drawable/vector_ek14"
+                    android:src="@drawable/share_image"
                     android:background="@android:color/transparent"/>
 
                 <ImageButton
@@ -139,7 +139,7 @@
                     android:layout_marginStart="308dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="vector_ek15"
-                    android:src="@drawable/vector_ek15"
+                    android:src="@drawable/get_address_image"
                     android:background="@android:color/transparent"/>
 
                 <ImageButton
@@ -149,7 +149,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="vector_ek16"
-                    android:src="@drawable/vector_ek16"
+                    android:src="@drawable/go_back_image"
                     android:background="@android:color/transparent"
                     />
 
@@ -168,7 +168,7 @@
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
                         android:contentDescription="rectangle_5_ek4"
-                        android:src="@drawable/rectangle_5_ek4" />
+                        android:src="@drawable/rectangle_layout_background" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -187,7 +187,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/adress"
+                                android:text="@string/bookmarkLocationInformationAddress"
                                 android:textColor="@color/penang_hill_color"
                                 android:textSize="15sp" />
 
@@ -197,7 +197,7 @@
                                 android:layout_height="20dp"
                                 android:layout_marginTop="5dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/operating_hours"
+                                android:text="@string/bookmarkLocationInformationOperating_hours"
                                 android:textColor="@color/penang_hill_color"
                                 android:textSize="15sp" />
                             <!--ADD A SECOND COLUMN TO INSERT THE DATA IN THIS IS RELATIVE TO THE RIGHT-->
@@ -207,7 +207,7 @@
                                 android:layout_height="20dp"
                                 android:layout_marginTop="5dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/price_range"
+                                android:text="@string/bookmarkLocationInformationPrice_range"
                                 android:textColor="@color/penang_hill_color"
                                 android:textSize="15sp" />
 
@@ -217,7 +217,7 @@
                                 android:layout_height="20dp"
                                 android:layout_marginTop="5dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/transport_options"
+                                android:text="@string/bookmarkLocationInformationTransport_options"
                                 android:textColor="@color/penang_hill_color"
                                 android:textSize="15sp" />
                         </LinearLayout>
@@ -231,7 +231,7 @@
                         android:layout_marginStart="71dp"
                         android:layout_marginTop="120dp"
                         android:contentDescription="vector_ek17"
-                        android:src="@drawable/vector_ek17" />
+                        android:src="@drawable/car_image" />
 
                     <ImageView
                         android:id="@+id/vector_ek18"
@@ -240,25 +240,25 @@
                         android:layout_marginStart="108dp"
                         android:layout_marginTop="118dp"
                         android:contentDescription="vector_ek18"
-                        android:src="@drawable/vector_ek18" />
+                        android:src="@drawable/bus_image" />
 
                     <ImageView
-                        android:id="@+id/vector_ek19"
+                        android:id="@+id/motorcycleImage"
                         android:layout_width="25.01dp"
                         android:layout_height="15dp"
                         android:layout_marginStart="34dp"
                         android:layout_marginTop="124dp"
                         android:contentDescription="vector_ek19"
-                        android:src="@drawable/vector_ek19" />
+                        android:src="@drawable/motorcycle_image" />
 
                     <ImageView
-                        android:id="@+id/vector_ek20"
+                        android:id="@+id/taxiImage"
                         android:layout_width="25dp"
                         android:layout_height="21.88dp"
                         android:layout_marginStart="142dp"
                         android:layout_marginTop="118dp"
                         android:contentDescription="vector_ek20"
-                        android:src="@drawable/vector_ek20" />
+                        android:src="@drawable/taxi_image" />
 
                 </RelativeLayout>
 
@@ -269,7 +269,7 @@
                     android:layout_marginLeft="34dp"
                     android:layout_marginTop="244dp"
                     android:fontFamily="Montserrat"
-                    android:text="@string/information_ek1_string"
+                    android:text="@string/information_subtitle_bookmark_location_add_options"
                     android:textColor="@color/hello__oliver__color"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -323,13 +323,13 @@
                         android:src="@drawable/rectangle_5_ek6" />
 
                     <TextView
-                        android:id="@+id/information_ek3"
+                        android:id="@+id/optionsTextView"
                         android:layout_width="170dp"
                         android:layout_height="52dp"
                         android:layout_marginLeft="11dp"
                         android:layout_marginTop="107dp"
                         android:fontFamily="Montserrat"
-                        android:text="@string/information_ek3_string"
+                        android:text="@string/optionsHeadlineString"
                         android:textColor="@color/hello__oliver__color"
                         android:textSize="14sp"
                         android:textStyle="bold" />

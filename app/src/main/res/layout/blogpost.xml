@@ -61,7 +61,7 @@
                         android:layout_marginTop="237dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/username_ek5_string"
-                        android:textColor="@color/___color"
+                        android:textColor="@color/white_color"
                         android:textSize="17sp"
                         android:textStyle="bold" />
 
@@ -73,7 +73,7 @@
                         android:layout_marginTop="234dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/likes_ek5_string"
-                        android:textColor="@color/___color"
+                        android:textColor="@color/white_color"
                         android:textSize="17sp"
                         android:textStyle="bold" />
 
@@ -85,7 +85,7 @@
                         android:layout_marginTop="15dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/title_ek6_string"
-                        android:textColor="@color/___color"
+                        android:textColor="@color/white_color"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 

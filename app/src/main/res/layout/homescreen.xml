@@ -43,6 +43,7 @@
                     android:layout_height="52dp"
                     android:layout_marginStart="331dp"
                     android:layout_marginTop="10dp"
+                    android:onClick="goToItinerary"
                     android:contentDescription="profile_button_ek1"
                     android:src="@drawable/profile_button" />
 

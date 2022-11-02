@@ -44,6 +44,11 @@ public class MainActivity extends AppCompatActivity {
         toast.show();
     }
 
+    public void goToItinerary(View view){
+        Intent intent = new Intent(this, BookmarkLocationAddOptionsActivity.class);
+        startActivity(intent);
+    }
+
     public void goToSearch(View view){
         Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
