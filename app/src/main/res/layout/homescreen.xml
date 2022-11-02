@@ -57,7 +57,7 @@
                         android:layout_marginLeft="21dp"
                         android:layout_marginTop="114dp"
                         android:fontFamily="Montserrat"
-                        android:text="@string/title_ek2_string"
+                        android:text="@string/blogpost_4Headline"
                         android:textColor="@color/hello__oliver__color"
                         android:textSize="48sp"
                         android:textStyle="bold" />
@@ -299,7 +299,7 @@
                                 android:layout_width="119dp"
                                 android:layout_height="fill_parent"
                                 android:contentDescription="rectangle_6"
-                                android:src="@drawable/rectangle_6" />
+                                android:src="@drawable/selangor_image" />
 
                             <TextView
                                 android:id="@+id/state2Text"
@@ -328,7 +328,7 @@
                                 android:layout_marginStart="0dp"
                                 android:layout_marginTop="0dp"
                                 android:contentDescription="rectangle_7"
-                                android:src="@drawable/rectangle_7" />
+                                android:src="@drawable/penang_image" />
 
                             <TextView
                                 android:id="@+id/state3Text"
