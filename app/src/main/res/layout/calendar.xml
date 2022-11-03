@@ -98,7 +98,7 @@
                             android:id="@+id/rectangle_3_ek2"
                             android:layout_width="364.9dp"
                             android:layout_height="89dp"
-                            android:background="@drawable/navbarshape" />
+                            android:background="@drawable/date_shape" />
 
                         <TextView
                             android:id="@+id/trip1TitleText"
@@ -148,7 +148,7 @@
                             android:id="@+id/rectangle_3_ek5"
                             android:layout_width="364.9dp"
                             android:layout_height="89dp"
-                            android:background="@drawable/rectangle_3_ek5_shape" />
+                            android:background="@drawable/date_shape" />
 
                         <TextView
                             android:id="@+id/trip2TitleText"
@@ -201,7 +201,7 @@
                             android:layout_height="89dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_3_ek4_shape" />
+                            android:background="@drawable/date_shape" />
 
                         <TextView
                             android:id="@+id/trip3TitleText"
@@ -252,7 +252,7 @@
                             android:layout_height="89dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_3_ek3_shape" />
+                            android:background="@drawable/date_shape" />
 
                         <TextView
                             android:id="@+id/trip4TitleText"
@@ -306,7 +306,7 @@
                             android:layout_height="89dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_3_ek1_shape" />
+                            android:background="@drawable/date_shape" />
 
                         <TextView
                             android:id="@+id/createNewActivityText"
@@ -326,23 +326,23 @@
                             android:layout_height="wrap_content">
 
                             <View
-                                android:id="@+id/ellipse_1"
+                                android:id="@+id/addCircle"
                                 android:layout_width="58.58dp"
                                 android:layout_height="52dp"
                                 android:layout_marginStart="285dp"
                                 android:layout_marginTop="19dp"
-                                android:background="@drawable/ellipse_1_shape" />
+                                android:background="@drawable/add_circle_elipse" />
 
                             <TextView
-                                android:id="@+id/__"
+                                android:id="@+id/addCirclePlusIcon"
                                 android:layout_width="69dp"
                                 android:layout_height="77dp"
                                 android:layout_centerVertical="true"
                                 android:layout_marginLeft="304dp"
                                 android:layout_marginTop="30dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/___string"
-                                android:textColor="@color/___color"
+                                android:text="+"
+                                android:textColor="@color/white"
                                 android:textSize="40sp" />
                         </RelativeLayout>
 
