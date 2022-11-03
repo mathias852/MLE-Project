@@ -204,7 +204,8 @@
                         android:layout_height="77dp"
                         android:layout_centerHorizontal="true"
                         android:contentDescription="rectangle_5_ek8"
-                        android:src="@drawable/rectangle_5_ek8" />
+                        android:src="@drawable/article1_image" />
+                   
 
                     <TextView
                         android:id="@+id/article1Text"
