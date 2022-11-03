@@ -29,6 +29,7 @@ import com.example.madmleproject.data.repo.UsersRepo;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
+    ImageButton homescreenHomeButton, homescreenSearchButton,homescreenSocialButton;
 
 
     @Override
@@ -61,11 +62,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToCalendar(View view){
         Intent intent = new Intent(this, CalendarActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToArticle(View view){
-        Intent intent = new Intent(this, ArticleActivity.class);
         startActivity(intent);
     }
 

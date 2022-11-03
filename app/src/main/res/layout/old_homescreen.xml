@@ -175,7 +175,7 @@
                         android:layout_marginStart="97dp"
                         android:layout_marginTop="37dp"
                         android:contentDescription="arrow_1"
-                        android:src="@drawable/calendar_arrow" />
+                        android:src="@drawable/arrow_1" />
 
                     <TextView
                         android:id="@+id/petaling_street"

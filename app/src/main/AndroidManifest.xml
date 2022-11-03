@@ -26,7 +26,6 @@
         <activity android:name=".activities.SearchActivity" />
         <activity android:name=".activities.CommunityActivity" />
         <activity android:name=".activities.CalendarActivity" />
-        <activity android:name=".activities.ArticleActivity" />
         <activity android:name=".activities.BookmarkLocationAddOptionsActivity" />
     </application>
 

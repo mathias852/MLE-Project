@@ -32,42 +32,16 @@
                     android:layout_height="752dp"
                     android:layout_marginStart="-115dp"
                     android:layout_marginTop="-358dp"
+                    android:contentDescription="image_1"
                     android:src="@drawable/image_1" />
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/hi_text"
-                        android:layout_width="51dp"
-                        android:layout_height="12dp"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginTop="16dp"
-                        android:fontFamily="Montserrat"
-                        android:text="Hello,"
-                        android:textColor="@color/hello__oliver__color"
-                        android:textSize="10dp" />
-
-                    <TextView
-                        android:id="@+id/hello_username"
-                        android:layout_width="51dp"
-                        android:layout_height="15dp"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginTop="25dp"
-                        android:fontFamily="Montserrat"
-                        android:text="Oliver!"
-                        android:textColor="@color/hello__oliver__color"
-                        android:textSize="12dp"
-                        android:textStyle="bold" />
-                </RelativeLayout>
-
                 <ImageView
-                    android:id="@+id/profileButton"
+                    android:id="@+id/profile_button"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:layout_marginStart="331dp"
                     android:layout_marginTop="10dp"
+                    android:contentDescription="profile_button"
                     android:src="@drawable/profile_button" />
 
                 <View
@@ -77,277 +51,6 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="276dp"
                     android:background="@drawable/backdrop_shape" />
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginEnd="0dp">
-
-                    <RelativeLayout
-                        android:id="@+id/trip1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="13dp"
-                        android:layout_marginTop="96dp">
-
-                        <View
-                            android:id="@+id/rectangle_3_ek2"
-                            android:layout_width="364.9dp"
-                            android:layout_height="89dp"
-                            android:background="@drawable/navbarshape" />
-
-                        <TextView
-                            android:id="@+id/trip1TitleText"
-                            android:layout_width="226.21dp"
-                            android:layout_height="28.5dp"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_marginLeft="73dp"
-                            android:layout_marginTop="13dp"
-                            android:fontFamily="Montserrat"
-                            android:gravity="center"
-                            android:text="@string/sabah_trip_string"
-                            android:textColor="@color/create_new_activity_color"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/trip1Date"
-                            android:layout_width="284.19dp"
-                            android:layout_height="27.5dp"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_marginLeft="44dp"
-                            android:layout_marginTop="36dp"
-                            android:fontFamily="Montserrat"
-                            android:gravity="center"
-                            android:text="@string/_6___10_december_2021_string"
-                            android:textColor="@color/create_new_activity_color"
-                            android:textSize="15sp" />
-
-                        <ImageView
-                            android:id="@+id/arrow_5"
-                            android:layout_width="34dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="34dp"
-                            android:layout_marginTop="89dp"
-                            android:src="@drawable/calendar_arrow"
-                            android:translationZ="1000dp" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/trip2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="13dp"
-                        android:layout_marginTop="219dp">
-
-                        <View
-                            android:id="@+id/rectangle_3_ek5"
-                            android:layout_width="364.9dp"
-                            android:layout_height="89dp"
-                            android:background="@drawable/rectangle_3_ek5_shape" />
-
-                        <TextView
-                            android:id="@+id/trip2TitleText"
-                            android:layout_width="226.21dp"
-                            android:layout_height="28.5dp"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_marginLeft="73dp"
-                            android:layout_marginTop="13dp"
-                            android:fontFamily="Montserrat"
-                            android:gravity="center"
-                            android:text="@string/ipoh_trip_string"
-                            android:textColor="@color/create_new_activity_color"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/trip2Date"
-                            android:layout_width="284.19dp"
-                            android:layout_height="27.5dp"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_marginLeft="44dp"
-                            android:layout_marginTop="36dp"
-                            android:fontFamily="Montserrat"
-                            android:gravity="center"
-                            android:text="@string/_17___20_february_2022_string"
-                            android:textColor="@color/create_new_activity_color"
-                            android:textSize="15sp" />
-
-                        <ImageView
-                            android:id="@+id/arrow_3"
-                            android:layout_width="34dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="34dp"
-                            android:layout_marginTop="89dp"
-                            android:src="@drawable/calendar_arrow" />
-
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/trip3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="13dp"
-                        android:layout_marginTop="342dp">
-
-                        <View
-                            android:id="@+id/rectangle_3_ek4"
-                            android:layout_width="364.9dp"
-                            android:layout_height="89dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_3_ek4_shape" />
-
-                        <TextView
-                            android:id="@+id/trip3TitleText"
-                            android:layout_width="226.21dp"
-                            android:layout_height="28.5dp"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_marginLeft="73dp"
-                            android:layout_marginTop="13dp"
-                            android:fontFamily="Montserrat"
-                            android:gravity="center"
-                            android:text="@string/malacca_trip_string"
-                            android:textColor="@color/create_new_activity_color"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/trip3Date"
-                            android:layout_width="284.19dp"
-                            android:layout_height="27.5dp"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_marginLeft="44dp"
-                            android:layout_marginTop="36dp"
-                            android:fontFamily="Montserrat"
-                            android:gravity="center"
-                            android:text="@string/_20___23_june_2022_string"
-                            android:textColor="@color/create_new_activity_color"
-                            android:textSize="15sp" />
-
-                        <ImageView
-                            android:id="@+id/arrow_4"
-                            android:layout_width="34dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="34dp"
-                            android:layout_marginTop="89dp"
-                            android:src="@drawable/calendar_arrow" />
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:id="@+id/trip4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="13dp"
-                        android:layout_marginTop="464dp">
-
-                        <View
-                            android:id="@+id/rectangle_3_ek3"
-                            android:layout_width="364.9dp"
-                            android:layout_height="89dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_3_ek3_shape" />
-
-                        <TextView
-                            android:id="@+id/trip4TitleText"
-                            android:layout_width="226.21dp"
-                            android:layout_height="28.5dp"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_marginLeft="73dp"
-                            android:layout_marginTop="13dp"
-                            android:fontFamily="Montserrat"
-                            android:gravity="center"
-                            android:text="@string/penang_trip_string"
-                            android:textColor="@color/create_new_activity_color"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/trip4Date"
-                            android:layout_width="284.19dp"
-                            android:layout_height="27.5dp"
-                            android:layout_gravity="center_horizontal|center"
-                            android:layout_marginLeft="44dp"
-                            android:layout_marginTop="36dp"
-                            android:fontFamily="Montserrat"
-                            android:gravity="center"
-                            android:text="@string/_3___5_september_2022_string"
-                            android:textColor="@color/create_new_activity_color"
-                            android:textSize="15sp" />
-
-                        <ImageView
-                            android:id="@+id/arrow_2"
-                            android:layout_width="34dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="34dp"
-                            android:layout_marginTop="89dp"
-                            android:contentDescription="arrow_2"
-                            android:src="@drawable/calendar_arrow" />
-
-                    </RelativeLayout>
-
-
-                    <RelativeLayout
-                        android:id="@+id/addAgendaActivity"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="13dp"
-                        android:layout_marginTop="588dp">
-
-                        <View
-                            android:id="@+id/rectangle_3_ek1"
-                            android:layout_width="364.9dp"
-                            android:layout_height="89dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_3_ek1_shape" />
-
-                        <TextView
-                            android:id="@+id/createNewActivityText"
-                            android:layout_width="195.11dp"
-                            android:layout_height="27.5dp"
-                            android:layout_marginLeft="99dp"
-                            android:layout_marginTop="36dp"
-                            android:fontFamily="Montserrat"
-                            android:text="@string/create_new_activity_string"
-                            android:textColor="@color/create_new_activity_color"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-
-                        <RelativeLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content">
-
-                            <View
-                                android:id="@+id/ellipse_1"
-                                android:layout_width="58.58dp"
-                                android:layout_height="52dp"
-                                android:layout_marginStart="285dp"
-                                android:layout_marginTop="19dp"
-                                android:background="@drawable/ellipse_1_shape" />
-
-                            <TextView
-                                android:id="@+id/__"
-                                android:layout_width="69dp"
-                                android:layout_height="77dp"
-                                android:layout_centerVertical="true"
-                                android:layout_marginLeft="304dp"
-                                android:layout_marginTop="30dp"
-                                android:fontFamily="Montserrat"
-                                android:text="@string/___string"
-                                android:textColor="@color/___color"
-                                android:textSize="40sp" />
-                        </RelativeLayout>
-
-                    </RelativeLayout>
-                </RelativeLayout>
 
 
                 <RelativeLayout
@@ -403,6 +106,297 @@
                         android:src="@drawable/navbar_calendar_icon_active" />
 
 
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/trip_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="96dp">
+
+                        <View
+                            android:id="@+id/rectangle_3_ek2"
+                            android:layout_width="364.9dp"
+                            android:layout_height="89dp"
+                            android:background="@drawable/navbarshape" />
+
+                        <TextView
+                            android:id="@+id/sabah_trip"
+                            android:layout_width="226.21dp"
+                            android:layout_height="28.5dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="73dp"
+                            android:layout_marginTop="13dp"
+                            android:fontFamily="Montserrat"
+                            android:gravity="center"
+                            android:text="@string/sabah_trip_string"
+                            android:textColor="@color/create_new_activity_color"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/_6___10_december_2021"
+                            android:layout_width="284.19dp"
+                            android:layout_height="27.5dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="44dp"
+                            android:layout_marginTop="36dp"
+                            android:fontFamily="Montserrat"
+                            android:gravity="center"
+                            android:text="@string/_6___10_december_2021_string"
+                            android:textColor="@color/create_new_activity_color"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_5"
+                            android:layout_width="34dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="89dp"
+                            android:contentDescription="arrow_5"
+                            android:src="@drawable/arrow_1"
+                            android:translationZ="1000dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/trip_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="219dp">
+
+                        <View
+                            android:id="@+id/rectangle_3_ek5"
+                            android:layout_width="364.9dp"
+                            android:layout_height="89dp"
+                            android:background="@drawable/rectangle_3_ek5_shape" />
+
+                        <TextView
+                            android:id="@+id/ipoh_trip"
+                            android:layout_width="226.21dp"
+                            android:layout_height="28.5dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="73dp"
+                            android:layout_marginTop="13dp"
+                            android:fontFamily="Montserrat"
+                            android:gravity="center"
+                            android:text="@string/ipoh_trip_string"
+                            android:textColor="@color/create_new_activity_color"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/_17___20_february_2022"
+                            android:layout_width="284.19dp"
+                            android:layout_height="27.5dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="44dp"
+                            android:layout_marginTop="36dp"
+                            android:fontFamily="Montserrat"
+                            android:gravity="center"
+                            android:text="@string/_17___20_february_2022_string"
+                            android:textColor="@color/create_new_activity_color"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_3"
+                            android:layout_width="34dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="89dp"
+                            android:contentDescription="arrow_3"
+                            android:src="@drawable/arrow_1" />
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/trip_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="342dp">
+
+                        <View
+                            android:id="@+id/rectangle_3_ek4"
+                            android:layout_width="364.9dp"
+                            android:layout_height="89dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_3_ek4_shape" />
+
+                        <TextView
+                            android:id="@+id/malacca_trip"
+                            android:layout_width="226.21dp"
+                            android:layout_height="28.5dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="73dp"
+                            android:layout_marginTop="13dp"
+                            android:fontFamily="Montserrat"
+                            android:gravity="center"
+                            android:text="@string/malacca_trip_string"
+                            android:textColor="@color/create_new_activity_color"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/_20___23_june_2022"
+                            android:layout_width="284.19dp"
+                            android:layout_height="27.5dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="44dp"
+                            android:layout_marginTop="36dp"
+                            android:fontFamily="Montserrat"
+                            android:gravity="center"
+                            android:text="@string/_20___23_june_2022_string"
+                            android:textColor="@color/create_new_activity_color"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_4"
+                            android:layout_width="34dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="89dp"
+                            android:contentDescription="arrow_4"
+                            android:src="@drawable/arrow_1" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/trip_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="464dp">
+
+                        <View
+                            android:id="@+id/rectangle_3_ek3"
+                            android:layout_width="364.9dp"
+                            android:layout_height="89dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_3_ek3_shape" />
+
+                        <TextView
+                            android:id="@+id/penang_trip"
+                            android:layout_width="226.21dp"
+                            android:layout_height="28.5dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="73dp"
+                            android:layout_marginTop="13dp"
+                            android:fontFamily="Montserrat"
+                            android:gravity="center"
+                            android:text="@string/penang_trip_string"
+                            android:textColor="@color/create_new_activity_color"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/_3___5_september_2022"
+                            android:layout_width="284.19dp"
+                            android:layout_height="27.5dp"
+                            android:layout_gravity="center_horizontal|center"
+                            android:layout_marginLeft="44dp"
+                            android:layout_marginTop="36dp"
+                            android:fontFamily="Montserrat"
+                            android:gravity="center"
+                            android:text="@string/_3___5_september_2022_string"
+                            android:textColor="@color/create_new_activity_color"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/arrow_2"
+                            android:layout_width="34dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="89dp"
+                            android:contentDescription="arrow_2"
+                            android:src="@drawable/arrow_1" />
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/add_agenda_activity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="588dp">
+
+                        <View
+                            android:id="@+id/rectangle_3_ek1"
+                            android:layout_width="364.9dp"
+                            android:layout_height="89dp"
+                            android:layout_marginStart="0dp"
+                            android:layout_marginTop="0dp"
+                            android:background="@drawable/rectangle_3_ek1_shape" />
+
+                        <TextView
+                            android:id="@+id/create_new_activity"
+                            android:layout_width="195.11dp"
+                            android:layout_height="27.5dp"
+                            android:layout_marginLeft="99dp"
+                            android:layout_marginTop="36dp"
+                            android:fontFamily="Montserrat"
+                            android:text="@string/create_new_activity_string"
+                            android:textColor="@color/create_new_activity_color"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:id="@+id/ellipse_1"
+                            android:layout_width="58.58dp"
+                            android:layout_height="52dp"
+                            android:layout_marginStart="285dp"
+                            android:layout_marginTop="19dp"
+                            android:background="@drawable/ellipse_1_shape" />
+
+                        <TextView
+                            android:id="@+id/__"
+                            android:layout_width="69dp"
+                            android:layout_height="77dp"
+                            android:layout_marginLeft="303dp"
+                            android:layout_marginTop="15dp"
+                            android:fontFamily="Montserrat"
+                            android:text="@string/___string"
+                            android:textColor="@color/white_color"
+                            android:textSize="40sp" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/hi_text"
+                        android:layout_width="51dp"
+                        android:layout_height="12dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="Montserrat"
+                        android:text="Hello,"
+                        android:textColor="@color/hello__oliver__color"
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/hello_username"
+                        android:layout_width="51dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="25dp"
+                        android:fontFamily="Montserrat"
+                        android:text="Oliver!"
+                        android:textColor="@color/hello__oliver__color"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
                 </RelativeLayout>
 
 
