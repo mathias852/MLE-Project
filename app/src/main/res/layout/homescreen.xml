@@ -33,7 +33,6 @@
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:adjustViewBounds="true"
-                    android:contentDescription="background"
                     android:scaleType="fitCenter"
                     android:src="@drawable/background" />
 
@@ -196,7 +195,8 @@
                     android:id="@+id/article1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="520dp">
+                    android:layout_marginTop="520dp"
+                    android:onClick="goToArticle">
 
                     <ImageView
                         android:id="@+id/article1Image"
@@ -204,7 +204,7 @@
                         android:layout_height="77dp"
                         android:layout_centerHorizontal="true"
                         android:contentDescription="rectangle_5_ek8"
-                        android:src="@drawable/rectangle_5_ek8" />
+                        android:src="@drawable/article1_image" />
 
                     <TextView
                         android:id="@+id/article1Text"
@@ -226,14 +226,15 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="610dp">
+                    android:layout_marginTop="610dp"
+                    android:onClick="goToArticle">
 
                     <ImageView
                         android:id="@+id/article2Image"
                         android:layout_width="match_parent"
                         android:layout_height="77dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/insta_cafe_img" />
+                        android:src="@drawable/article2_image" />
 
                     <TextView
                         android:id="@+id/article2Text"

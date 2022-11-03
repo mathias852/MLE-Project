@@ -42,12 +42,21 @@
                         android:layout_marginTop="0dp"
                         android:background="@drawable/rectangle_11_shape" />
 
+                    <ImageView
+                        android:id="@+id/articleArrowBack"
+                        android:layout_width="18dp"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="77dp"
+                        android:src="@drawable/arrow_back" />
+
+
                     <TextView
                         android:id="@+id/lorem_ipsum_dolor_sit_amet__consectetur_adipiscing_elit__sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua__ut_enim_ad_minim_veniam__quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat__duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur__excepteur_sint_occaecat_cupidatat_non_proident__sunt_in_culpa_qui_officia_deserunt_mollit_anim_id_est_laborum__duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur__excepteur_sint_occaecat_cupidatat_non_proident__sunt_in_culpa_qui_officia_deserunt_mollit_anim_id_est_laborum_"
-                        android:layout_width="345dp"
+                        android:layout_width="330dp"
                         android:layout_height="295dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="266dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="265dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/lorem_ipsum_dolor_sit_amet__consectetur_adipiscing_elit__sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua__ut_enim_ad_minim_veniam__quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat__duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur__excepteur_sint_occaecat_cupidatat_non_proident__sunt_in_culpa_qui_officia_deserunt_mollit_anim_id_est_laborum__duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur__excepteur_sint_occaecat_cupidatat_non_proident__sunt_in_culpa_qui_officia_deserunt_mollit_anim_id_est_laborum__string"
                         android:textColor="@color/create_new_trip_color"
@@ -243,7 +252,7 @@
                         android:layout_marginStart="125dp"
                         android:layout_marginTop="16dp"
                         android:onClick="goToSearch"
-                        android:src="@drawable/navbar_search_icon" />
+                        android:src="@drawable/navbar_search_icon_active" />
 
 
                     <ImageView
@@ -262,18 +271,11 @@
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="14dp"
                         android:onClick="goToCalendar"
-                        android:src="@drawable/navbar_calendar_icon_active" />
+                        android:src="@drawable/navbar_calendar_icon" />
+
 
                 </RelativeLayout>
 
-                <ImageButton
-                    android:id="@+id/vector_ek33"
-                    android:layout_width="18dp"
-                    android:layout_height="29dp"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="77dp"
-                    android:contentDescription="vector_ek33"
-                    android:src="@drawable/vector_ek33" />
 
             </RelativeLayout>
         </RelativeLayout>
