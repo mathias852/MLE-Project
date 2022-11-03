@@ -29,6 +29,7 @@ import com.example.madmleproject.data.repo.UsersRepo;
 
 public class MainActivity extends AppCompatActivity {
     public static final String TAG = MainActivity.class.getSimpleName();
+    ImageButton homescreenHomeButton, homescreenSearchButton,homescreenSocialButton;
 
 
     @Override
@@ -41,6 +42,11 @@ public class MainActivity extends AppCompatActivity {
     public void goToHome(View view){
         Toast toast = Toast.makeText(this, "You are already here" , Toast.LENGTH_LONG);
         toast.show();
+    }
+
+    public void goToItinerary(View view){
+        Intent intent = new Intent(this, BookmarkLocationAddOptionsActivity.class);
+        startActivity(intent);
     }
 
     public void goToSearch(View view){
@@ -56,11 +62,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void goToCalendar(View view){
         Intent intent = new Intent(this, CalendarActivity.class);
-        startActivity(intent);
-    }
-
-    public void goToArticle(View view){
-        Intent intent = new Intent(this, ArticleActivity.class);
         startActivity(intent);
     }
 

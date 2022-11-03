@@ -21,21 +21,21 @@
                 android:layout_height="779dp">
 
                 <View
-                    android:id="@+id/_bg__location_bookmark_options_ek2"
+                    android:id="@+id/backgroundLocationBookmarkOptions"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/_bg__location_bookmark_options_ek2_shape" />
+                    android:background="@drawable/background_location_bookmark_options" />
 
                 <ImageView
-                    android:id="@+id/image_2"
+                    android:id="@+id/imageBackgroundLocationBookmarkOptions"
                     android:layout_width="393dp"
                     android:layout_height="779dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
                     android:contentDescription="image_2"
-                    android:src="@drawable/image_2_ek1" />
+                    android:src="@drawable/image_background_location_bookmark_options" />
 
 
                 <RelativeLayout
@@ -46,12 +46,12 @@
                     android:layout_marginTop="506dp">
 
                     <View
-                        android:id="@+id/rectangle_10"
+                        android:id="@+id/optionsBackgroundView"
                         android:layout_width="393dp"
                         android:layout_height="274dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_10_shape" />
+                        android:background="@drawable/options_background_view" />
 
 
                     <RelativeLayout
@@ -81,22 +81,22 @@
                             android:layout_marginTop="0dp">
 
                             <View
-                                android:id="@+id/ellipse_1_ek1"
+                                android:id="@+id/optionsAddCircleBackground"
                                 android:layout_width="37dp"
                                 android:layout_height="36dp"
                                 android:layout_marginStart="0dp"
                                 android:layout_marginTop="4dp"
-                                android:background="@drawable/ellipse_1_ek1_shape" />
+                                android:background="@drawable/options_add_circle_background" />
 
                             <TextView
-                                android:id="@+id/___ek1"
+                                android:id="@+id/optionsAddPlus"
                                 android:layout_width="52dp"
                                 android:layout_height="49dp"
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginTop="0dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/___ek1_string"
-                                android:textColor="@color/___color"
+                                android:text="@string/optionsAddPlusString"
+                                android:textColor="@color/white_color"
                                 android:textSize="30sp" />
 
                         </RelativeLayout>
@@ -107,7 +107,7 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/add_to_new_trip_ek1"
+                    android:id="@+id/add_toExistentTrip1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="31dp"
@@ -134,22 +134,22 @@
                         android:layout_marginTop="0dp">
 
                         <View
-                            android:id="@+id/ellipse_1_ek2"
+                            android:id="@+id/optionsAddCircleBackgroundExistentTrip1"
                             android:layout_width="37dp"
                             android:layout_height="36dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="4dp"
-                            android:background="@drawable/ellipse_1_ek2_shape" />
+                            android:background="@drawable/options_add_circle_background" />
 
                         <TextView
-                            android:id="@+id/___ek2"
+                            android:id="@+id/optionsAddPlusExistentTrip1"
                             android:layout_width="52dp"
                             android:layout_height="49dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/___ek2_string"
-                            android:textColor="@color/___color"
+                            android:text="@string/optionsAddPlusString"
+                            android:textColor="@color/white_color"
                             android:textSize="30sp" />
 
                     </RelativeLayout>
@@ -178,29 +178,29 @@
 
 
                     <RelativeLayout
-                        android:id="@+id/add_button_ek2"
+                        android:id="@+id/add_toExistentTrip2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp">
 
                         <View
-                            android:id="@+id/ellipse_1_ek3"
+                            android:id="@+id/optionsAddCircleBackgroundExistentTrip2"
                             android:layout_width="37dp"
                             android:layout_height="36dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="4dp"
-                            android:background="@drawable/ellipse_1_ek3_shape" />
+                            android:background="@drawable/options_add_circle_background" />
 
                         <TextView
-                            android:id="@+id/___ek3"
+                            android:id="@+id/optionsAddPlusExistentTrip2"
                             android:layout_width="52dp"
                             android:layout_height="49dp"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="0dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/___ek3_string"
-                            android:textColor="@color/___color"
+                            android:text="@string/optionsAddPlusString"
+                            android:textColor="@color/white_color"
                             android:textSize="30sp" />
 
                     </RelativeLayout>
@@ -208,148 +208,149 @@
                 </RelativeLayout>
 
                 <ImageView
-                    android:id="@+id/vector_ek13"
+                    android:id="@+id/starRatingImage"
                     android:layout_width="18dp"
                     android:layout_height="17dp"
                     android:layout_marginStart="17dp"
                     android:layout_marginTop="157dp"
                     android:contentDescription="vector_ek13"
-                    android:src="@drawable/vector_ek13" />
+                    android:src="@drawable/star_rating_image" />
 
                 <TextView
-                    android:id="@+id/title"
+                    android:id="@+id/bookmarkLocationHeadline"
                     android:layout_width="334.5dp"
                     android:layout_height="73.5dp"
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="104dp"
                     android:fontFamily="Montserrat"
-                    android:text="@string/penang_hill_string"
-                    android:textColor="@color/___color"
+                    android:text="@string/bookmarkLocationHeadline"
+                    android:textColor="@color/white_color"
                     android:textSize="45sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/_4_8"
+                    android:id="@+id/bookmarkLocationRating"
                     android:layout_width="314.5dp"
                     android:layout_height="59.5dp"
                     android:layout_marginLeft="37dp"
                     android:layout_marginTop="150dp"
                     android:fontFamily="Montserrat"
                     android:text="@string/_4_8_string"
-                    android:textColor="@color/___color"
+                    android:textColor="@color/white_color"
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
                 <ImageView
-                    android:id="@+id/vector_ek14"
+                    android:id="@+id/shareImage"
                     android:layout_width="23dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="353dp"
                     android:layout_marginTop="14dp"
                     android:contentDescription="vector_ek14"
-                    android:src="@drawable/vector_ek14" />
+                    android:src="@drawable/share_image" />
 
                 <ImageView
-                    android:id="@+id/vector_ek15"
+                    android:id="@+id/getAddressImage"
                     android:layout_width="26dp"
                     android:layout_height="29dp"
                     android:layout_marginStart="308dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="vector_ek15"
-                    android:src="@drawable/vector_ek15" />
+                    android:src="@drawable/get_address_image" />
 
                 <ImageView
-                    android:id="@+id/vector_ek16"
+                    android:id="@+id/goBackImage"
                     android:layout_width="18dp"
                     android:layout_height="29dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="vector_ek16"
-                    android:src="@drawable/arrow_back" />
+                    android:src="@drawable/go_back_image" />
 
 
                 <RelativeLayout
-                    android:id="@+id/navbar_ek3"
+                    android:id="@+id/navbar_homescreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:layout_marginTop="710dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek16"
+                        android:id="@+id/mainNavBarView"
                         android:layout_width="365dp"
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_ek16_shape" />
+                        android:background="@drawable/navbarshape" />
 
-                    <ImageButton
-                        android:id="@+id/vector_ek9"
-                        android:layout_width="29.91dp"
-                        android:layout_height="17.04dp"
-                        android:layout_marginStart="224dp"
-                        android:layout_marginTop="17dp"
-                        android:contentDescription="vector_ek9"
-                        android:src="@drawable/vector_ek21" />
-
-                    <ImageButton
-                        android:id="@+id/vector_ek10"
-                        android:layout_width="24dp"
-                        android:layout_height="23dp"
-                        android:layout_marginStart="312dp"
-                        android:layout_marginTop="14dp"
-                        android:contentDescription="ek22"
-                        android:src="@drawable/navbar_calendar_icon" />
-
-                    <ImageButton
-                        android:id="@+id/vector_ek11"
-                        android:layout_width="26dp"
-                        android:layout_height="21dp"
-                        android:layout_marginStart="125dp"
-                        android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek11"
-                        android:src="@drawable/vector_ek11" />
-
-                    <ImageButton
-                        android:id="@+id/vector_ek12"
+                    <ImageView
+                        android:id="@+id/mainNavBarHomeButton"
                         android:layout_width="29dp"
                         android:layout_height="19dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
-                        android:clickable="true"
-                        android:contentDescription="vector_ek12"
-                        android:src="@drawable/vector_ek12" />
+                        android:onClick="goToHome"
+                        android:src="@drawable/navbar_homescreen_icon" />
+
+                    <ImageView
+                        android:id="@+id/mainNavBarSearchButton"
+                        android:layout_width="26dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="125dp"
+                        android:layout_marginTop="16dp"
+                        android:onClick="goToSearch"
+                        android:src="@drawable/navbar_search_icon" />
+
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCommunityButton"
+                        android:layout_width="29.91dp"
+                        android:layout_height="17.04dp"
+                        android:layout_marginStart="224dp"
+                        android:layout_marginTop="17dp"
+                        android:onClick="goToCommunity"
+                        android:src="@drawable/navbar_social_icon" />
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCalenderScreenButton"
+                        android:layout_width="24dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="312dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="goToCalendar"
+                        android:src="@drawable/navbar_calendar_icon" />
+
 
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/information_ek1"
+                    android:id="@+id/informationSubtitle"
                     android:layout_width="182dp"
                     android:layout_height="56dp"
                     android:layout_marginLeft="34dp"
                     android:layout_marginTop="244dp"
                     android:fontFamily="Montserrat"
-                    android:text="@string/information_ek1_string"
-                    android:textColor="@color/___color"
+                    android:text="@string/information_subtitle_bookmark_location_add_options"
+                    android:textColor="@color/white_color"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
 
                 <RelativeLayout
-                    android:id="@+id/information_ek2"
+                    android:id="@+id/informationLayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="278dp">
 
                     <ImageView
-                        android:id="@+id/rectangle_5_ek4"
+                        android:id="@+id/rectangleLayoutBackground"
                         android:layout_width="362dp"
                         android:layout_height="149dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
                         android:contentDescription="rectangle_5_ek4"
-                        android:src="@drawable/rectangle_5_ek4" />
+                        android:src="@drawable/rectangle_layout_background" />
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -364,41 +365,41 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/location_adress"
+                                android:id="@+id/information_address"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/adress"
+                                android:text="@string/bookmarkLocationInformationAddress"
                                 android:textColor="@color/penang_hill_color"
                                 android:textSize="15sp" />
 
                             <TextView
-                                android:id="@+id/operating_hours"
+                                android:id="@+id/information_operating_hours"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:layout_marginTop="5dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/operating_hours"
+                                android:text="@string/bookmarkLocationInformationOperating_hours"
                                 android:textColor="@color/penang_hill_color"
                                 android:textSize="15sp" />
                             <!--ADD A SECOND COLUMN TO INSERT THE DATA IN THIS IS RELATIVE TO THE RIGHT-->
                             <TextView
-                                android:id="@+id/price_range"
+                                android:id="@+id/InformationPrice_range"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:layout_marginTop="5dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/price_range"
+                                android:text="@string/bookmarkLocationInformationPrice_range"
                                 android:textColor="@color/penang_hill_color"
                                 android:textSize="15sp" />
 
                             <TextView
-                                android:id="@+id/transport_options"
+                                android:id="@+id/information_transport_options"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:layout_marginTop="5dp"
                                 android:fontFamily="Montserrat"
-                                android:text="@string/transport_options"
+                                android:text="@string/bookmarkLocationInformationTransport_options"
                                 android:textColor="@color/penang_hill_color"
                                 android:textSize="15sp" />
                         </LinearLayout>
@@ -406,52 +407,52 @@
                     </RelativeLayout>
 
                     <ImageView
-                        android:id="@+id/vector_ek21"
+                        android:id="@+id/carImage"
                         android:layout_width="23.44dp"
                         android:layout_height="18.75dp"
                         android:layout_marginStart="71dp"
                         android:layout_marginTop="120dp"
                         android:contentDescription="vector_ek17"
-                        android:src="@drawable/vector_ek17" />
+                        android:src="@drawable/car_image" />
 
                     <ImageView
-                        android:id="@+id/vector_ek22"
+                        android:id="@+id/busImage"
                         android:layout_width="21dp"
                         android:layout_height="21dp"
                         android:layout_marginStart="108dp"
                         android:layout_marginTop="118dp"
                         android:contentDescription="vector_ek18"
-                        android:src="@drawable/vector_ek18" />
+                        android:src="@drawable/bus_image" />
 
                     <ImageView
-                        android:id="@+id/vector_ek23"
+                        android:id="@+id/motorcycleImage"
                         android:layout_width="25.01dp"
                         android:layout_height="15dp"
                         android:layout_marginStart="34dp"
                         android:layout_marginTop="124dp"
                         android:contentDescription="vector_ek19"
-                        android:src="@drawable/vector_ek19" />
+                        android:src="@drawable/motorcycle_image" />
 
                     <ImageView
-                        android:id="@+id/vector_ek24"
+                        android:id="@+id/taxiImage"
                         android:layout_width="25dp"
                         android:layout_height="21.88dp"
                         android:layout_marginStart="142dp"
                         android:layout_marginTop="118dp"
                         android:contentDescription="vector_ek20"
-                        android:src="@drawable/vector_ek20" />
+                        android:src="@drawable/taxi_image" />
 
                 </RelativeLayout>
 
                 <TextView
-                    android:id="@+id/information_ek3"
+                    android:id="@+id/optionsHeadlineTextView"
                     android:layout_width="316dp"
                     android:layout_height="56dp"
                     android:layout_marginLeft="35dp"
                     android:layout_marginTop="474dp"
                     android:fontFamily="Montserrat"
-                    android:text="@string/information_ek3_string"
-                    android:textColor="@color/___color"
+                    android:text="@string/optionsHeadlineString"
+                    android:textColor="@color/white_color"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 

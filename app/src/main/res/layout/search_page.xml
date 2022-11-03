@@ -116,7 +116,7 @@
                             android:layout_marginLeft="7dp"
                             android:layout_marginTop="151dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/penang_hill_string"
+                            android:text="@string/bookmarkLocationHeadline"
                             android:textColor="@color/penang_hill_color"
                             android:textSize="15sp"
                             android:textStyle="bold" />

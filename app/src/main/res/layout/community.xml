@@ -22,19 +22,19 @@
                 android:layout_marginTop="0dp">
 
                 <View
-                    android:id="@+id/_bg__community_ek2"
+                    android:id="@+id/backgroundCommunityView"
                     android:layout_width="393dp"
                     android:layout_height="779dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/_bg__community_ek2_shape" />
+                    android:background="@drawable/background_view" />
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/hi_text"
+                        android:id="@+id/hi_textCommunity"
                         android:layout_width="51dp"
                         android:layout_height="12dp"
                         android:layout_marginLeft="14dp"
@@ -104,26 +104,26 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/blogpost_5"
+                    android:id="@+id/blogpost_5RelativeLayoutCommunity"
                     android:layout_width="167dp"
                     android:layout_height="162dp"
                     android:layout_marginStart="211dp"
                     android:layout_marginTop="528dp">
 
                     <ImageView
-                        android:id="@+id/rectangle_9"
+                        android:id="@+id/skyBridgePictureCommunity"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:src="@drawable/rectangle_9" />
+                        android:src="@drawable/sky_bridge_picture" />
 
                     <TextView
-                        android:id="@+id/title_ek1"
+                        android:id="@+id/blogpost_5Headline"
                         android:layout_width="match_parent"
                         android:layout_height="33dp"
                         android:layout_marginStart="11dp"
                         android:layout_marginTop="105dp"
                         android:fontFamily="Montserrat"
-                        android:text="@string/title_ek1_string"
+                        android:text="@string/blogpost_5Headline"
                         android:textColor="@color/create_new_activity_color"
                         android:textStyle="bold" />
 
@@ -133,61 +133,61 @@
                         android:layout_height="wrap_content">
 
                         <TextView
-                            android:id="@+id/username"
+                            android:id="@+id/usernameBlogpost_5"
                             android:layout_width="101dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="11dp"
                             android:layout_marginTop="131dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/username_string"
+                            android:text="@string/username_string_Blogpost_5"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/likes"
+                            android:id="@+id/likesBlogpost_5_textView"
                             android:layout_width="94.51dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="114dp"
                             android:layout_marginTop="131dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/likes_string"
+                            android:text="@string/likes_string_blogpost_5"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
                         <ImageView
-                            android:id="@+id/like_vector_5"
+                            android:id="@+id/likePictureBlogpost_5"
                             android:layout_width="12dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="141dp"
                             android:layout_marginTop="131dp"
-                            android:src="@drawable/like_vector_1" />
+                            android:src="@drawable/like_image" />
                     </RelativeLayout>
 
                 </RelativeLayout>
 
 
                 <RelativeLayout
-                    android:id="@+id/blogpost_4"
+                    android:id="@+id/blogpost_4RelativeLayoutCommunity"
                     android:layout_width="167dp"
                     android:layout_height="231dp"
                     android:layout_marginStart="211dp"
                     android:layout_marginTop="284dp">
 
                     <ImageView
-                        android:id="@+id/rectangle_7"
+                        android:id="@+id/penangPictureImageView"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="rectangle_7"
-                        android:src="@drawable/rectangle_7" />
+                        android:src="@drawable/penang_image" />
 
                     <TextView
-                        android:id="@+id/title_ek2"
+                        android:id="@+id/blogpost_4Headline"
                         android:layout_width="match_parent"
                         android:layout_height="33dp"
                         android:layout_marginStart="6dp"
                         android:layout_marginTop="166dp"
                         android:fontFamily="Montserrat"
-                        android:text="@string/title_ek2_string"
+                        android:text="@string/blogpost_4Headline"
                         android:textColor="@color/create_new_activity_color"
                         android:textStyle="bold" />
 
@@ -197,32 +197,32 @@
                         android:layout_marginTop="200dp">
 
                         <TextView
-                            android:id="@+id/username_ek1"
+                            android:id="@+id/username_Blogpost_4"
                             android:layout_width="101.3dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="6dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/username_ek1_string"
+                            android:text="@string/username_string_blogpost_4"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/likes_ek1"
+                            android:id="@+id/likes_blogpost_4_TextView"
                             android:layout_width="94.51dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="114dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/likes_ek1_string"
+                            android:text="@string/likes_string_blogpost_4"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
 
                         <ImageView
-                            android:id="@+id/like_vector_4"
+                            android:id="@+id/likePictureBlogpost_4"
                             android:layout_width="12dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="141dp"
-                            android:src="@drawable/like_vector_1" />
+                            android:src="@drawable/like_image" />
                     </RelativeLayout>
 
                 </RelativeLayout>
@@ -236,11 +236,11 @@
                     android:layout_marginTop="116dp">
 
                     <ImageView
-                        android:id="@+id/rectangle_6"
+                        android:id="@+id/selangorPictureImageVIew"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="rectangle_6"
-                        android:src="@drawable/rectangle_6" />
+                        android:src="@drawable/selangor_image" />
 
 
                     <RelativeLayout
@@ -250,45 +250,45 @@
                         android:layout_marginTop="102dp">
 
                         <TextView
-                            android:id="@+id/title_ek3"
+                            android:id="@+id/blogpost_3Headline"
                             android:layout_width="157.5dp"
                             android:layout_height="35dp"
 
                             android:fontFamily="Montserrat"
-                            android:text="@string/title_ek2_string"
+                            android:text="@string/blogpost_4Headline"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/username_ek2"
+                            android:id="@+id/username_Blogpost_3"
                             android:layout_width="101.3dp"
                             android:layout_height="20dp"
 
                             android:layout_marginTop="32dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/username_ek2_string"
+                            android:text="@string/username_string_blogpost_3"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/likes_ek2"
+                            android:id="@+id/likes_blogpost_3_TextView"
                             android:layout_width="94.51dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="105dp"
                             android:layout_marginTop="32dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/likes_ek2_string"
+                            android:text="@string/likes_string_blogpost_3"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
                         <ImageView
-                            android:id="@+id/like_vector_3"
+                            android:id="@+id/likePictureBlogpost_3"
                             android:layout_width="12dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="131dp"
                             android:layout_marginTop="33dp"
                             android:contentDescription="like_vector_3"
-                            android:src="@drawable/like_vector_1" />
+                            android:src="@drawable/like_image" />
                     </RelativeLayout>
 
                 </RelativeLayout>
@@ -302,20 +302,20 @@
                     android:layout_marginTop="353dp">
 
                     <ImageView
-                        android:id="@+id/rectangle_8"
+                        android:id="@+id/cameronHighlandsPictureImageView"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="rectangle_8"
-                        android:src="@drawable/rectangle_8" />
+                        android:src="@drawable/cameron_highlands_image" />
 
                     <TextView
-                        android:id="@+id/title_ek4"
+                        android:id="@+id/blogpost_2Headline"
                         android:layout_width="match_parent"
                         android:layout_height="33dp"
                         android:layout_marginStart="11dp"
                         android:layout_marginTop="264dp"
                         android:fontFamily="Montserrat"
-                        android:text="@string/title_ek4_string"
+                        android:text="@string/cameron_highlands_headline"
                         android:textColor="@color/create_new_activity_color"
                         android:textStyle="bold" />
 
@@ -326,33 +326,33 @@
                         android:layout_marginTop="302dp">
 
                         <TextView
-                            android:id="@+id/username_ek3"
+                            android:id="@+id/username_Blogpost_2"
                             android:layout_width="105.36dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="11dp"
 
                             android:fontFamily="Montserrat"
-                            android:text="@string/username_ek3_string"
+                            android:text="@string/username_string_blogpost_2"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/likes_ek3"
+                            android:id="@+id/likes_blogpost_2_TextView"
                             android:layout_width="98.14dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="120dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/likes_ek3_string"
+                            android:text="@string/likes_string_blogpost_2"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
 
                         <ImageView
-                            android:id="@+id/like_vector_2"
+                            android:id="@+id/likePictureBlogpost_2"
                             android:layout_width="12dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="150dp"
-                            android:src="@drawable/like_vector_1" />
+                            android:src="@drawable/like_image" />
                     </RelativeLayout>
 
                 </RelativeLayout>
@@ -366,21 +366,21 @@
                     android:layout_marginTop="116dp">
 
                     <ImageView
-                        android:id="@+id/rectangle_5_ek5"
+                        android:id="@+id/streetFoodKLPictureImageView"
                         android:layout_width="175dp"
                         android:layout_height="224dp"
                         android:contentDescription="rectangle_5_ek5"
-                        android:src="@drawable/rectangle_5_ek5" />
+                        android:src="@drawable/street_food_kl_image" />
 
 
                     <TextView
-                        android:id="@+id/username_ek4"
+                        android:id="@+id/username_Blogpost_1"
                         android:layout_width="95.64dp"
                         android:layout_height="17.5dp"
                         android:layout_marginLeft="11dp"
                         android:layout_marginTop="190dp"
                         android:fontFamily="Montserrat"
-                        android:text="@string/username_ek4_string"
+                        android:text="@string/username_string_blogpost_1"
                         android:textColor="@color/create_new_activity_color"
                         android:textStyle="bold" />
 
@@ -391,30 +391,30 @@
                         android:layout_marginTop="190dp">
 
                         <TextView
-                            android:id="@+id/likes_ek4"
+                            android:id="@+id/likes_blogpost_1_TextView"
                             android:layout_width="98.14dp"
                             android:layout_height="20dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/likes_ek4_string"
+                            android:text="@string/likes_string_blogpost_1"
                             android:textColor="@color/create_new_activity_color"
                             android:textStyle="bold" />
 
                         <ImageView
-                            android:id="@+id/like_vector_1"
+                            android:id="@+id/likePictureBlogpost_1"
                             android:layout_width="12dp"
                             android:layout_height="20dp"
                             android:layout_marginStart="27dp"
-                            android:src="@drawable/like_vector_1" />
+                            android:src="@drawable/like_image" />
                     </RelativeLayout>
 
                     <TextView
-                        android:id="@+id/title_ek5"
+                        android:id="@+id/blogpost_1Headline"
                         android:layout_width="match_parent"
                         android:layout_height="33dp"
                         android:layout_marginStart="11dp"
                         android:layout_marginTop="155dp"
                         android:fontFamily="Montserrat"
-                        android:text="@string/title_ek4_string"
+                        android:text="@string/headline_blogpost_1"
                         android:textColor="@color/create_new_activity_color"
                         android:textStyle="bold" />
 
@@ -422,7 +422,7 @@
                 </RelativeLayout>
 
                 <ImageView
-                    android:id="@+id/profile_button_ek3"
+                    android:id="@+id/profile_button"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
                     android:layout_marginStart="331dp"
@@ -432,17 +432,20 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/navbar_ek4"
+                    android:id="@+id/navbar_homescreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:layout_marginTop="710dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek17"
+                        android:id="@+id/mainNavBarView"
                         android:layout_width="365dp"
                         android:layout_height="51dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
                         android:background="@drawable/navbarshape" />
+
                     <ImageView
                         android:id="@+id/mainNavBarHomeButton"
                         android:layout_width="29dp"
@@ -479,6 +482,7 @@
                         android:layout_marginTop="14dp"
                         android:onClick="goToCalendar"
                         android:src="@drawable/navbar_calendar_icon" />
+
 
                 </RelativeLayout>
 
