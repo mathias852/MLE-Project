@@ -354,7 +354,7 @@
                             android:layout_height="52dp"
                             android:layout_marginStart="285dp"
                             android:layout_marginTop="19dp"
-                            android:background="@drawable/ellipse_1_shape" />
+                            android:background="@drawable/add_circle_elipse" />
 
                         <RelativeLayout
                             android:layout_width="wrap_content"
