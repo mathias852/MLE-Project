@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.ArticleComments;
 import com.example.madmleproject.data.model.Articles;
-import com.example.madmleproject.data.model.Landmarks;
 import com.example.madmleproject.data.model.Users;
 
 public class ArticleCommentsRepo {
@@ -36,7 +35,7 @@ public class ArticleCommentsRepo {
 
     public int insert(ArticleComments articlesComment, Articles article){
         int articleCommentID;
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         ContentValues values = new ContentValues();
         values.put(ArticleComments.COLUMN_FK_ARTICLE_ID, articlesComment.getArticleId());
         values.put(ArticleComments.COLUMN_FK_USER_ID, articlesComment.getUserId());
@@ -53,13 +52,13 @@ public class ArticleCommentsRepo {
     }
 
     public void delete(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         db.delete(ArticleComments.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }
 
     public void updateCommentAmountForSpecificArticle(int articleId, int newCommentAmount){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
 
         ContentValues values = new ContentValues();
         values.put(Articles.COLUMN_COMMENT_AMOUNT, newCommentAmount);
@@ -70,7 +69,7 @@ public class ArticleCommentsRepo {
     }
 
     public void updateLikesBasedOnArticleCommentId(int articleCommentId){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
 
         int newLikes = getLikeAmountFromArticleCommentId(articleCommentId) + 1;
 
@@ -84,7 +83,7 @@ public class ArticleCommentsRepo {
 
     @SuppressLint("Range")
     public int getLikeAmountFromArticleCommentId(int articleCommentId){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
 
         Cursor cursor = db.rawQuery("SELECT " + ArticleComments.COLUMN_PK_ID + ", "
         + ArticleComments.COLUMN_LIKES + " FROM " + ArticleComments.TABLE

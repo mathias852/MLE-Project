@@ -38,7 +38,7 @@ public class ArticlesRepo {
 
     public int insert(Articles articles, Landmarks landmark){
         int articleID;
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         ContentValues values = new ContentValues();
         values.put(Articles.COLUMN_FK_LANDMARK_ID, articles.getLandmarkId());
         values.put(Articles.COLUMN_FK_USER_ID, articles.getUserId());
@@ -58,13 +58,13 @@ public class ArticlesRepo {
     }
 
     public void delete(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         db.delete(Articles.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }
 
     public void updateArticleAmountForSpecificLandmark(int landmarkId, int newArticleAmount){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
 
         ContentValues values = new ContentValues();
         values.put(Landmarks.COLUMN_ARTICLE_AMOUNT, newArticleAmount);
@@ -76,7 +76,7 @@ public class ArticlesRepo {
     @SuppressLint("Range")
     public Articles getArticleCommentAmountFromId(int id){
         Articles article = new Articles();
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
 
         Cursor cursor = db.rawQuery("SELECT " + Articles.COLUMN_PK_ID + ", "
                 + Articles.COLUMN_COMMENT_AMOUNT + " FROM " + Articles.TABLE

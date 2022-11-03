@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.madmleproject.data.DatabaseManager;
-import com.example.madmleproject.data.model.Articles;
 import com.example.madmleproject.data.model.Bookmarks;
 import com.example.madmleproject.data.model.Landmarks;
 import com.example.madmleproject.data.model.Users;
@@ -32,7 +31,7 @@ public class BookmarksRepo {
 
     public int insert (Bookmarks bookmark){
         int bookmarkId;
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         ContentValues values = new ContentValues();
         values.put(Bookmarks.COLUMN_PK_FK_LANDMARK_ID, bookmark.getLandmarkId());
         values.put(Bookmarks.COLUMN_PK_FK_USER_ID, bookmark.getUserId());
@@ -44,13 +43,13 @@ public class BookmarksRepo {
     }
 
     public void delete(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         db.delete(Bookmarks.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }
 
     public void deleteSingleEntry(int landmarkId, int userId){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         String whereClause = Bookmarks.COLUMN_PK_FK_USER_ID + " = ? AND " + Bookmarks.COLUMN_PK_FK_LANDMARK_ID + " = ?";
         String[] whereArgs = {String.valueOf(userId), String.valueOf(landmarkId)};
 

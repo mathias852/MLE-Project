@@ -30,10 +30,18 @@ public class DatabaseManager {
         return instance;
     }
 
-    public synchronized SQLiteDatabase openDatabase() {
+    public synchronized SQLiteDatabase openWriteDatabase() {
         if(mOpenCounter.incrementAndGet() == 1) {
             // Opening new database
             mDatabase = mDatabaseHelper.getWritableDatabase();
+        }
+        return mDatabase;
+    }
+
+    public synchronized SQLiteDatabase openReadDatabase() {
+        if(mOpenCounter.incrementAndGet() == 1) {
+            // Opening new database
+            mDatabase = mDatabaseHelper.getReadableDatabase();
         }
         return mDatabase;
     }

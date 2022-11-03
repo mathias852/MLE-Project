@@ -4,7 +4,6 @@ import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.madmleproject.data.DatabaseManager;
-import com.example.madmleproject.data.model.Landmarks;
 import com.example.madmleproject.data.model.Users;
 
 public class UsersRepo {
@@ -25,7 +24,7 @@ public class UsersRepo {
 
     public int insert(Users user){
         int userId;
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         ContentValues values = new ContentValues();
         values.put(Users.COLUMN_USER_NAME, user.getUsername());
         values.put(Users.COLUMN_PASSWORD, user.getPassword());
@@ -37,7 +36,7 @@ public class UsersRepo {
     }
 
     public void delete(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         db.delete(Users.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }

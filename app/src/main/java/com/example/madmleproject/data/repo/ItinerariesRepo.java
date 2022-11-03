@@ -32,7 +32,7 @@ public class ItinerariesRepo {
 
     public int insert(Itineraries itinerary){
         int itineraryId;
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         ContentValues values = new ContentValues();
         values.put(Itineraries.COLUMN_FK_TRIP_ID, itinerary.getTripId());
         values.put(Itineraries.COLUMN_FK_LANDMARK_ID, itinerary.getLandmarkId());
@@ -44,7 +44,7 @@ public class ItinerariesRepo {
     }
 
     public void delete(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         db.delete(Itineraries.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }

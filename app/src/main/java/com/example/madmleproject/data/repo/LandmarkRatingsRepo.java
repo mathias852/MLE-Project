@@ -6,12 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.example.madmleproject.data.DatabaseManager;
-import com.example.madmleproject.data.model.Articles;
 import com.example.madmleproject.data.model.LandmarkRatings;
 import com.example.madmleproject.data.model.Landmarks;
-import com.example.madmleproject.data.model.Users;
-
-import java.util.ArrayList;
 
 public class LandmarkRatingsRepo {
     private LandmarkRatings landmarkRatings;
@@ -33,7 +29,7 @@ public class LandmarkRatingsRepo {
 
     public int insert (LandmarkRatings landmarkRating, Landmarks landmark){
         int landmarkRatingId;
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
 
         ContentValues values = new ContentValues();
         values.put(LandmarkRatings.COLUMN_FK_LANDMARK_ID, landmarkRating.getLandmarkId());
@@ -47,7 +43,7 @@ public class LandmarkRatingsRepo {
     }
 
     public void delete(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         db.delete(LandmarkRatings.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }
@@ -55,7 +51,7 @@ public class LandmarkRatingsRepo {
     @SuppressLint("Range")
     public double calculateAverageRatingsFromSpecificLandmark(int landmarkId) {
         //Get Readable database
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         double averageRating = 0;
 
         //Query to get only the ratings based on the associated landmark ID
@@ -75,7 +71,7 @@ public class LandmarkRatingsRepo {
     }
 
     public void updateAverageRatingForSpecificLandmark(int landmarkId, double newAverageRating){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
 
         ContentValues values = new ContentValues();
         values.put(Landmarks.COLUMN_AVERAGE_RATING, newAverageRating);

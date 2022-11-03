@@ -7,9 +7,6 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.Landmarks;
-import com.example.madmleproject.data.model.Users;
-
-import java.util.ArrayList;
 
 public class LandmarksRepo {
     private Landmarks landmarks;
@@ -35,7 +32,7 @@ public class LandmarksRepo {
 
     public int insert (Landmarks landmark){
         int landmarkId;
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         ContentValues values = new ContentValues();
         values.put(Landmarks.COLUMN_NAME, landmark.getName());
         values.put(Landmarks.COLUMN_STATE, landmark.getState());
@@ -53,7 +50,7 @@ public class LandmarksRepo {
     }
 
     public void delete(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         db.delete(Landmarks.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }
@@ -61,7 +58,7 @@ public class LandmarksRepo {
     @SuppressLint("Range")
     public Landmarks getLandmarkRatingFromId(int id){
         Landmarks landmark = new Landmarks();
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
 
         Cursor cursor = db.rawQuery("SELECT " + Landmarks.COLUMN_PK_ID + ", "
                 + Landmarks.COLUMN_AVERAGE_RATING + " FROM " + Landmarks.TABLE
@@ -79,7 +76,7 @@ public class LandmarksRepo {
     @SuppressLint("Range")
     public Landmarks getLandmarkArticleAmountFromId(int id){
         Landmarks landmark = new Landmarks();
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
 
         Cursor cursor = db.rawQuery("SELECT " + Landmarks.COLUMN_PK_ID + ", "
                 + Landmarks.COLUMN_ARTICLE_AMOUNT + " FROM " + Landmarks.TABLE

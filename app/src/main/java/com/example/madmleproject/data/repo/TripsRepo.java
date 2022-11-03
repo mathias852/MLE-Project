@@ -28,7 +28,7 @@ public class TripsRepo {
 
     public int insert(Trips activity){
         int activityId;
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         ContentValues values = new ContentValues();
         values.put(Trips.COLUMN_FK_USER_ID, activity.getUserId());
         values.put(Trips.COLUMN_STATE, activity.getState());
@@ -40,7 +40,7 @@ public class TripsRepo {
     }
 
     public void delete(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openDatabase();
+        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
         db.delete(Trips.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }
