@@ -82,7 +82,7 @@
                     android:layout_height="575dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="276dp"
-                    android:background="@drawable/backdrop_ek1_shape" />
+                    android:background="@drawable/trip_overview_bookmark_backdrop_gray_background" />
 
                 <TextView
                     android:id="@+id/articles"

@@ -33,7 +33,7 @@
                     android:layout_marginStart="-115dp"
                     android:layout_marginTop="-358dp"
                     android:contentDescription="image_1"
-                    android:src="@drawable/image_1" />
+                    android:src="@drawable/imageview_tripoverview_background_img_train" />
 
                 <ImageView
                     android:id="@+id/profile_button"
@@ -334,7 +334,7 @@
                             android:layout_height="89dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/rectangle_3_ek1_shape" />
+                            android:background="@drawable/agenda_activity_background_blue" />
 
                         <TextView
                             android:id="@+id/create_new_activity"

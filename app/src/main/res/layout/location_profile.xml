@@ -48,7 +48,7 @@
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_ek1_shape" />
+                        android:background="@drawable/agenda_activity_background_blue" />
 
                     <ImageButton
                         android:id="@+id/vector_ek9"
@@ -85,7 +85,7 @@
                         android:layout_marginTop="16dp"
                         android:clickable="true"
                         android:contentDescription="vector_ek12"
-                        android:src="@drawable/vector_ek12" />
+                        android:src="@drawable/navbar_home_icon" />
 
                 </RelativeLayout>
 
@@ -149,7 +149,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="vector_ek16"
-                    android:src="@drawable/vector_ek16"
+                    android:src="@drawable/back_icon"
                     android:background="@android:color/transparent"
                     />
 

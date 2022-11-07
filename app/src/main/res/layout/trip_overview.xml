@@ -16,24 +16,24 @@
 
 
             <RelativeLayout
-                android:id="@+id/page_trip_overview_ek1"
+                android:id="@+id/page_trip_overview_relativelayout1"
                 android:layout_width="393dp"
                 android:layout_height="779dp">
 
                 <View
-                    android:id="@+id/_bg__trip_overview_ek2"
+                    android:id="@+id/_bg__trip_overview_background"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/_bg__trip_overview_ek2_shape" />
+                    android:background="@drawable/bg_trip_overview_bookmark" />
 
                 <ImageView
-                    android:id="@+id/image_1"
+                    android:id="@+id/tripoverview_background_img_train"
                     android:layout_width="564dp"
                     android:layout_height="752dp"
                     android:layout_marginStart="-115dp"
                     android:layout_marginTop="-358dp"
-                    android:contentDescription="image_1"
-                    android:src="@drawable/image_1" />
+                    android:contentDescription="img_of_train"
+                    android:src="@drawable/imageview_tripoverview_background_img_train" />
 
                 <ImageView
                     android:id="@+id/profile_button"
@@ -61,66 +61,66 @@
                     android:layout_marginTop="710dp">
 
                     <View
-                        android:id="@+id/rectangle_3"
+                        android:id="@+id/navbar_background"
                         android:layout_width="365dp"
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_shape" />
+                        android:background="@drawable/navbar_background" />
 
                     <ImageView
-                        android:id="@+id/vector"
+                        android:id="@+id/navbar_social_icon"
                         android:layout_width="29.91dp"
                         android:layout_height="17.04dp"
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="17dp"
-                        android:contentDescription="vector"
+                        android:contentDescription="social icon"
                         android:src="@drawable/navbar_social_icon" />
 
                     <ImageView
-                        android:id="@+id/vector_ek1"
+                        android:id="@+id/navbar_calendar_icon_active"
                         android:layout_width="24dp"
                         android:layout_height="23dp"
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="14dp"
-                        android:contentDescription="vector_ek1"
+                        android:contentDescription="calendar_icon"
                         android:src="@drawable/navbar_calendar_icon_active" />
 
                     <ImageView
-                        android:id="@+id/vector_ek2"
+                        android:id="@+id/navbar_search_icon"
                         android:layout_width="26dp"
                         android:layout_height="21dp"
                         android:layout_marginStart="125dp"
                         android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek2"
+                        android:contentDescription="search_icon"
                         android:src="@drawable/navbar_search_icon" />
 
                     <ImageView
-                        android:id="@+id/vector_ek3"
+                        android:id="@+id/navbar_home_icon"
                         android:layout_width="29dp"
                         android:layout_height="19dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek3"
-                        android:src="@drawable/vector_ek12" />
+                        android:contentDescription="home_icon"
+                        android:src="@drawable/navbar_home_icon" />
 
                 </RelativeLayout>
 
 
                 <RelativeLayout
-                    android:id="@+id/agenda_activity_1"
+                    android:id="@+id/agenda_activity_background"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="96dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek1"
+                        android:id="@+id/agenda_activity_background_blue"
                         android:layout_width="360dp"
                         android:layout_height="581dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_ek1_shape" />
+                        android:background="@drawable/agenda_activity_background_blue" />
 
                 </RelativeLayout>
 
@@ -181,22 +181,22 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/detailed_description_1"
+                    android:id="@+id/day1_relativelayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="27dp"
                     android:layout_marginTop="286dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek2"
+                        android:id="@+id/day1_blue_background"
                         android:layout_width="336dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="29dp"
-                        android:background="@drawable/rectangle_3_ek7_shape" />
+                        android:background="@drawable/dayx_blue_background" />
 
                     <TextView
-                        android:id="@+id/___add_activity"
+                        android:id="@+id/_add_activity_day1"
                         android:layout_width="346.03dp"
                         android:layout_height="31.5dp"
                         android:layout_marginLeft="10dp"
@@ -229,15 +229,15 @@
                     android:layout_marginTop="257dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek3"
+                        android:id="@+id/automate_blue_background"
                         android:layout_width="174dp"
                         android:layout_height="37dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_ek7_shape" />
+                        android:background="@drawable/dayx_blue_background" />
 
                     <TextView
-                        android:id="@+id/automate_ek1"
+                        android:id="@+id/automate_textview"
                         android:layout_width="188.5dp"
                         android:layout_height="39.5dp"
                         android:layout_marginLeft="39dp"
@@ -249,34 +249,34 @@
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:id="@+id/crown"
+                        android:id="@+id/automate_crown_icon"
                         android:layout_width="25dp"
                         android:layout_height="20dp"
                         android:layout_marginStart="124dp"
                         android:layout_marginTop="7dp"
                         android:contentDescription="crown"
-                        android:src="@drawable/crown" />
+                        android:src="@drawable/crown_icon" />
 
                 </RelativeLayout>
 
 
                 <RelativeLayout
-                    android:id="@+id/detailed_description_2"
+                    android:id="@+id/day2_relativelayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="27dp"
                     android:layout_marginTop="359dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek4"
+                        android:id="@+id/day2_blue_background"
                         android:layout_width="336dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="29dp"
-                        android:background="@drawable/rectangle_3_ek7_shape" />
+                        android:background="@drawable/dayx_blue_background" />
 
                     <TextView
-                        android:id="@+id/___add_activity_ek1"
+                        android:id="@+id/add_activity_day2"
                         android:layout_width="346.03dp"
                         android:layout_height="31.5dp"
                         android:layout_marginLeft="10dp"
@@ -302,22 +302,22 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/detailed_description_5"
+                    android:id="@+id/day5_relativelayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="27dp"
                     android:layout_marginTop="586dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek5"
+                        android:id="@+id/day5_blue_background"
                         android:layout_width="336dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="29dp"
-                        android:background="@drawable/rectangle_3_ek7_shape" />
+                        android:background="@drawable/dayx_blue_background" />
 
                     <TextView
-                        android:id="@+id/___add_activity_ek2"
+                        android:id="@+id/_add_activity_day5"
                         android:layout_width="346.03dp"
                         android:layout_height="31.5dp"
                         android:layout_marginLeft="10dp"
@@ -343,22 +343,22 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/detailed_description_4"
+                    android:id="@+id/day4_relativelayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="27dp"
                     android:layout_marginTop="513dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek6"
+                        android:id="@+id/day4_blue_background"
                         android:layout_width="336dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="29dp"
-                        android:background="@drawable/rectangle_3_ek7_shape" />
+                        android:background="@drawable/dayx_blue_background" />
 
                     <TextView
-                        android:id="@+id/___add_activity_ek3"
+                        android:id="@+id/add_activity_day4"
                         android:layout_width="346.03dp"
                         android:layout_height="31.5dp"
                         android:layout_marginLeft="10dp"
@@ -384,22 +384,22 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/detailed_description_3"
+                    android:id="@+id/day3_relativelayout"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="27dp"
                     android:layout_marginTop="436dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek7"
+                        android:id="@+id/day3_blue_background"
                         android:layout_width="336dp"
                         android:layout_height="27dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="29dp"
-                        android:background="@drawable/rectangle_3_ek7_shape" />
+                        android:background="@drawable/dayx_blue_background" />
 
                     <TextView
-                        android:id="@+id/___add_activity_ek4"
+                        android:id="@+id/_add_activity_day3"
                         android:layout_width="346.03dp"
                         android:layout_height="31.5dp"
                         android:layout_marginLeft="10dp"
@@ -432,21 +432,21 @@
                     android:layout_marginTop="183dp">
 
                     <View
-                        android:id="@+id/ellipse_2"
+                        android:id="@+id/bookmark_blue_background"
                         android:layout_width="43dp"
                         android:layout_height="43dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/ellipse_2_shape" />
+                        android:background="@drawable/bookmark_blue_background" />
 
                     <ImageView
-                        android:id="@+id/bookmark_agenda_vector"
+                        android:id="@+id/bookmark_agenda_icon"
                         android:layout_width="16.37dp"
                         android:layout_height="19.48dp"
                         android:layout_marginStart="13dp"
                         android:layout_marginTop="12dp"
                         android:contentDescription="bookmark_agenda_vector"
-                        android:src="@drawable/bookmark_agenda_vector" />
+                        android:src="@drawable/bookmark_agenda_icon" />
 
                 </RelativeLayout>
 
@@ -459,21 +459,21 @@
                     android:layout_marginTop="183dp">
 
                     <View
-                        android:id="@+id/ellipse_2_ek1"
+                        android:id="@+id/share_agenda_blue_background"
                         android:layout_width="43dp"
                         android:layout_height="43dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/ellipse_2_ek1_shape" />
+                        android:background="@drawable/share_agenda_blue_background" />
 
                     <ImageView
-                        android:id="@+id/share_agenda_vector"
+                        android:id="@+id/share_agenda_icon"
                         android:layout_width="19.65dp"
                         android:layout_height="19.48dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="11dp"
-                        android:contentDescription="share_agenda_vector"
-                        android:src="@drawable/share_agenda_vector" />
+                        android:contentDescription="share_agenda_icon"
+                        android:src="@drawable/share_agenda_icon" />
 
                 </RelativeLayout>
 
@@ -486,33 +486,33 @@
                     android:layout_marginTop="183dp">
 
                     <ImageView
-                        android:id="@+id/ellipse_3"
+                        android:id="@+id/triplan_friends_no1"
                         android:layout_width="43dp"
                         android:layout_height="43dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:contentDescription="ellipse_3"
-                        android:src="@drawable/ellipse_3" />
+                        android:contentDescription="triplan_friends_no1"
+                        android:src="@drawable/triplan_friends_no1" />
 
                     <ImageView
-                        android:id="@+id/ellipse_4"
+                        android:id="@+id/triplan_friends_no2"
                         android:layout_width="43dp"
                         android:layout_height="43dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="0dp"
-                        android:contentDescription="ellipse_4"
-                        android:src="@drawable/ellipse_4" />
+                        android:contentDescription="triplan_friends_no2"
+                        android:src="@drawable/triplan_friends_no2" />
 
                     <View
-                        android:id="@+id/ellipse_5"
+                        android:id="@+id/triplan_friends_blue_background"
                         android:layout_width="43dp"
                         android:layout_height="43dp"
                         android:layout_marginStart="55dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/ellipse_5_shape" />
+                        android:background="@drawable/triplan_friends_blue_background" />
 
                     <TextView
-                        android:id="@+id/__3"
+                        android:id="@+id/friends_in_group"
                         android:layout_width="39.5dp"
                         android:layout_height="27.5dp"
                         android:layout_marginLeft="67dp"

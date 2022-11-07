@@ -265,7 +265,7 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="15dp"
                     android:contentDescription="vector_ek16"
-                    android:src="@drawable/vector_ek16" />
+                    android:src="@drawable/back_icon" />
 
 
                 <RelativeLayout
@@ -318,7 +318,7 @@
                         android:layout_marginTop="16dp"
                         android:clickable="true"
                         android:contentDescription="vector_ek12"
-                        android:src="@drawable/vector_ek12" />
+                        android:src="@drawable/navbar_home_icon" />
 
                 </RelativeLayout>
 
