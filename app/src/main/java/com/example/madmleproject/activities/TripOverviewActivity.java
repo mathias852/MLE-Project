@@ -9,12 +9,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.madmleproject.R;
 
-public class CalendarActivity extends AppCompatActivity {
+public class TripOverviewActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calendar);
+        setContentView(R.layout.trip_overview);
     }
 
     public void goToHome(View view) {
@@ -34,13 +35,13 @@ public class CalendarActivity extends AppCompatActivity {
     }
 
     public void goToCalendar(View view) {
-        Toast toast = Toast.makeText(this, "You are already here", Toast.LENGTH_LONG);
-        toast.show();
+        Intent intent = new Intent(this, CalendarActivity.class);
+        startActivity(intent);
     }
 
 
-    public void goToTripOverview(View view) {
-        Intent intent = new Intent(this, TripOverviewActivity.class);
+    public void goToTripOverviewBookmark(View view) {
+        Intent intent = new Intent(this, TripOverviewBookmarkActivity.class);
         startActivity(intent);
     }
 }

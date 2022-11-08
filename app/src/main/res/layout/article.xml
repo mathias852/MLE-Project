@@ -165,7 +165,7 @@
                         android:layout_width="132.5dp"
                         android:layout_height="23.5dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
                         android:layout_marginTop="2dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/__weekendtrip_string"
@@ -182,23 +182,23 @@
                         android:id="@+id/hi_text"
                         android:layout_width="51dp"
                         android:layout_height="12dp"
-                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
                         android:layout_marginTop="16dp"
                         android:fontFamily="Montserrat"
-                        android:text="Hello,"
+                        android:text="@string/hello"
                         android:textColor="@color/black"
-                        android:textSize="10dp" />
+                        android:textSize="10sp" />
 
                     <TextView
                         android:id="@+id/hello_username"
                         android:layout_width="51dp"
                         android:layout_height="15dp"
-                        android:layout_marginLeft="14dp"
+                        android:layout_marginStart="14dp"
                         android:layout_marginTop="25dp"
                         android:fontFamily="Montserrat"
-                        android:text="Oliver!"
+                        android:text="@string/oliver"
                         android:textColor="@color/black"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -266,14 +266,13 @@
 
                 </RelativeLayout>
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/vector_ek33"
                     android:layout_width="18dp"
                     android:layout_height="29dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="77dp"
-                    android:contentDescription="vector_ek33"
-                    android:src="@drawable/vector_ek33" />
+                    android:src="@drawable/go_back_image" />
 
             </RelativeLayout>
         </RelativeLayout>

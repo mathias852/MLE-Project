@@ -33,7 +33,6 @@
                     android:layout_height="381dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="-63dp"
-                    android:contentDescription="image_2"
                     android:src="@drawable/image_2" />
 
 
@@ -58,7 +57,7 @@
                         android:layout_marginTop="2dp"
                         android:background="@android:color/transparent"
                         android:fontFamily="Montserrat"
-                        android:text="@string/penang____string"
+                        android:hint="@string/penang____string"
                         android:textColor="@color/black"
                         android:textSize="12sp" />
 
@@ -87,17 +86,16 @@
 
                     <RelativeLayout
                         android:id="@+id/location_1"
-                        android:layout_width="wrap_content"
+                        android:layout_width="152dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="337dp">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/rectangle_5"
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
-                            android:layout_marginRight="216dp"
-                            android:contentDescription="rectangle_5"
+                            android:onClick="goToBookmark"
                             android:src="@drawable/rectangle_5" />
 
                         <ImageView
@@ -106,7 +104,7 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:contentDescription="vector_ek5"
+                            android:onClick="goToBookmarkOptions"
                             android:src="@drawable/bookmark_icon" />
 
                         <TextView
@@ -126,18 +124,16 @@
 
                     <RelativeLayout
                         android:id="@+id/location_2"
-                        android:layout_width="wrap_content"
+                        android:layout_width="152dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="215dp"
                         android:layout_marginTop="337dp">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/rectangle_5_ek1"
-                            android:layout_width="152dp"
+                            android:layout_width="match_parent"
                             android:layout_height="144dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:contentDescription="rectangle_5_ek1"
+                            android:onClick="goToBookmark"
                             android:src="@drawable/rectangle_5_ek1" />
 
                         <ImageView
@@ -146,14 +142,13 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:contentDescription="vector_ek6"
-                            android:src="@drawable/bookmark_more_actions" />
+                            android:src="@drawable/bookmark_icon" />
 
                         <TextView
                             android:id="@+id/kek_lok_si_temple"
                             android:layout_width="166.5dp"
                             android:layout_height="49.5dp"
-                            android:layout_marginLeft="6dp"
+                            android:layout_marginStart="6dp"
                             android:layout_marginTop="151dp"
                             android:fontFamily="Montserrat"
                             android:text="@string/kek_lok_si_temple_string"
@@ -166,18 +161,16 @@
 
                     <RelativeLayout
                         android:id="@+id/location_3"
-                        android:layout_width="wrap_content"
+                        android:layout_width="152dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="25dp"
                         android:layout_marginTop="520dp">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/rectangle_5_ek2"
-                            android:layout_width="152dp"
+                            android:layout_width="match_parent"
                             android:layout_height="144dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:contentDescription="rectangle_5_ek2"
+                            android:onClick="goToBookmark"
                             android:src="@drawable/rectangle_5_ek2" />
 
                         <ImageView
@@ -186,14 +179,13 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:contentDescription="vector_ek7"
-                            android:src="@drawable/bookmark_more_actions" />
+                            android:src="@drawable/bookmark_icon" />
 
                         <TextView
                             android:id="@+id/gurney_drive"
                             android:layout_width="131.5dp"
                             android:layout_height="49.5dp"
-                            android:layout_marginLeft="7dp"
+                            android:layout_marginStart="7dp"
                             android:layout_marginTop="151dp"
                             android:fontFamily="Montserrat"
                             android:text="@string/gurney_drive_string"
@@ -206,18 +198,16 @@
 
                     <RelativeLayout
                         android:id="@+id/location_4"
-                        android:layout_width="wrap_content"
+                        android:layout_width="152dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="215dp"
                         android:layout_marginTop="520dp">
 
-                        <ImageButton
+                        <ImageView
                             android:id="@+id/rectangle_5_ek3"
-                            android:layout_width="152dp"
+                            android:layout_width="match_parent"
                             android:layout_height="144dp"
-                            android:layout_marginStart="0dp"
-                            android:layout_marginTop="0dp"
-                            android:contentDescription="rectangle_5_ek3"
+                            android:onClick="goToBookmark"
                             android:src="@drawable/rectangle_5_ek3" />
 
                         <ImageView
@@ -226,14 +216,13 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:contentDescription="vector_ek8"
                             android:src="@drawable/bookmark_more_actions" />
 
                         <TextView
                             android:id="@+id/batu_ferringhi"
                             android:layout_width="166.5dp"
                             android:layout_height="49.5dp"
-                            android:layout_marginLeft="6dp"
+                            android:layout_marginStart="6dp"
                             android:layout_marginTop="151dp"
                             android:fontFamily="Montserrat"
                             android:text="@string/batu_ferringhi_string"
@@ -257,7 +246,7 @@
                             android:id="@+id/all"
                             android:layout_width="44.5dp"
                             android:layout_height="23.5dp"
-                            android:layout_marginLeft="20dp"
+                            android:layout_marginStart="20dp"
                             android:clickable="true"
                             android:fontFamily="Montserrat"
                             android:text="@string/all_string"
@@ -329,9 +318,9 @@
                         android:layout_marginLeft="14dp"
                         android:layout_marginTop="25dp"
                         android:fontFamily="Montserrat"
-                        android:text="Oliver!"
+                        android:text="@string/oliver"
                         android:textColor="@color/hello__oliver__color"
-                        android:textSize="12dp"
+                        android:textSize="12sp"
                         android:textStyle="bold" />
                 </RelativeLayout>
 
@@ -341,19 +330,18 @@
                     android:layout_height="52dp"
                     android:layout_marginStart="331dp"
                     android:layout_marginTop="10dp"
-                    android:contentDescription="profile_button"
                     android:src="@drawable/profile_button" />
 
 
                 <TextView
                     android:id="@+id/title"
-                    android:layout_width="249.5dp"
-                    android:layout_height="98.5dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginTop="180dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="220dp"
                     android:fontFamily="Montserrat"
 
-                    android:text="@string/title_string"
+                    android:text="@string/penang"
                     android:textColor="@color/hello__oliver__color"
                     android:textSize="40sp"
                     android:textStyle="bold" />

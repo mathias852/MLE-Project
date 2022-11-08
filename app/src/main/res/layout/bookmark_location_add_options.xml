@@ -59,7 +59,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="31dp"
-                        android:layout_marginTop="16dp">
+                        android:layout_marginTop="16dp"
+                        android:onClick="createNewTrip">
 
                         <TextView
                             android:id="@+id/create_new_trip"
@@ -107,17 +108,18 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/add_toExistentTrip1"
+                    android:id="@+id/add_toExistingTrip1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="31dp"
-                    android:layout_marginTop="587dp">
+                    android:layout_marginTop="587dp"
+                    android:onClick="addToExistingTrip">
 
                     <TextView
                         android:id="@+id/add_to_penang_trip"
                         android:layout_width="235dp"
                         android:layout_height="33dp"
-                        android:layout_marginLeft="51dp"
+                        android:layout_marginStart="51dp"
                         android:layout_marginTop="8dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/add_to_penang_trip_string"
@@ -162,7 +164,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="31dp"
-                    android:layout_marginTop="649dp">
+                    android:layout_marginTop="649dp"
+                    android:onClick="addToExistingTrip">
 
                     <TextView
                         android:id="@+id/add_to_ipoh_trip"
@@ -213,7 +216,6 @@
                     android:layout_height="17dp"
                     android:layout_marginStart="17dp"
                     android:layout_marginTop="157dp"
-                    android:contentDescription="vector_ek13"
                     android:src="@drawable/star_rating_image" />
 
                 <TextView
@@ -223,7 +225,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="104dp"
                     android:fontFamily="Montserrat"
-                    android:text="@string/bookmarkLocationHeadline"
+                    android:text="@string/penang_hill"
                     android:textColor="@color/white_color"
                     android:textSize="45sp"
                     android:textStyle="bold" />
@@ -264,7 +266,7 @@
                     android:layout_height="29dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="15dp"
-                    android:contentDescription="vector_ek16"
+                    android:onClick="goToSearch"
                     android:src="@drawable/go_back_image" />
 
 
@@ -345,11 +347,9 @@
 
                     <ImageView
                         android:id="@+id/rectangleLayoutBackground"
-                        android:layout_width="362dp"
-                        android:layout_height="149dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
-                        android:contentDescription="rectangle_5_ek4"
+                        android:layout_width="360dp"
+                        android:layout_height="150dp"
+                        android:layout_centerVertical="true"
                         android:src="@drawable/rectangle_layout_background" />
 
                     <RelativeLayout
@@ -406,41 +406,44 @@
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/carImage"
-                        android:layout_width="23.44dp"
-                        android:layout_height="18.75dp"
-                        android:layout_marginStart="71dp"
-                        android:layout_marginTop="120dp"
-                        android:contentDescription="vector_ek17"
-                        android:src="@drawable/car_image" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="118dp">
 
-                    <ImageView
-                        android:id="@+id/busImage"
-                        android:layout_width="21dp"
-                        android:layout_height="21dp"
-                        android:layout_marginStart="108dp"
-                        android:layout_marginTop="118dp"
-                        android:contentDescription="vector_ek18"
-                        android:src="@drawable/bus_image" />
+                        <ImageView
+                            android:id="@+id/motorcycleImage"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/motorcycle_image" />
 
-                    <ImageView
-                        android:id="@+id/motorcycleImage"
-                        android:layout_width="25.01dp"
-                        android:layout_height="15dp"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="124dp"
-                        android:contentDescription="vector_ek19"
-                        android:src="@drawable/motorcycle_image" />
+                        <ImageView
+                            android:id="@+id/carImage"
+                            android:layout_width="23.44dp"
+                            android:layout_height="18.75dp"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/car_image" />
 
-                    <ImageView
-                        android:id="@+id/taxiImage"
-                        android:layout_width="25dp"
-                        android:layout_height="21.88dp"
-                        android:layout_marginStart="142dp"
-                        android:layout_marginTop="118dp"
-                        android:contentDescription="vector_ek20"
-                        android:src="@drawable/taxi_image" />
+                        <ImageView
+                            android:id="@+id/busImage"
+                            android:layout_width="25dp"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="68dp"
+
+                            android:src="@drawable/bus_image" />
+
+
+                        <ImageView
+                            android:id="@+id/taxiImage"
+                            android:layout_width="25dp"
+                            android:layout_height="21.88dp"
+                            android:layout_marginStart="102dp"
+                            android:layout_marginTop="-1dp"
+                            android:src="@drawable/taxi_image" />
+                    </RelativeLayout>
 
                 </RelativeLayout>
 

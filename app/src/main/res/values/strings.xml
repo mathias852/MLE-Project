@@ -124,4 +124,8 @@
 	<string name="__weekendtrip_string">#weekendtrip</string>
 	<string name="hello__oliver__ek4_string">Hello,Oliver!</string>
     <string name="adress_operating_hours_price_range_transport_options__string">AdressOperating HoursPrice RangeTransport Options: </string>
+    <string name="penang">Penang</string>
+    <string name="oliver">Oliver!</string>
+    <string name="penang_hill">Penang Hill</string>
+    <string name="hello">Hello,</string>
 </resources>

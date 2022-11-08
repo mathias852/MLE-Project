@@ -34,58 +34,58 @@
                     android:contentDescription="image_2_ek1"
                     android:src="@drawable/image_background_location_bookmark_options" />
 
-
                 <RelativeLayout
-                    android:id="@+id/navbar_ek1"
+                    android:id="@+id/navbar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
                     android:layout_marginTop="710dp">
 
                     <View
-                        android:id="@+id/rectangle_3_ek1"
+                        android:id="@+id/rectangle_3"
                         android:layout_width="365dp"
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_ek1_shape" />
+                        android:background="@drawable/navbarshape" />
 
-                    <ImageButton
-                        android:id="@+id/vector_ek9"
-                        android:layout_width="29.91dp"
-                        android:layout_height="17.04dp"
-                        android:layout_marginStart="224dp"
-                        android:layout_marginTop="17dp"
-                        android:contentDescription="vector_ek9"
-                        android:src="@drawable/vector_ek21" />
 
-                    <ImageButton
-                        android:id="@+id/vector_ek10"
-                        android:layout_width="24dp"
-                        android:layout_height="23dp"
-                        android:layout_marginStart="312dp"
-                        android:layout_marginTop="14dp"
-                        android:contentDescription="ek22"
-                        android:src="@drawable/navbar_calendar_icon" />
-
-                    <ImageButton
-                        android:id="@+id/vector_ek11"
-                        android:layout_width="26dp"
-                        android:layout_height="21dp"
-                        android:layout_marginStart="125dp"
-                        android:layout_marginTop="16dp"
-                        android:contentDescription="vector_ek11"
-                        android:src="@drawable/vector_ek11" />
-
-                    <ImageButton
-                        android:id="@+id/vector_ek12"
+                    <ImageView
+                        android:id="@+id/mainNavBarHomeButton"
                         android:layout_width="29dp"
                         android:layout_height="19dp"
                         android:layout_marginStart="24dp"
                         android:layout_marginTop="16dp"
-                        android:clickable="true"
-                        android:contentDescription="vector_ek12"
-                        android:src="@drawable/vector_ek12" />
+                        android:onClick="goToHome"
+                        android:src="@drawable/navbar_homescreen_icon" />
+
+                    <ImageView
+                        android:id="@+id/mainNavBarSearchButton"
+                        android:layout_width="26dp"
+                        android:layout_height="21dp"
+                        android:layout_marginStart="125dp"
+                        android:layout_marginTop="16dp"
+                        android:onClick="goToSearch"
+                        android:src="@drawable/navbar_search_icon_active" />
+
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCommunityButton"
+                        android:layout_width="29.91dp"
+                        android:layout_height="17.04dp"
+                        android:layout_marginStart="224dp"
+                        android:layout_marginTop="17dp"
+                        android:onClick="goToCommunity"
+                        android:src="@drawable/navbar_social_icon" />
+
+                    <ImageView
+                        android:id="@+id/mainNavBarCalenderScreenButton"
+                        android:layout_width="24dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="312dp"
+                        android:layout_marginTop="14dp"
+                        android:onClick="goToCalendar"
+                        android:src="@drawable/navbar_calendar_icon" />
 
                 </RelativeLayout>
 
@@ -105,7 +105,7 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="104dp"
                     android:fontFamily="Montserrat"
-                    android:text="@string/blogpost_5Headline"
+                    android:text="@string/penang_hill"
                     android:textColor="@color/hello__oliver__color"
                     android:textSize="38sp"
                     android:textStyle="bold" />
@@ -142,16 +142,15 @@
                     android:src="@drawable/get_address_image"
                     android:background="@android:color/transparent"/>
 
-                <ImageButton
+                <ImageView
                     android:id="@+id/vector_ek16"
                     android:layout_width="18dp"
                     android:layout_height="29dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="15dp"
-                    android:contentDescription="vector_ek16"
-                    android:src="@drawable/go_back_image"
                     android:background="@android:color/transparent"
-                    />
+                    android:onClick="goToSearch"
+                    android:src="@drawable/go_back_image" />
 
 
                 <RelativeLayout
@@ -183,7 +182,7 @@
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/location_adress"
+                                android:id="@+id/information_address"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:fontFamily="Montserrat"
@@ -192,7 +191,7 @@
                                 android:textSize="15sp" />
 
                             <TextView
-                                android:id="@+id/operating_hours"
+                                android:id="@+id/information_operating_hours"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:layout_marginTop="5dp"
@@ -202,7 +201,7 @@
                                 android:textSize="15sp" />
                             <!--ADD A SECOND COLUMN TO INSERT THE DATA IN THIS IS RELATIVE TO THE RIGHT-->
                             <TextView
-                                android:id="@+id/price_range"
+                                android:id="@+id/InformationPrice_range"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:layout_marginTop="5dp"
@@ -212,7 +211,7 @@
                                 android:textSize="15sp" />
 
                             <TextView
-                                android:id="@+id/transport_options"
+                                android:id="@+id/information_transport_options"
                                 android:layout_width="match_parent"
                                 android:layout_height="20dp"
                                 android:layout_marginTop="5dp"
@@ -224,41 +223,44 @@
 
                     </RelativeLayout>
 
-                    <ImageView
-                        android:id="@+id/vector_ek17"
-                        android:layout_width="23.44dp"
-                        android:layout_height="18.75dp"
-                        android:layout_marginStart="71dp"
-                        android:layout_marginTop="120dp"
-                        android:contentDescription="vector_ek17"
-                        android:src="@drawable/car_image" />
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="116dp">
 
-                    <ImageView
-                        android:id="@+id/vector_ek18"
-                        android:layout_width="21dp"
-                        android:layout_height="21dp"
-                        android:layout_marginStart="108dp"
-                        android:layout_marginTop="118dp"
-                        android:contentDescription="vector_ek18"
-                        android:src="@drawable/bus_image" />
+                        <ImageView
+                            android:id="@+id/motorcycleImage"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/motorcycle_image" />
 
-                    <ImageView
-                        android:id="@+id/motorcycleImage"
-                        android:layout_width="25.01dp"
-                        android:layout_height="15dp"
-                        android:layout_marginStart="34dp"
-                        android:layout_marginTop="124dp"
-                        android:contentDescription="vector_ek19"
-                        android:src="@drawable/motorcycle_image" />
+                        <ImageView
+                            android:id="@+id/carImage"
+                            android:layout_width="23.44dp"
+                            android:layout_height="18.75dp"
+                            android:layout_marginStart="34dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/car_image" />
 
-                    <ImageView
-                        android:id="@+id/taxiImage"
-                        android:layout_width="25dp"
-                        android:layout_height="21.88dp"
-                        android:layout_marginStart="142dp"
-                        android:layout_marginTop="118dp"
-                        android:contentDescription="vector_ek20"
-                        android:src="@drawable/taxi_image" />
+                        <ImageView
+                            android:id="@+id/busImage"
+                            android:layout_width="26dp"
+                            android:layout_height="19dp"
+                            android:layout_marginStart="68dp"
+
+                            android:src="@drawable/bus_image" />
+
+
+                        <ImageView
+                            android:id="@+id/taxiImage"
+                            android:layout_width="25dp"
+                            android:layout_height="21.88dp"
+                            android:layout_marginStart="102dp"
+                            android:layout_marginTop="-1dp"
+                            android:src="@drawable/taxi_image" />
+                    </RelativeLayout>
 
                 </RelativeLayout>
 
@@ -277,25 +279,22 @@
 
                 <RelativeLayout
                     android:id="@+id/post_1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="156dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="17dp"
                     android:layout_marginTop="508dp">
 
                     <ImageView
                         android:id="@+id/rectangle_5_ek5"
-                        android:layout_width="156dp"
+                        android:layout_width="match_parent"
                         android:layout_height="149dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
-                        android:contentDescription="rectangle_5_ek5"
                         android:src="@drawable/street_food_kl_image" />
 
                     <TextView
                         android:id="@+id/information_ek2"
-                        android:layout_width="170dp"
+                        android:layout_width="match_parent"
                         android:layout_height="52dp"
-                        android:layout_marginLeft="7dp"
+                        android:layout_marginStart="7dp"
                         android:layout_marginTop="106dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/information_ek2_string"
@@ -308,25 +307,22 @@
 
                 <RelativeLayout
                     android:id="@+id/post_2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="156dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="222dp"
                     android:layout_marginTop="508dp">
 
                     <ImageView
                         android:id="@+id/rectangle_5_ek6"
-                        android:layout_width="156dp"
+                        android:layout_width="match_parent"
                         android:layout_height="149dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
-                        android:contentDescription="rectangle_5_ek6"
                         android:src="@drawable/rectangle_5_ek6" />
 
                     <TextView
                         android:id="@+id/optionsTextView"
-                        android:layout_width="170dp"
+                        android:layout_width="match_parent"
                         android:layout_height="52dp"
-                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
                         android:layout_marginTop="107dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/optionsHeadlineString"
@@ -340,7 +336,7 @@
                     android:id="@+id/information_ek4"
                     android:layout_width="228dp"
                     android:layout_height="56dp"
-                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
                     android:layout_marginTop="474dp"
                     android:fontFamily="Montserrat"
                     android:text="@string/information_ek4_string"

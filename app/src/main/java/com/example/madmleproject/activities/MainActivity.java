@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void goToItinerary(View view){
-        Intent intent = new Intent(this, BookmarkLocationAddOptionsActivity.class);
+        Intent intent = new Intent(this, BookmarkOptionsActivity.class);
         startActivity(intent);
     }
 
@@ -64,6 +64,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, CalendarActivity.class);
         startActivity(intent);
     }
+
+    public void goToArticle(View view) {
+        Intent intent = new Intent(this, ArticleActivity.class);
+        startActivity(intent);
+    }
+
 
     private void insertSampleData(){
         UsersRepo usersRepo = new UsersRepo();
@@ -240,6 +246,7 @@ public class MainActivity extends AppCompatActivity {
         //Uncomment to see database while app's running
         DatabaseManager.getInstance().openWriteDatabase();
     }
+
 
 
 }
