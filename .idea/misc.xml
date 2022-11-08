@@ -38,7 +38,10 @@
         <entry key="app/src/main/res/layout/agendaScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/agenda_activity.xml" value="0.21927083333333333" />
         <entry key="app/src/main/res/layout/agenda_screen.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/article.xml" value="0.4125" />
         <entry key="app/src/main/res/layout/blogpost.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/bookmark.xml" value="0.4125" />
+        <entry key="app/src/main/res/layout/bookmark_location_add_options.xml" value="0.4125" />
         <entry key="app/src/main/res/layout/calendar.xml" value="0.335" />
         <entry key="app/src/main/res/layout/calendarScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/calendar_activity_.xml" value="0.21778259277343748" />
@@ -55,7 +58,7 @@
         <entry key="app/src/main/res/layout/old_homescreen.xml" value="0.21927083333333333" />
         <entry key="app/src/main/res/layout/search_page.xml" value="0.42168674698795183" />
         <entry key="app/src/main/res/layout/test.xml" value="0.29320831298828126" />
-        <entry key="app/src/main/res/layout/trip_overview.xml" value="0.5" />
+        <entry key="app/src/main/res/layout/trip_overview.xml" value="0.25" />
         <entry key="app/src/main/res/layout/trip_overview_bookmark.xml" value="0.32948608398437496" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1655" />
       </map>

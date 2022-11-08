@@ -254,8 +254,8 @@
                         android:layout_height="29dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="15dp"
-                        android:contentDescription="vector_ek12"
-                        android:src="@drawable/go_back_image" />
+                        android:src="@drawable/go_back_image"
+                        android:onClick="goToTripOverview"/>
 
                     <TextView
                         android:id="@+id/penang_trip_ek2"
@@ -454,51 +454,56 @@
             </RelativeLayout>
 
             <RelativeLayout
-                android:id="@+id/navbar_ek2"
+                android:id="@+id/navbar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="14dp"
                 android:layout_marginTop="710dp">
 
                 <View
-                    android:id="@+id/rectangle_3_ek14"
+                    android:id="@+id/rectangle_3"
                     android:layout_width="365dp"
                     android:layout_height="51dp"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="0dp"
-                    android:background="@drawable/rectangle_3_ek14_shape" />
+                    android:background="@drawable/navbarshape" />
 
                 <ImageView
-                    android:id="@+id/vector_ek11"
+                    android:id="@+id/mainNavBarHomeButton"
                     android:layout_width="29dp"
                     android:layout_height="19dp"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="16dp"
-                    android:src="@drawable/vector_ek12" />
+                    android:onClick="goToHome"
+                    android:src="@drawable/navbar_homescreen_icon" />
 
                 <ImageView
-                    android:id="@+id/vector_ek10"
+                    android:id="@+id/mainNavBarSearchButton"
                     android:layout_width="26dp"
                     android:layout_height="21dp"
                     android:layout_marginStart="125dp"
                     android:layout_marginTop="16dp"
-                    android:src="@drawable/vector_ek31" />
+                    android:onClick="goToSearch"
+                    android:src="@drawable/navbar_search_icon" />
+
 
                 <ImageView
-                    android:id="@+id/vector_ek8"
+                    android:id="@+id/mainNavBarCommunityButton"
                     android:layout_width="29.91dp"
                     android:layout_height="17.04dp"
                     android:layout_marginStart="224dp"
                     android:layout_marginTop="17dp"
-                    android:src="@drawable/vector_ek21" />
+                    android:onClick="goToCommunity"
+                    android:src="@drawable/navbar_social_icon" />
 
                 <ImageView
-                    android:id="@+id/vector_ek9"
+                    android:id="@+id/mainNavBarCalenderScreenButton"
                     android:layout_width="24dp"
-                    android:layout_height="23dp"
+                    android:layout_height="20dp"
                     android:layout_marginStart="312dp"
                     android:layout_marginTop="14dp"
-                    android:src="@drawable/vector_ek4" />
+                    android:onClick="goToCalendar"
+                    android:src="@drawable/navbar_calendar_icon_active" />
 
 
             </RelativeLayout>
