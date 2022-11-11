@@ -99,7 +99,7 @@
                     android:src="@drawable/star_rating_image" />
 
                 <TextView
-                    android:id="@+id/title_ek1"
+                    android:id="@+id/bookmarkTitle"
                     android:layout_width="350dp"
                     android:layout_height="50dp"
                     android:layout_marginLeft="15dp"

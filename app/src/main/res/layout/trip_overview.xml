@@ -204,6 +204,8 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="35dp"
                         android:fontFamily="Montserrat"
+                        android:contentDescription="@string/Day_1"
+                        android:onClick="goToAddTripOverviewBookmark"
                         android:text="@string/___add_activity_string"
                         android:textColor="@color/_3___5_september_2022_color"
                         android:textSize="15sp"
@@ -278,12 +280,14 @@
                         android:background="@drawable/dayx_blue_background" />
 
                     <TextView
-                        android:id="@+id/add_activity_day2"
+                        android:id="@+id/_add_activity_day2"
                         android:layout_width="346.03dp"
                         android:layout_height="31.5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="35dp"
                         android:fontFamily="Montserrat"
+                        android:contentDescription="@string/Day_2"
+                        android:onClick="goToAddTripOverviewBookmark"
                         android:text="@string/___add_activity_ek1_string"
                         android:textColor="@color/_3___5_september_2022_color"
                         android:textSize="15sp"
@@ -325,6 +329,8 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="35dp"
                         android:fontFamily="Montserrat"
+                        android:onClick="goToAddTripOverviewBookmark"
+                        android:contentDescription="@string/Day_5"
                         android:text="@string/___add_activity_ek2_string"
                         android:textColor="@color/_3___5_september_2022_color"
                         android:textSize="15sp"
@@ -360,12 +366,14 @@
                         android:background="@drawable/dayx_blue_background" />
 
                     <TextView
-                        android:id="@+id/add_activity_day4"
+                        android:id="@+id/_add_activity_day4"
                         android:layout_width="346.03dp"
                         android:layout_height="31.5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="35dp"
                         android:fontFamily="Montserrat"
+                        android:contentDescription="@string/Day_4"
+                        android:onClick="goToAddTripOverviewBookmark"
                         android:text="@string/___add_activity_ek3_string"
                         android:textColor="@color/_3___5_september_2022_color"
                         android:textSize="15sp"
@@ -407,6 +415,8 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="35dp"
                         android:fontFamily="Montserrat"
+                        android:contentDescription="@string/Day_3"
+                        android:onClick="goToAddTripOverviewBookmark"
                         android:text="@string/___add_activity_ek4_string"
                         android:textColor="@color/_3___5_september_2022_color"
                         android:textSize="15sp"

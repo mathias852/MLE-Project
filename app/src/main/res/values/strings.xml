@@ -68,10 +68,10 @@
     <string name="culture_string">Culture</string>
     <string name="outdoor_string">Outdoor</string>
     <string name="_4_8_string">4.8</string>
-    <string name="bookmarkLocationInformationAddress">Adress: </string>
-    <string name="bookmarkLocationInformationOperating_hours">Operating hours: </string>
-    <string name="bookmarkLocationInformationPrice_range">Price range: </string>
-    <string name="bookmarkLocationInformationTransport_options">Transport options: </string>
+    <string name="bookmarkLocationInformationAddress">Adress: 11500 Bukit Bendera, Penang </string>
+    <string name="bookmarkLocationInformationOperating_hours">Operating hours: 10am - 6pm</string>
+    <string name="bookmarkLocationInformationPrice_range">Price range: 100</string>
+    <string name="bookmarkLocationInformationTransport_options">Transport options: N/A</string>
     <string name="information_subtitle_bookmark_location_add_options">Information</string>
     <string name="information_ek2_string">Convenient to the top #penanghill</string>
     <string name="optionsHeadlineString">What I did at #penanghill</string>
@@ -128,4 +128,9 @@
     <string name="oliver">Oliver!</string>
     <string name="penang_hill">Penang Hill</string>
     <string name="hello">Hello,</string>
+    <string name="Day_1">1</string>
+    <string name="Day_2">2</string>
+    <string name="Day_3">3</string>
+    <string name="Day_4">4</string>
+    <string name="Day_5">5</string>
 </resources>

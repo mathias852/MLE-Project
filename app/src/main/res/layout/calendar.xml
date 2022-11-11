@@ -127,7 +127,7 @@
                             android:onClick="goToTripOverview"/>
 
                         <TextView
-                            android:id="@+id/sabah_trip"
+                            android:id="@+id/penang_trip"
                             android:layout_width="226.21dp"
                             android:layout_height="28.5dp"
                             android:layout_gravity="center_horizontal|center"
@@ -135,7 +135,7 @@
                             android:layout_marginTop="13dp"
                             android:fontFamily="Montserrat"
                             android:gravity="center"
-                            android:text="@string/sabah_trip_string"
+                            android:text="@string/penang_trip_string"
                             android:textColor="@color/create_new_activity_color"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -284,7 +284,7 @@
                             android:background="@drawable/date_shape" />
 
                         <TextView
-                            android:id="@+id/penang_trip"
+                            android:id="@+id/sabah_trip"
                             android:layout_width="226.21dp"
                             android:layout_height="28.5dp"
                             android:layout_gravity="center_horizontal|center"
@@ -292,7 +292,7 @@
                             android:layout_marginTop="13dp"
                             android:fontFamily="Montserrat"
                             android:gravity="center"
-                            android:text="@string/penang_trip_string"
+                            android:text="@string/sabah_trip_string"
                             android:textColor="@color/create_new_activity_color"
                             android:textSize="15sp"
                             android:textStyle="bold" />

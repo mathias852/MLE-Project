@@ -202,6 +202,7 @@
                         android:layout_marginStart="16dp"
                         android:layout_marginTop="15dp"
                         android:contentDescription="vector_ek12"
+                        android:onClick="goBack"
                         android:src="@drawable/go_back_image" />
 
                     <TextView
@@ -240,23 +241,26 @@
                         android:layout_marginTop="171dp">
 
                         <ImageView
-                            android:id="@+id/rectangle_5"
+                            android:id="@+id/penangImageView"
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
-                            android:contentDescription="rectangle_5"
-                            android:src="@drawable/bookmark1_img" />
+                            android:contentDescription="@string/penang_hill"
+                            android:onClick="addToActivity"
+                            android:src="@drawable/bookmark1_img"
+                            android:visibility="invisible" />
 
                         <TextView
-                            android:id="@+id/bookmark1_name_landmark"
+                            android:id="@+id/penangTextView"
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
                             android:layout_marginStart="7dp"
                             android:layout_marginTop="140dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/bookmark_1_ek1_string"
+                            android:text="@string/bookmarkLocationHeadline"
                             android:textColor="@color/white_color"
                             android:textSize="15sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
 
                     </RelativeLayout>
 
@@ -269,25 +273,28 @@
                         android:layout_marginTop="171dp">
 
                         <ImageView
-                            android:id="@+id/bookmark2_img"
+                            android:id="@+id/kekLokSiTempleImageView"
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:contentDescription="rectangle_5_ek1"
-                            android:src="@drawable/bookmark2_img" />
+                            android:contentDescription="@string/kek_lok_si_temple_string"
+                            android:onClick="addToActivity"
+                            android:src="@drawable/bookmark2_img"
+                            android:visibility="invisible"/>
 
                         <TextView
-                            android:id="@+id/bookmark2_name_landmark"
+                            android:id="@+id/kekLokSiTempleTextView"
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
                             android:layout_marginLeft="7dp"
                             android:layout_marginTop="140dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/bookmark_2_ek1_string"
+                            android:text="@string/kek_lok_si_temple_string"
                             android:textColor="@color/white_color"
                             android:textSize="15sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:visibility="invisible"/>
 
                     </RelativeLayout>
 
@@ -300,25 +307,28 @@
                         android:layout_marginTop="354dp">
 
                         <ImageView
-                            android:id="@+id/bookmark3_img"
+                            android:id="@+id/gurneyDriveImageView"
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:contentDescription="rectangle_5_ek2"
-                            android:src="@drawable/bookmark3_img" />
+                            android:contentDescription="@string/gurney_drive_string"
+                            android:onClick="addToActivity"
+                            android:src="@drawable/bookmark3_img"
+                            android:visibility="invisible"/>
 
                         <TextView
-                            android:id="@+id/bookmark3_name_landmark"
+                            android:id="@+id/gurneyDriveTextView"
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
                             android:layout_marginStart="7dp"
                             android:layout_marginTop="141dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/bookmark_3_ek1_string"
+                            android:text="@string/gurney_drive_string"
                             android:textColor="@color/white_color"
                             android:textSize="15sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:visibility="invisible"/>
 
                     </RelativeLayout>
 
@@ -331,25 +341,28 @@
                         android:layout_marginTop="354dp">
 
                         <ImageView
-                            android:id="@+id/bookmark4_img"
+                            android:id="@+id/batuFerringhiImageView"
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:contentDescription="bookmark4_img"
-                            android:src="@drawable/bookmark4_img" />
+                            android:contentDescription="@string/batu_ferringhi_string"
+                            android:onClick="addToActivity"
+                            android:src="@drawable/bookmark4_img"
+                            android:visibility="invisible"/>
 
                         <TextView
-                            android:id="@+id/bookmark4_name_landmark"
+                            android:id="@+id/batuFerringhiTextView"
                             android:layout_width="match_parent"
                             android:layout_height="20dp"
                             android:layout_marginLeft="6dp"
                             android:layout_marginTop="141dp"
                             android:fontFamily="Montserrat"
-                            android:text="@string/bookmark_4_ek1_string"
+                            android:text="@string/batu_ferringhi_string"
                             android:textColor="@color/white_color"
                             android:textSize="15sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:visibility="invisible"/>
 
                     </RelativeLayout>
 
