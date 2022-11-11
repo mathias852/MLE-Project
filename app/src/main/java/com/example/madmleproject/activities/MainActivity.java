@@ -154,6 +154,66 @@ public class MainActivity extends AppCompatActivity {
         landmark.setArticleAmount(0);
         landmarksRepo.insert(landmark);
 
+        landmark.setName("Hutan Bandar Recreational Park");
+        landmark.setState("Johor");
+        landmark.setCity("Johor Bahru");
+        landmark.setAddress("Jalan Tasek Utara & Jalan Yahya Awal 80100 Johor Bahru johore");
+        landmark.setDescription("In consectetur malesuada nunc, ac vehicula ipsum commodo nec. Proin nec commodo nulla. Sed in porta urna, sit amet volutpat turpis. Ut eget placerat ligula. Mauris metus nisi, dignissim quis ipsum et, auctor lobortis quam. Nam posuere justo posuere, blandit elit id, porttitor dui. Praesent vitae ornare tellus. Maecenas sed scelerisque arcu.");
+        landmark.setOperatingHours("7am - 11pm");
+        landmark.setPriceEntrance(0);
+        landmark.setArticleAmount(0);
+        landmarksRepo.insert(landmark);
+
+        landmark.setName("LEGOLAND Malaysia");
+        landmark.setState("Johor");
+        landmark.setCity("Medini");
+        landmark.setAddress("7, Persiaran Medini Utara 3 79100");
+        landmark.setDescription("In consectetur malesuada nunc, ac vehicula ipsum commodo nec. Proin nec commodo nulla. Sed in porta urna, sit amet volutpat turpis. Ut eget placerat ligula. Mauris metus nisi, dignissim quis ipsum et, auctor lobortis quam. Nam posuere justo posuere, blandit elit id, porttitor dui. Praesent vitae ornare tellus. Maecenas sed scelerisque arcu.");
+        landmark.setOperatingHours("ALL DAY");
+        landmark.setPriceEntrance(0);
+        landmark.setArticleAmount(0);
+        landmarksRepo.insert(landmark);
+
+        landmark.setName("Mega Water Sports - Jet Ski Tours");
+        landmark.setState("Kedah");
+        landmark.setCity("Langkawi");
+        landmark.setAddress("Pantai Chenang, Jalan Pantai Chenang 07000 Langkawi Kedah");
+        landmark.setDescription("In consectetur malesuada nunc, ac vehicula ipsum commodo nec. Proin nec commodo nulla. Sed in porta urna, sit amet volutpat turpis. Ut eget placerat ligula. Mauris metus nisi, dignissim quis ipsum et, auctor lobortis quam. Nam posuere justo posuere, blandit elit id, porttitor dui. Praesent vitae ornare tellus. Maecenas sed scelerisque arcu.");
+        landmark.setOperatingHours("9am - 6pm");
+        landmark.setPriceEntrance(0);
+        landmark.setArticleAmount(0);
+        landmarksRepo.insert(landmark);
+
+        landmark.setName("Telaga Tujuh Waterfalls");
+        landmark.setState("Kedah");
+        landmark.setCity("Langkawi");
+        landmark.setAddress("Gunung Mat Chincang 07100 Langkawi Kedah");
+        landmark.setDescription("In consectetur malesuada nunc, ac vehicula ipsum commodo nec. Proin nec commodo nulla. Sed in porta urna, sit amet volutpat turpis. Ut eget placerat ligula. Mauris metus nisi, dignissim quis ipsum et, auctor lobortis quam. Nam posuere justo posuere, blandit elit id, porttitor dui. Praesent vitae ornare tellus. Maecenas sed scelerisque arcu.");
+        landmark.setOperatingHours("9am - 6pm");
+        landmark.setPriceEntrance(0);
+        landmark.setArticleAmount(0);
+        landmarksRepo.insert(landmark);
+
+        landmark.setName("Pantai Sri Tujuh");
+        landmark.setState("Kelantan");
+        landmark.setCity("Tumpat");
+        landmark.setAddress("Jln Pantai Tujuh, 16200 Tumpat, Kelantan");
+        landmark.setDescription("In consectetur malesuada nunc, ac vehicula ipsum commodo nec. Proin nec commodo nulla. Sed in porta urna, sit amet volutpat turpis. Ut eget placerat ligula. Mauris metus nisi, dignissim quis ipsum et, auctor lobortis quam. Nam posuere justo posuere, blandit elit id, porttitor dui. Praesent vitae ornare tellus. Maecenas sed scelerisque arcu.");
+        landmark.setOperatingHours("7am - 11pm");
+        landmark.setPriceEntrance(0);
+        landmark.setArticleAmount(0);
+        landmarksRepo.insert(landmark);
+
+        landmark.setName("Redang Island");
+        landmark.setState("Terengganu");
+        landmark.setCity("Kuala Terengganu");
+        landmark.setAddress("Pulau Redang, 21090 Kuala Terengganu, Terengganu");
+        landmark.setDescription("In consectetur malesuada nunc, ac vehicula ipsum commodo nec. Proin nec commodo nulla. Sed in porta urna, sit amet volutpat turpis. Ut eget placerat ligula. Mauris metus nisi, dignissim quis ipsum et, auctor lobortis quam. Nam posuere justo posuere, blandit elit id, porttitor dui. Praesent vitae ornare tellus. Maecenas sed scelerisque arcu.");
+        landmark.setOperatingHours("All Day");
+        landmark.setPriceEntrance(0);
+        landmark.setArticleAmount(0);
+        landmarksRepo.insert(landmark);
+
         //Insert Landmark Ratings
         LandmarkRatings landmarkRating = new LandmarkRatings();
         landmarkRating.setLandmarkId(1);
@@ -244,7 +304,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Uncomment to see database while app's running
-        DatabaseManager.getInstance().openWriteDatabase();
+        DatabaseManager.getInstance().openReadDatabase();
     }
 
 

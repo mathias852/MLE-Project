@@ -33,7 +33,7 @@
                     android:layout_marginStart="-115dp"
                     android:layout_marginTop="-358dp"
                     android:contentDescription="image_1"
-                    android:src="@drawable/image_1" />
+                    android:src="@drawable/imageview_tripoverview_background_img_train" />
 
                 <ImageView
                     android:id="@+id/profile_button"

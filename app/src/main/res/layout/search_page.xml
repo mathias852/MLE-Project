@@ -96,7 +96,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
                             android:onClick="goToBookmark"
-                            android:src="@drawable/rectangle_5" />
+                            android:src="@drawable/bookmark1_img" />
 
                         <ImageView
                             android:id="@+id/vector_ek5"
@@ -134,7 +134,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
                             android:onClick="goToBookmark"
-                            android:src="@drawable/rectangle_5_ek1" />
+                            android:src="@drawable/bookmark2_img" />
 
                         <ImageView
                             android:id="@+id/vector_ek6"
@@ -171,7 +171,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
                             android:onClick="goToBookmark"
-                            android:src="@drawable/rectangle_5_ek2" />
+                            android:src="@drawable/bookmark3_img" />
 
                         <ImageView
                             android:id="@+id/vector_ek7"
@@ -208,7 +208,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
                             android:onClick="goToBookmark"
-                            android:src="@drawable/rectangle_5_ek3" />
+                            android:src="@drawable/bookmark4_img" />
 
                         <ImageView
                             android:id="@+id/vector_ek8"
@@ -216,7 +216,7 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:src="@drawable/bookmark_more_actions" />
+                            android:src="@drawable/bookmark_icon" />
 
                         <TextView
                             android:id="@+id/batu_ferringhi"

@@ -80,7 +80,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="276dp"
-                    android:background="@drawable/backdrop_ek2_shape" />
+                    android:background="@drawable/backdrop_gray_background" />
 
                 <TextView
                     android:id="@+id/upcoming_trip"
@@ -120,7 +120,7 @@
                         android:layout_height="51dp"
                         android:layout_marginStart="0dp"
                         android:layout_marginTop="0dp"
-                        android:background="@drawable/rectangle_3_ek15_shape" />
+                        android:background="@drawable/your_bookmark_blue_background" />
 
                     <ImageView
                         android:id="@+id/_vector_ek24"
@@ -282,7 +282,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="fill_parent"
                                 android:contentDescription="rectangle_5_ek1"
-                                android:src="@drawable/rectangle_5_ek1" />
+                                android:src="@drawable/bookmark2_img" />
 
                             <TextView
                                 android:id="@+id/batu_caves"
@@ -340,7 +340,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="204dp"
                                 android:contentDescription="rectangle_7_ek1"
-                                android:src="@drawable/rectangle_5_ek1" />
+                                android:src="@drawable/bookmark2_img" />
 
                             <TextView
                                 android:id="@+id/petaling_street_ek1"
