@@ -44,7 +44,7 @@
 
                     <TextView
                         android:id="@+id/lorem_ipsum_dolor_sit_amet__consectetur_adipiscing_elit__sed_do_eiusmod_tempor_incididunt_ut_labore_et_dolore_magna_aliqua__ut_enim_ad_minim_veniam__quis_nostrud_exercitation_ullamco_laboris_nisi_ut_aliquip_ex_ea_commodo_consequat__duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur__excepteur_sint_occaecat_cupidatat_non_proident__sunt_in_culpa_qui_officia_deserunt_mollit_anim_id_est_laborum__duis_aute_irure_dolor_in_reprehenderit_in_voluptate_velit_esse_cillum_dolore_eu_fugiat_nulla_pariatur__excepteur_sint_occaecat_cupidatat_non_proident__sunt_in_culpa_qui_officia_deserunt_mollit_anim_id_est_laborum_"
-                        android:layout_width="345dp"
+                        android:layout_width="325dp"
                         android:layout_height="295dp"
                         android:layout_marginLeft="15dp"
                         android:layout_marginTop="266dp"
@@ -213,7 +213,7 @@
 
 
                 <RelativeLayout
-                    android:id="@+id/navbarBlogpost"
+                    android:id="@+id/navbar_homescreen"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="14dp"
@@ -253,7 +253,7 @@
                         android:layout_marginStart="224dp"
                         android:layout_marginTop="17dp"
                         android:onClick="goToCommunity"
-                        android:src="@drawable/navbar_social_icon" />
+                        android:src="@drawable/navbar_community_icon_active" />
 
                     <ImageView
                         android:id="@+id/mainNavBarCalenderScreenButton"
@@ -262,7 +262,8 @@
                         android:layout_marginStart="312dp"
                         android:layout_marginTop="14dp"
                         android:onClick="goToCalendar"
-                        android:src="@drawable/navbar_calendar_icon_active" />
+                        android:src="@drawable/navbar_calendar_icon" />
+
 
                 </RelativeLayout>
 
@@ -272,6 +273,7 @@
                     android:layout_height="29dp"
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="77dp"
+                    android:onClick="goToCommunity"
                     android:src="@drawable/go_back_image" />
 
             </RelativeLayout>
