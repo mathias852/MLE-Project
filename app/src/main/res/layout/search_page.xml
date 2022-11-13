@@ -117,10 +117,10 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:onClick="updateBookmark"
                             android:contentDescription="@string/penang_hill"
-                            android:visibility="invisible"
-                            android:src="@drawable/bookmark_icon_selected" />
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon_selected"
+                            android:visibility="invisible" />
 
                         <TextView
                             android:id="@+id/penang_hill"
