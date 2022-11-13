@@ -21,6 +21,7 @@ import com.example.madmleproject.R;
 import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.Bookmarks;
 import com.example.madmleproject.data.model.Landmarks;
+import com.example.madmleproject.data.repo.BookmarksRepo;
 
 public class SearchActivity extends AppCompatActivity {
 
@@ -31,6 +32,8 @@ public class SearchActivity extends AppCompatActivity {
     ImageView bookmarkIconPenangHill, bookmarkIconPenangHillBookmarked, bookmarkIconKekLokSiTemple,
             bookmarkIconKekLokSiTempleBookmarked, bookmarkIconGurneyDrive, bookmarkIconGurneyDriveBookmarked,
             bookmarkIconBatuFerringhi, bookmarkIconBatuFerringhiBookmarked;
+
+    BookmarksRepo bookmarksRepo = RepoManager.getRepoManager().getBookmarksRepo();
 
 
     @Override
@@ -85,7 +88,7 @@ public class SearchActivity extends AppCompatActivity {
 
     public void updateBookmark(View view){
         String landmarkName = view.getContentDescription().toString();
-        updateBookmarkLandmark(landmarkName);
+        bookmarksRepo.updateBookmarkLandmark(landmarkName);
 
         switch (landmarkName){
             case("Penang Hill"):
@@ -106,7 +109,7 @@ public class SearchActivity extends AppCompatActivity {
 
     private void updateVisibilityPenangHill(){
         String landmarkName = penang_hill.getText().toString();
-        if(isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
+        if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
             bookmarkIconPenangHill.setVisibility(View.INVISIBLE);
             bookmarkIconPenangHillBookmarked.setVisibility(View.VISIBLE);
         } else{
@@ -118,7 +121,7 @@ public class SearchActivity extends AppCompatActivity {
     private void updateVisibilityKekLokSiTemple(){
         String landmarkName = kek_lok_si_temple.getText().toString();
 
-        if(isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
+        if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
             bookmarkIconKekLokSiTemple.setVisibility(View.INVISIBLE);
             bookmarkIconKekLokSiTempleBookmarked.setVisibility(View.VISIBLE);
         } else {
@@ -130,7 +133,7 @@ public class SearchActivity extends AppCompatActivity {
     private void updateVisibilityGurneyDrive(){
         String landmarkName = gurney_drive.getText().toString();
 
-        if(isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
+        if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
             bookmarkIconGurneyDrive.setVisibility(View.INVISIBLE);
             bookmarkIconGurneyDriveBookmarked.setVisibility(View.VISIBLE);
         } else {
@@ -142,49 +145,13 @@ public class SearchActivity extends AppCompatActivity {
     private void updateVisibilityBatuFerringhi(){
         String landmarkName = batu_ferringhi.getText().toString();
 
-        if(isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
+        if(RepoManager.getRepoManager().getBookmarksRepo().isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
             bookmarkIconBatuFerringhi.setVisibility(View.INVISIBLE);
             bookmarkIconBatuFerringhiBookmarked.setVisibility(View.VISIBLE);
         } else {
             bookmarkIconBatuFerringhi.setVisibility(View.VISIBLE);
             bookmarkIconBatuFerringhiBookmarked.setVisibility(View.INVISIBLE);
         }
-    }
-
-    @SuppressLint("Range")
-    public boolean updateBookmarkLandmark(String landmarkName){
-        boolean isNowUpdatedBookmarked = false;
-        int landmarkId = 0;
-
-        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
-
-        //Get the ID of the landmark via name
-        landmarkId = RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName);
-
-        if(!isBookmarked(landmarkId)) {
-            Bookmarks bookmark = new Bookmarks();
-            bookmark.setLandmarkId(landmarkId);
-            bookmark.setUserId(1);
-            RepoManager.getRepoManager().getBookmarksRepo().insert(bookmark);
-            isNowUpdatedBookmarked = true;
-        } else {
-            RepoManager.getRepoManager().getBookmarksRepo().deleteSingleEntry(landmarkId, 1);
-            isNowUpdatedBookmarked = true;
-        }
-
-        DatabaseManager.getInstance().closeDatabase();
-
-        return isNowUpdatedBookmarked;
-    }
-
-    public boolean isBookmarked(int landmarkId){
-        SQLiteDatabase db = DatabaseManager.getInstance().openReadDatabase();
-
-        Cursor cursor = db.rawQuery("SELECT * FROM " + Bookmarks.TABLE +
-                " WHERE " + Bookmarks.COLUMN_PK_FK_LANDMARK_ID + " = ?", new String[] {String.valueOf(landmarkId)});
-
-        //If false, the item is not bookmarked
-        return cursor.moveToFirst();
     }
 
 

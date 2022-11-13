@@ -40,14 +40,7 @@ public class TripOverviewActivity extends AppCompatActivity {
 
     @SuppressLint("Range")
     public void updateItinerary(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openReadDatabase();
-        int tripId = 1;
-
-        Cursor cursor = db.rawQuery("SELECT " + Itineraries.COLUMN_FK_LANDMARK_ID + ", "
-                + Itineraries.COLUMN_DAY + " FROM " + Itineraries.TABLE +
-                " WHERE " + Itineraries.COLUMN_FK_TRIP_ID + " = ?", new String[] {String.valueOf(tripId)} );
-        cursor.moveToFirst();
-
+        Cursor cursor = RepoManager.getRepoManager().getItinerariesRepo().updateItinerary();
         while (!cursor.isAfterLast()){
             int day = cursor.getInt(cursor.getColumnIndex(Itineraries.COLUMN_DAY));
             int landmarkId = cursor.getInt(cursor.getColumnIndex(Itineraries.COLUMN_FK_LANDMARK_ID));

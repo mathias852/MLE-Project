@@ -1,8 +1,12 @@
 package com.example.madmleproject.data.repo;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.view.View;
 
+import com.example.madmleproject.Domain.RepoManager;
 import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.Bookmarks;
 import com.example.madmleproject.data.model.Landmarks;
@@ -57,4 +61,43 @@ public class BookmarksRepo {
 
     }
 
+    @SuppressLint("Range")
+    public void updateBookmarkLandmark(String landmarkName){
+        int landmarkId = 0;
+
+        //Get the ID of the landmark via name
+        landmarkId = RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName);
+
+        if(!isBookmarked(landmarkId)) {
+            Bookmarks bookmark = new Bookmarks();
+            bookmark.setLandmarkId(landmarkId);
+            bookmark.setUserId(1);
+            RepoManager.getRepoManager().getBookmarksRepo().insert(bookmark);
+        } else {
+            RepoManager.getRepoManager().getBookmarksRepo().deleteSingleEntry(landmarkId, 1);
+        }
+    }
+
+    public boolean isBookmarked(int landmarkId){
+        SQLiteDatabase db = DatabaseManager.getInstance().openReadDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT * FROM " + Bookmarks.TABLE +
+                " WHERE " + Bookmarks.COLUMN_PK_FK_LANDMARK_ID + " = ?", new String[] {String.valueOf(landmarkId)});
+
+        //If false, the item is not bookmarked
+        return cursor.moveToFirst();
+    }
+
+    @SuppressLint("Range")
+    public Cursor updateBookmarkImages(){
+        SQLiteDatabase db = DatabaseManager.getInstance().openReadDatabase();
+
+        Cursor cursor = db.rawQuery("SELECT " + Bookmarks.COLUMN_PK_FK_LANDMARK_ID + " FROM " +
+                Bookmarks.TABLE + " WHERE " + Bookmarks.COLUMN_PK_FK_USER_ID + " = ?", new String[] {String.valueOf(1)});
+        cursor.moveToFirst();
+
+        DatabaseManager.getInstance().closeDatabase();
+        return cursor;
+
+    }
 }

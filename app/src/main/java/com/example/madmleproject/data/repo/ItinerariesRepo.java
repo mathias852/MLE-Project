@@ -1,8 +1,11 @@
 package com.example.madmleproject.data.repo;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
+import com.example.madmleproject.Domain.RepoManager;
 import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.Itineraries;
 import com.example.madmleproject.data.model.Landmarks;
@@ -48,4 +51,19 @@ public class ItinerariesRepo {
         db.delete(Itineraries.TABLE, null, null);
         DatabaseManager.getInstance().closeDatabase();
     }
+
+    @SuppressLint("Range")
+    public Cursor updateItinerary(){
+        SQLiteDatabase db = DatabaseManager.getInstance().openReadDatabase();
+        int tripId = 1;
+
+        Cursor cursor = db.rawQuery("SELECT " + Itineraries.COLUMN_FK_LANDMARK_ID + ", "
+                + Itineraries.COLUMN_DAY + " FROM " + Itineraries.TABLE +
+                " WHERE " + Itineraries.COLUMN_FK_TRIP_ID + " = ?", new String[] {String.valueOf(tripId)} );
+        cursor.moveToFirst();
+
+        DatabaseManager.getInstance().closeDatabase();
+        return cursor;
+    }
+
 }

@@ -48,12 +48,7 @@ public class TripOverviewBookmarkActivity extends AppCompatActivity {
     }
     @SuppressLint("Range")
     public void updateBookmarkImages(){
-        SQLiteDatabase db = DatabaseManager.getInstance().openReadDatabase();
-
-        Cursor cursor = db.rawQuery("SELECT " + Bookmarks.COLUMN_PK_FK_LANDMARK_ID + " FROM " +
-                Bookmarks.TABLE + " WHERE " + Bookmarks.COLUMN_PK_FK_USER_ID + " = ?", new String[] {String.valueOf(1)});
-        cursor.moveToFirst();
-
+        Cursor cursor = RepoManager.getRepoManager().getBookmarksRepo().updateBookmarkImages();
         while (!cursor.isAfterLast()){
             int landmarkId = cursor.getInt(cursor.getColumnIndex(Bookmarks.COLUMN_PK_FK_LANDMARK_ID));
             String landmarkName = RepoManager.getRepoManager().getLandmarkNameFromId(landmarkId);
