@@ -71,32 +71,6 @@ public class RepoManager {
         return articleCommentsRepo;
     }
 
-    @SuppressLint("Range")
-    public int getLandmarkIdFromName(String landmarkName){
-        int landmarkId = 0;
-        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
-        Cursor cursor = db.rawQuery("SELECT " + Landmarks.COLUMN_PK_ID + ", "
-                + Landmarks.COLUMN_NAME + " FROM " + Landmarks.TABLE
-                + " WHERE " + Landmarks.COLUMN_NAME + " = ?", new String[] {landmarkName});
-        cursor.moveToFirst();
-
-        landmarkId = cursor.getInt(cursor.getColumnIndex(Landmarks.COLUMN_PK_ID));
-        return landmarkId;
-    }
-
-    @SuppressLint("Range")
-    public String getLandmarkNameFromId(int id){
-        SQLiteDatabase db = DatabaseManager.getInstance().openWriteDatabase();
-
-        Cursor cursor = db.rawQuery("SELECT " + Landmarks.COLUMN_PK_ID + ", "
-                + Landmarks.COLUMN_NAME + " FROM " + Landmarks.TABLE
-                + " WHERE " + Landmarks.COLUMN_PK_ID + " = ?", new String[] {String.valueOf(id)});
-        cursor.moveToFirst();
-        DatabaseManager.getInstance().closeDatabase();
-
-        return cursor.getString(cursor.getColumnIndex(Landmarks.COLUMN_NAME));
-    }
-
     private void insertSampleData(){
         usersRepo.delete();
         landmarksRepo.delete();

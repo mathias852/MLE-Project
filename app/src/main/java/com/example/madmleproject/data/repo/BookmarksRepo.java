@@ -66,7 +66,7 @@ public class BookmarksRepo {
         int landmarkId = 0;
 
         //Get the ID of the landmark via name
-        landmarkId = RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName);
+        landmarkId = RepoManager.getRepoManager().getLandmarksRepo().getLandmarkIdFromName(landmarkName);
 
         if(!isBookmarked(landmarkId)) {
             Bookmarks bookmark = new Bookmarks();

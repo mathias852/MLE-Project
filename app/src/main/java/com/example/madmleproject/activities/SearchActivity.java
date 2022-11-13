@@ -109,7 +109,7 @@ public class SearchActivity extends AppCompatActivity {
 
     private void updateVisibilityPenangHill(){
         String landmarkName = penang_hill.getText().toString();
-        if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
+        if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarksRepo().getLandmarkIdFromName(landmarkName))){
             bookmarkIconPenangHill.setVisibility(View.INVISIBLE);
             bookmarkIconPenangHillBookmarked.setVisibility(View.VISIBLE);
         } else{
@@ -121,7 +121,7 @@ public class SearchActivity extends AppCompatActivity {
     private void updateVisibilityKekLokSiTemple(){
         String landmarkName = kek_lok_si_temple.getText().toString();
 
-        if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
+        if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarksRepo().getLandmarkIdFromName(landmarkName))){
             bookmarkIconKekLokSiTemple.setVisibility(View.INVISIBLE);
             bookmarkIconKekLokSiTempleBookmarked.setVisibility(View.VISIBLE);
         } else {
@@ -133,7 +133,7 @@ public class SearchActivity extends AppCompatActivity {
     private void updateVisibilityGurneyDrive(){
         String landmarkName = gurney_drive.getText().toString();
 
-        if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
+        if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarksRepo().getLandmarkIdFromName(landmarkName))){
             bookmarkIconGurneyDrive.setVisibility(View.INVISIBLE);
             bookmarkIconGurneyDriveBookmarked.setVisibility(View.VISIBLE);
         } else {
@@ -145,7 +145,7 @@ public class SearchActivity extends AppCompatActivity {
     private void updateVisibilityBatuFerringhi(){
         String landmarkName = batu_ferringhi.getText().toString();
 
-        if(RepoManager.getRepoManager().getBookmarksRepo().isBookmarked(RepoManager.getRepoManager().getLandmarkIdFromName(landmarkName))){
+        if(RepoManager.getRepoManager().getBookmarksRepo().isBookmarked(RepoManager.getRepoManager().getLandmarksRepo().getLandmarkIdFromName(landmarkName))){
             bookmarkIconBatuFerringhi.setVisibility(View.INVISIBLE);
             bookmarkIconBatuFerringhiBookmarked.setVisibility(View.VISIBLE);
         } else {

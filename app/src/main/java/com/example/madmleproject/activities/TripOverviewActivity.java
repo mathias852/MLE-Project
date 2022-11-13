@@ -45,7 +45,7 @@ public class TripOverviewActivity extends AppCompatActivity {
             int day = cursor.getInt(cursor.getColumnIndex(Itineraries.COLUMN_DAY));
             int landmarkId = cursor.getInt(cursor.getColumnIndex(Itineraries.COLUMN_FK_LANDMARK_ID));
 
-            String landmarkName = RepoManager.getRepoManager().getLandmarkNameFromId(landmarkId);
+            String landmarkName = RepoManager.getRepoManager().getLandmarksRepo().getLandmarkNameFromId(landmarkId);
             switch (day){
                 case(1):
                     addActivityDay1.setText(landmarkName);

@@ -51,7 +51,7 @@ public class TripOverviewBookmarkActivity extends AppCompatActivity {
         Cursor cursor = RepoManager.getRepoManager().getBookmarksRepo().updateBookmarkImages();
         while (!cursor.isAfterLast()){
             int landmarkId = cursor.getInt(cursor.getColumnIndex(Bookmarks.COLUMN_PK_FK_LANDMARK_ID));
-            String landmarkName = RepoManager.getRepoManager().getLandmarkNameFromId(landmarkId);
+            String landmarkName = RepoManager.getRepoManager().getLandmarksRepo().getLandmarkNameFromId(landmarkId);
 
             switch (landmarkName){
                 case("Penang Hill"):
@@ -77,7 +77,7 @@ public class TripOverviewBookmarkActivity extends AppCompatActivity {
 
     public void addToActivity(View view){
         AddActivityManager.getActivityManager().setActivityName(view.getContentDescription().toString());
-        int landmarkId = RepoManager.getRepoManager().getLandmarkIdFromName(AddActivityManager.getActivityManager().getActivityName());
+        int landmarkId = RepoManager.getRepoManager().getLandmarksRepo().getLandmarkIdFromName(AddActivityManager.getActivityManager().getActivityName());
 
         insertActivityIntoItinerary(1, landmarkId, AddActivityManager.getActivityManager().getDay());
 
