@@ -36,6 +36,14 @@ public class BookmarkActivity extends AppCompatActivity {
 
     }
 
+    public void goToTripBookmarkOptions(View view){
+        Intent intent = new Intent(this, BookmarkOptionsActivity.class);
+        startActivity(intent);
+
+    }
+
+
+
     public void goToSearch(View view){
         Intent intent = new Intent(this, SearchActivity.class);
         startActivity(intent);
@@ -47,7 +55,7 @@ public class BookmarkActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void goToCalendar(View view){
+    public void goToCalendar(View view) {
         Intent intent = new Intent(this, CalendarActivity.class);
         startActivity(intent);
     }

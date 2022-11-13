@@ -130,6 +130,7 @@
                     android:layout_marginTop="14dp"
                     android:background="@android:color/transparent"
                     android:contentDescription="vector_ek14"
+                    android:onClick="goToTripBookmarkOptions"
                     android:src="@drawable/bookmark_icon" />
 
                 <ImageButton
