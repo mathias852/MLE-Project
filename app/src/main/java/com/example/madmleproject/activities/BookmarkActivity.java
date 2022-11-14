@@ -70,9 +70,7 @@ public class BookmarkActivity extends AppCompatActivity {
     public void goToHome(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
-
     }
-
 
     public void goToSearch(View view) {
         Intent intent = new Intent(this, SearchActivity.class);
@@ -91,4 +89,8 @@ public class BookmarkActivity extends AppCompatActivity {
     }
 
 
+    public void goToAddTripOverviewBookmark(View view) {
+        Intent intent = new Intent(this, BookmarkOptionsActivity.class);
+        startActivity(intent);
+    }
 }

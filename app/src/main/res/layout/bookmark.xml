@@ -172,15 +172,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="278dp">
+                    android:layout_marginTop="278dp"
+                    android:onClick="goToAddTripOverviewBookmark">
 
                     <ImageView
                         android:id="@+id/rectangle_5_ek4"
                         android:layout_width="362dp"
                         android:layout_height="149dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
-                        android:contentDescription="rectangle_5_ek4"
                         android:src="@drawable/rectangle_layout_background" />
 
                     <RelativeLayout
