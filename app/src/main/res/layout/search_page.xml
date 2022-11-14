@@ -109,8 +109,8 @@
                             android:layout_marginTop="10dp"
                             android:contentDescription="@string/penang_hill"
                             android:onClick="updateBookmark"
-                            android:visibility="visible"
-                            android:src="@drawable/bookmark_icon" />
+                            android:src="@drawable/bookmark_icon"
+                            android:visibility="visible" />
 
                         <ImageView
                             android:id="@+id/bookmarkIconPenangHillBookmarked"
@@ -158,10 +158,10 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:onClick="updateBookmark"
                             android:contentDescription="@string/kek_lok_si_temple_string"
-                            android:visibility="visible"
-                            android:src="@drawable/bookmark_icon" />
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon"
+                            android:visibility="visible" />
 
                         <ImageView
                             android:id="@+id/bookmarkIconKekLokSiTempleBookmarked"
@@ -209,10 +209,10 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:onClick="updateBookmark"
                             android:contentDescription="@string/gurney_drive_string"
-                            android:visibility="visible"
-                            android:src="@drawable/bookmark_icon" />
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon"
+                            android:visibility="visible" />
 
                         <ImageView
                             android:id="@+id/bookmarkIconGurneyDriveBookmarked"
@@ -220,8 +220,8 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:onClick="updateBookmark"
                             android:contentDescription="@string/gurney_drive_string"
+                            android:onClick="updateBookmark"
                             android:src="@drawable/bookmark_icon_selected"
                             android:visibility="invisible" />
 
@@ -260,10 +260,10 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:onClick="updateBookmark"
                             android:contentDescription="@string/batu_ferringhi_string"
-                            android:visibility="visible"
-                            android:src="@drawable/bookmark_icon" />
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon"
+                            android:visibility="visible" />
 
                         <ImageView
                             android:id="@+id/bookmarkIconBatuFerringhiBookmarked"
@@ -271,8 +271,8 @@
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:onClick="updateBookmark"
                             android:contentDescription="@string/batu_ferringhi_string"
+                            android:onClick="updateBookmark"
                             android:src="@drawable/bookmark_icon_selected"
                             android:visibility="invisible" />
 
@@ -290,11 +290,17 @@
 
                     </RelativeLayout>
 
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="301dp">
+
                     <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginEnd="0dp"
-                        android:layout_marginBottom="0dp">
+                        android:layout_height="match_parent">
 
                         <TextView
                             android:id="@+id/all"
@@ -349,7 +355,6 @@
                             android:textSize="15sp" />
                     </LinearLayout>
                 </RelativeLayout>
-
 
                 <RelativeLayout
                     android:layout_width="match_parent"
