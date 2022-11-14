@@ -14,12 +14,17 @@
         <entry key="app/src/main/res/drawable-nodpi/_bg__trip_overview_ek2_shape.xml" value="0.255" />
         <entry key="app/src/main/res/drawable-nodpi/backdrop_ek2_shape.xml" value="0.1655" />
         <entry key="app/src/main/res/drawable-nodpi/backdrop_shape.xml" value="0.154" />
+        <entry key="app/src/main/res/drawable-nodpi/bookmark_blue_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-nodpi/create_new_date_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable-nodpi/date_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable-nodpi/dayx_blue_background.xml" value="0.264" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_1_ek1_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_2_ek2_shape.xml" value="0.1655" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_2_ek3_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_2_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_5_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/ic_launcher_foreground.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable-nodpi/navbarshape.xml" value="0.264" />
         <entry key="app/src/main/res/drawable-nodpi/rectangle_10_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/rectangle_11_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/rectangle_12_ek1_shape.xml" value="0.226" />
@@ -38,28 +43,31 @@
         <entry key="app/src/main/res/layout/agendaScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/agenda_activity.xml" value="0.21927083333333333" />
         <entry key="app/src/main/res/layout/agenda_screen.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/article.xml" value="0.4125" />
+        <entry key="app/src/main/res/layout/article.xml" value="0.5" />
         <entry key="app/src/main/res/layout/blogpost.xml" value="0.335" />
         <entry key="app/src/main/res/layout/bookmark.xml" value="0.4125" />
         <entry key="app/src/main/res/layout/bookmark_location_add_options.xml" value="0.4125" />
-        <entry key="app/src/main/res/layout/calendar.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/calendar.xml" value="0.2741912841796875" />
         <entry key="app/src/main/res/layout/calendarScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/calendar_activity_.xml" value="0.21778259277343748" />
         <entry key="app/src/main/res/layout/community.xml" value="0.375" />
         <entry key="app/src/main/res/layout/communityScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/homeScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/home_screen.xml" value="0.17119565217391305" />
-        <entry key="app/src/main/res/layout/homescreen.xml" value="0.310546875" />
+        <entry key="app/src/main/res/layout/homescreen.xml" value="0.35829925537109375" />
         <entry key="app/src/main/res/layout/location_bookmark_options.xml" value="0.375" />
         <entry key="app/src/main/res/layout/location_profile.xml" value="0.4046920821114369" />
         <entry key="app/src/main/res/layout/loginScreen.xml" value="0.2477355072463768" />
         <entry key="app/src/main/res/layout/newTest.xml" value="0.165" />
         <entry key="app/src/main/res/layout/newtest.xml" value="0.31703470031545744" />
         <entry key="app/src/main/res/layout/old_homescreen.xml" value="0.21927083333333333" />
-        <entry key="app/src/main/res/layout/search_page.xml" value="0.42168674698795183" />
+        <entry key="app/src/main/res/layout/search_page.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/search_page_copy.xml" value="0.2984889082237919" />
         <entry key="app/src/main/res/layout/test.xml" value="0.29320831298828126" />
-        <entry key="app/src/main/res/layout/trip_overview.xml" value="0.25" />
-        <entry key="app/src/main/res/layout/trip_overview_bookmark.xml" value="0.32948608398437496" />
+        <entry key="app/src/main/res/layout/trip_overview.xml" value="0.33031921386718754" />
+        <entry key="app/src/main/res/layout/trip_overview_Copy.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/trip_overview_bookmark.xml" value="0.2852020263671875" />
+        <entry key="app/src/main/res/layout/trip_overview_bookmark_copy.xml" value="0.30650177001953127" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1655" />
       </map>
     </option>

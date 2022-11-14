@@ -50,15 +50,18 @@
                         android:background="@drawable/rectangle_4_shape" />
 
                     <EditText
-                        android:id="@+id/penang___"
+                        android:id="@+id/searchTextInputSearchPage"
                         android:layout_width="270dp"
                         android:layout_height="41dp"
-                        android:layout_marginLeft="50dp"
+                        android:layout_marginStart="50dp"
                         android:layout_marginTop="2dp"
                         android:background="@android:color/transparent"
                         android:fontFamily="Montserrat"
                         android:hint="@string/penang____string"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textFilter"
                         android:textColor="@color/black"
+                        android:textColorHint="@color/search_text_color"
                         android:textSize="12sp" />
 
                     <ImageView
@@ -96,16 +99,29 @@
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
                             android:onClick="goToBookmark"
-                            android:src="@drawable/rectangle_5" />
+                            android:src="@drawable/bookmark1_img" />
 
                         <ImageView
-                            android:id="@+id/vector_ek5"
+                            android:id="@+id/bookmarkIconPenangHill"
                             android:layout_width="18.75dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:onClick="goToBookmarkOptions"
-                            android:src="@drawable/bookmark_icon" />
+                            android:contentDescription="@string/penang_hill"
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/bookmarkIconPenangHillBookmarked"
+                            android:layout_width="18.75dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/penang_hill"
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon_selected"
+                            android:visibility="invisible" />
 
                         <TextView
                             android:id="@+id/penang_hill"
@@ -133,16 +149,30 @@
                             android:id="@+id/rectangle_5_ek1"
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
-                            android:onClick="goToBookmark"
-                            android:src="@drawable/rectangle_5_ek1" />
+                            android:onClick="sorryNotSupported"
+                            android:src="@drawable/bookmark2_img" />
 
                         <ImageView
-                            android:id="@+id/vector_ek6"
+                            android:id="@+id/bookmarkIconKekLokSiTemple"
                             android:layout_width="18.75dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:src="@drawable/bookmark_icon" />
+                            android:contentDescription="@string/kek_lok_si_temple_string"
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/bookmarkIconKekLokSiTempleBookmarked"
+                            android:layout_width="18.75dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/kek_lok_si_temple_string"
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon_selected"
+                            android:visibility="invisible" />
 
                         <TextView
                             android:id="@+id/kek_lok_si_temple"
@@ -170,16 +200,30 @@
                             android:id="@+id/rectangle_5_ek2"
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
-                            android:onClick="goToBookmark"
-                            android:src="@drawable/rectangle_5_ek2" />
+                            android:onClick="sorryNotSupported"
+                            android:src="@drawable/bookmark3_img" />
 
                         <ImageView
-                            android:id="@+id/vector_ek7"
+                            android:id="@+id/bookmarkIconGurneyDrive"
                             android:layout_width="18.75dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:src="@drawable/bookmark_icon" />
+                            android:contentDescription="@string/gurney_drive_string"
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/bookmarkIconGurneyDriveBookmarked"
+                            android:layout_width="18.75dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/gurney_drive_string"
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon_selected"
+                            android:visibility="invisible" />
 
                         <TextView
                             android:id="@+id/gurney_drive"
@@ -207,16 +251,30 @@
                             android:id="@+id/rectangle_5_ek3"
                             android:layout_width="match_parent"
                             android:layout_height="144dp"
-                            android:onClick="goToBookmark"
-                            android:src="@drawable/rectangle_5_ek3" />
+                            android:onClick="sorryNotSupported"
+                            android:src="@drawable/bookmark4_img" />
 
                         <ImageView
-                            android:id="@+id/vector_ek8"
+                            android:id="@+id/bookmarkIconBatuFerringhi"
                             android:layout_width="18.75dp"
                             android:layout_height="25dp"
                             android:layout_marginStart="16dp"
                             android:layout_marginTop="10dp"
-                            android:src="@drawable/bookmark_more_actions" />
+                            android:contentDescription="@string/batu_ferringhi_string"
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/bookmarkIconBatuFerringhiBookmarked"
+                            android:layout_width="18.75dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:contentDescription="@string/batu_ferringhi_string"
+                            android:onClick="updateBookmark"
+                            android:src="@drawable/bookmark_icon_selected"
+                            android:visibility="invisible" />
 
                         <TextView
                             android:id="@+id/batu_ferringhi"
@@ -231,6 +289,8 @@
                             android:textStyle="bold" />
 
                     </RelativeLayout>
+
+
                 </RelativeLayout>
 
                 <RelativeLayout
@@ -297,6 +357,20 @@
                 </RelativeLayout>
 
                 <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="301dp">
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="301dp">
+
+                </RelativeLayout>
+
+                <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -334,7 +408,7 @@
 
 
                 <TextView
-                    android:id="@+id/title"
+                    android:id="@+id/stateNameTitle"
                     android:layout_width="match_parent"
                     android:layout_height="55dp"
                     android:layout_marginStart="16dp"

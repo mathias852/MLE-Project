@@ -33,7 +33,7 @@
                     android:layout_marginStart="-115dp"
                     android:layout_marginTop="-358dp"
                     android:contentDescription="image_1"
-                    android:src="@drawable/image_1" />
+                    android:src="@drawable/imageview_tripoverview_background_img_train" />
 
                 <ImageView
                     android:id="@+id/profile_button"
@@ -124,10 +124,10 @@
                             android:layout_width="364.9dp"
                             android:layout_height="89dp"
                             android:background="@drawable/date_shape"
-                            android:onClick="goToTripOverview"/>
+                            android:onClick="goToTripOverview" />
 
                         <TextView
-                            android:id="@+id/sabah_trip"
+                            android:id="@+id/penang_trip"
                             android:layout_width="226.21dp"
                             android:layout_height="28.5dp"
                             android:layout_gravity="center_horizontal|center"
@@ -135,7 +135,7 @@
                             android:layout_marginTop="13dp"
                             android:fontFamily="Montserrat"
                             android:gravity="center"
-                            android:text="@string/sabah_trip_string"
+                            android:text="@string/penang_trip_string"
                             android:textColor="@color/create_new_activity_color"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -284,7 +284,7 @@
                             android:background="@drawable/date_shape" />
 
                         <TextView
-                            android:id="@+id/penang_trip"
+                            android:id="@+id/sabah_trip"
                             android:layout_width="226.21dp"
                             android:layout_height="28.5dp"
                             android:layout_gravity="center_horizontal|center"
@@ -292,7 +292,7 @@
                             android:layout_marginTop="13dp"
                             android:fontFamily="Montserrat"
                             android:gravity="center"
-                            android:text="@string/penang_trip_string"
+                            android:text="@string/sabah_trip_string"
                             android:textColor="@color/create_new_activity_color"
                             android:textSize="15sp"
                             android:textStyle="bold" />
@@ -335,7 +335,7 @@
                             android:layout_height="89dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/date_shape" />
+                            android:background="@drawable/create_new_date_shape" />
 
                         <TextView
                             android:id="@+id/create_new_activity"

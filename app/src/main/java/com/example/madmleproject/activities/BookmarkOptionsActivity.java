@@ -40,4 +40,8 @@ public class BookmarkOptionsActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void addToExistingTrip(View view) {
+        Toast toast = Toast.makeText(this, "Sorry, this feature is not supported yet", Toast.LENGTH_LONG);
+        toast.show();
+    }
 }

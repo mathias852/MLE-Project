@@ -18,6 +18,11 @@ public class CommunityActivity extends AppCompatActivity {
         setContentView(R.layout.community);
     }
 
+    public void goToArticle(View view){
+        Intent intent = new Intent(this, ArticleActivity.class);
+        startActivity(intent);
+    }
+
     public void goToHome(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
