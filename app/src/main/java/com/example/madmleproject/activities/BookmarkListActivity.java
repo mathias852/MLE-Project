@@ -22,7 +22,7 @@ import com.example.madmleproject.data.model.Bookmarks;
 import com.example.madmleproject.data.model.Itineraries;
 import com.example.madmleproject.data.model.Landmarks;
 
-public class TripOverviewBookmarkActivity extends AppCompatActivity {
+public class BookmarkListActivity extends AppCompatActivity {
 
     ImageView penangImageView, kekLokSiTempleImageView, gurneyDriveImageView, batuFerringhiImageView;
 

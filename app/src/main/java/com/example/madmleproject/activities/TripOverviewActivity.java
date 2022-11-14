@@ -3,11 +3,9 @@ package com.example.madmleproject.activities;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -16,7 +14,6 @@ import com.example.madmleproject.Domain.RepoManager;
 import com.example.madmleproject.R;
 import com.example.madmleproject.data.DatabaseManager;
 import com.example.madmleproject.data.model.Itineraries;
-import com.example.madmleproject.data.model.Landmarks;
 
 public class TripOverviewActivity extends AppCompatActivity {
 
@@ -70,12 +67,12 @@ public class TripOverviewActivity extends AppCompatActivity {
 
     public void goToAddTripOverviewBookmark(View view){
         AddActivityManager.getActivityManager().setDay(Integer.parseInt(view.getContentDescription().toString()));
-        Intent intent = new Intent(this, TripOverviewBookmarkActivity.class);
+        Intent intent = new Intent(this, BookmarkListActivity.class);
         startActivity(intent);
     }
 
     public void test(View view){
-        Intent intent = new Intent(this, TripOverviewBookmarkActivity.class);
+        Intent intent = new Intent(this, BookmarkListActivity.class);
         startActivity(intent);
     }
     public void goToHome(View view) {

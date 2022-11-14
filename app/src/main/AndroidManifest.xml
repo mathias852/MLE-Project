@@ -29,7 +29,7 @@
         <activity android:name=".activities.BookmarkActivity" />
         <activity android:name=".activities.BookmarkOptionsActivity" />
         <activity android:name=".activities.TripOverviewActivity" />
-        <activity android:name=".activities.TripOverviewBookmarkActivity" />
+        <activity android:name=".activities.BookmarkListActivity" />
         <activity android:name=".activities.ArticleActivity" />
 
     </application>

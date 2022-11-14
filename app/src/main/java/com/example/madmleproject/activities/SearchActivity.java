@@ -107,6 +107,8 @@ public class SearchActivity extends AppCompatActivity {
     }
 
 
+
+
     private void updateVisibilityPenangHill(){
         String landmarkName = penang_hill.getText().toString();
         if(bookmarksRepo.isBookmarked(RepoManager.getRepoManager().getLandmarksRepo().getLandmarkIdFromName(landmarkName))){
@@ -186,11 +188,5 @@ public class SearchActivity extends AppCompatActivity {
     public void sorryNotSupported(View view){
         Toast toast = Toast.makeText(this, "Sorry, but bookmark option for this is not supported", Toast.LENGTH_SHORT);
         toast.show();
-    }
-
-    public void createNewTrip(View view) {
-    }
-
-    public void addToExistingTrip(View view) {
     }
 }
