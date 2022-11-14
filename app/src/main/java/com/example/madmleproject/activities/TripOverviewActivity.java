@@ -74,6 +74,10 @@ public class TripOverviewActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void test(View view){
+        Intent intent = new Intent(this, TripOverviewBookmarkActivity.class);
+        startActivity(intent);
+    }
     public void goToHome(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
@@ -95,9 +99,8 @@ public class TripOverviewActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-    public void goToTripOverviewBookmark(View view) {
-        Intent intent = new Intent(this, TripOverviewBookmarkActivity.class);
+    public void goToBookmark(View view) {
+        Intent intent = new Intent(this, BookmarkActivity.class);
         startActivity(intent);
     }
 }

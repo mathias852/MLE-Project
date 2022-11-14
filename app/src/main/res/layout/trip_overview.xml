@@ -170,9 +170,9 @@
                 <TextView
                     android:id="@+id/penang_trip"
                     android:layout_width="208dp"
-                    android:layout_height="128.01dp"
+                    android:layout_height="20dp"
                     android:layout_gravity="center_horizontal|center"
-                    android:layout_marginLeft="95dp"
+                    android:layout_marginStart="95dp"
                     android:layout_marginTop="108dp"
                     android:fontFamily="Montserrat"
                     android:gravity="center"
@@ -203,8 +203,8 @@
                         android:layout_height="31.5dp"
                         android:layout_marginLeft="10dp"
                         android:layout_marginTop="35dp"
-                        android:fontFamily="Montserrat"
                         android:contentDescription="@string/Day_1"
+                        android:fontFamily="Montserrat"
                         android:onClick="goToAddTripOverviewBookmark"
                         android:text="@string/___add_activity_string"
                         android:textColor="@color/_3___5_september_2022_color"
@@ -244,8 +244,8 @@
                         android:id="@+id/automate_textview"
                         android:layout_width="188.5dp"
                         android:layout_height="39.5dp"
-                        android:layout_marginLeft="39dp"
-                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="39dp"
+                        android:layout_marginTop="8dp"
                         android:fontFamily="Montserrat"
                         android:text="@string/automate_ek1_string"
                         android:textColor="@color/_3___5_september_2022_color"
@@ -258,7 +258,6 @@
                         android:layout_height="20dp"
                         android:layout_marginStart="124dp"
                         android:layout_marginTop="7dp"
-                        android:contentDescription="crown"
                         android:src="@drawable/crown_icon" />
 
                 </RelativeLayout>
@@ -441,7 +440,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="55dp"
-                    android:layout_marginTop="183dp">
+                    android:layout_marginTop="183dp"
+                    android:onClick="test">
 
                     <View
                         android:id="@+id/bookmark_blue_background"

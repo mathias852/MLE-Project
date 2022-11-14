@@ -15,12 +15,16 @@
         <entry key="app/src/main/res/drawable-nodpi/backdrop_ek2_shape.xml" value="0.1655" />
         <entry key="app/src/main/res/drawable-nodpi/backdrop_shape.xml" value="0.154" />
         <entry key="app/src/main/res/drawable-nodpi/bookmark_blue_background.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable-nodpi/create_new_date_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable-nodpi/date_shape.xml" value="0.264" />
+        <entry key="app/src/main/res/drawable-nodpi/dayx_blue_background.xml" value="0.264" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_1_ek1_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_2_ek2_shape.xml" value="0.1655" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_2_ek3_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_2_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/ellipse_5_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/ic_launcher_foreground.xml" value="0.1655" />
+        <entry key="app/src/main/res/drawable-nodpi/navbarshape.xml" value="0.264" />
         <entry key="app/src/main/res/drawable-nodpi/rectangle_10_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/rectangle_11_shape.xml" value="0.226" />
         <entry key="app/src/main/res/drawable-nodpi/rectangle_12_ek1_shape.xml" value="0.226" />
@@ -57,7 +61,7 @@
         <entry key="app/src/main/res/layout/newTest.xml" value="0.165" />
         <entry key="app/src/main/res/layout/newtest.xml" value="0.31703470031545744" />
         <entry key="app/src/main/res/layout/old_homescreen.xml" value="0.21927083333333333" />
-        <entry key="app/src/main/res/layout/search_page.xml" value="0.26626892089843757" />
+        <entry key="app/src/main/res/layout/search_page.xml" value="0.2273788452148438" />
         <entry key="app/src/main/res/layout/search_page_copy.xml" value="0.2984889082237919" />
         <entry key="app/src/main/res/layout/test.xml" value="0.29320831298828126" />
         <entry key="app/src/main/res/layout/trip_overview.xml" value="0.33031921386718754" />

@@ -124,7 +124,7 @@
                             android:layout_width="364.9dp"
                             android:layout_height="89dp"
                             android:background="@drawable/date_shape"
-                            android:onClick="goToTripOverview"/>
+                            android:onClick="goToTripOverview" />
 
                         <TextView
                             android:id="@+id/penang_trip"
@@ -335,7 +335,7 @@
                             android:layout_height="89dp"
                             android:layout_marginStart="0dp"
                             android:layout_marginTop="0dp"
-                            android:background="@drawable/date_shape" />
+                            android:background="@drawable/create_new_date_shape" />
 
                         <TextView
                             android:id="@+id/create_new_activity"

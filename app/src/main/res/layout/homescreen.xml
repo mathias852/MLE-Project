@@ -147,8 +147,6 @@
                         android:id="@+id/mainNavBarView"
                         android:layout_width="365dp"
                         android:layout_height="51dp"
-                        android:layout_marginStart="0dp"
-                        android:layout_marginTop="0dp"
                         android:background="@drawable/navbarshape" />
 
                     <ImageView
@@ -204,7 +202,7 @@
                         android:layout_centerHorizontal="true"
                         android:onClick="goToArticle"
                         android:src="@drawable/article1_image" />
-                   
+
 
                     <TextView
                         android:id="@+id/article1Text"
@@ -269,19 +267,18 @@
                             android:layout_marginEnd="10dp"
                             android:orientation="vertical">
 
-                            <ImageButton
+                            <ImageView
                                 android:id="@+id/state1Image"
                                 android:layout_width="match_parent"
                                 android:layout_height="fill_parent"
-                                android:contentDescription="rectangle_5_ek9"
-                                android:src="@drawable/rectangle_5_ek9" />
+                                android:src="@drawable/malacca_image" />
 
                             <TextView
                                 android:id="@+id/state1Text"
                                 android:layout_width="103.07dp"
                                 android:layout_height="21.16dp"
-                                android:layout_marginLeft="11dp"
-                                android:layout_marginTop="124dp"
+                                android:layout_marginStart="11dp"
+                                android:layout_marginTop="110dp"
                                 android:fontFamily="Montserrat"
                                 android:text="@string/malacca_string"
                                 android:textColor="@color/hello__oliver__color"
@@ -293,22 +290,23 @@
                         <RelativeLayout
                             android:id="@+id/state2"
                             android:layout_width="119dp"
-                            android:layout_height="fill_parent"
+                            android:layout_height="match_parent"
                             android:layout_marginRight="10dp">
 
                             <ImageView
                                 android:id="@+id/state2Image"
-                                android:layout_width="119dp"
+                                android:layout_width="fill_parent"
                                 android:layout_height="fill_parent"
-                                android:contentDescription="rectangle_6"
-                                android:src="@drawable/selangor_image" />
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:src="@drawable/state_selangor_img" />
 
                             <TextView
                                 android:id="@+id/state2Text"
                                 android:layout_width="125.74dp"
                                 android:layout_height="21.16dp"
                                 android:layout_marginLeft="9dp"
-                                android:layout_marginTop="124dp"
+                                android:layout_marginTop="110dp"
                                 android:fontFamily="Montserrat"
                                 android:text="@string/selangor_string"
                                 android:textColor="@color/hello__oliver__color"
@@ -321,23 +319,20 @@
                             android:id="@+id/state3"
                             android:layout_width="119dp"
                             android:layout_height="fill_parent"
-                            android:layout_marginRight="10dp">
+                            android:layout_marginEnd="10dp">
 
                             <ImageView
                                 android:id="@+id/state3Image"
-                                android:layout_width="119dp"
-                                android:layout_height="match_parent"
-                                android:layout_marginStart="0dp"
-                                android:layout_marginTop="0dp"
-                                android:contentDescription="rectangle_7"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
                                 android:src="@drawable/penang_image" />
 
                             <TextView
                                 android:id="@+id/state3Text"
                                 android:layout_width="125.74dp"
                                 android:layout_height="21.16dp"
-                                android:layout_marginLeft="12dp"
-                                android:layout_marginTop="124dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginTop="110dp"
                                 android:fontFamily="Montserrat"
                                 android:text="@string/sabah_string"
                                 android:textColor="@color/hello__oliver__color"
@@ -350,23 +345,20 @@
                             android:id="@+id/state4"
                             android:layout_width="119dp"
                             android:layout_height="fill_parent"
-                            android:layout_marginRight="10dp">
+                            android:layout_marginEnd="10dp">
 
                             <ImageView
                                 android:id="@+id/state4Image"
                                 android:layout_width="119dp"
                                 android:layout_height="match_parent"
-                                android:layout_marginStart="0dp"
-                                android:layout_marginTop="0dp"
-                                android:contentDescription="rectangle_7"
-                                android:src="@drawable/rectangle_5_ek9" />
+                                android:src="@drawable/malacca_image" />
 
                             <TextView
                                 android:id="@+id/state4Text"
                                 android:layout_width="125.74dp"
                                 android:layout_height="21.16dp"
                                 android:layout_marginLeft="12dp"
-                                android:layout_marginTop="124dp"
+                                android:layout_marginTop="110dp"
                                 android:fontFamily="Montserrat"
                                 android:text="@string/sabah_string"
                                 android:textColor="@color/hello__oliver__color"
@@ -403,11 +395,11 @@
                         android:background="@null"
                         android:fontFamily="Montserrat"
                         android:hint="@string/hi_oliver__where_do_you_want_to_go__string"
+                        android:imeOptions="actionSearch"
+                        android:inputType="textFilter"
                         android:outlineSpotShadowColor="@color/black"
                         android:textColor="@color/penang____color"
-                        android:textSize="12sp"
-                        android:inputType="textFilter"
-                        android:imeOptions="actionSearch"/>
+                        android:textSize="12sp" />
 
 
                     <ImageView

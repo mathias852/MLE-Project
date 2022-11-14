@@ -58,6 +58,7 @@ public class BookmarksRepo {
         String[] whereArgs = {String.valueOf(userId), String.valueOf(landmarkId)};
 
         db.delete(Bookmarks.TABLE, whereClause, whereArgs);
+        DatabaseManager.getInstance().closeDatabase();
 
     }
 
@@ -85,6 +86,7 @@ public class BookmarksRepo {
                 " WHERE " + Bookmarks.COLUMN_PK_FK_LANDMARK_ID + " = ?", new String[] {String.valueOf(landmarkId)});
 
         //If false, the item is not bookmarked
+        DatabaseManager.getInstance().closeDatabase();
         return cursor.moveToFirst();
     }
 
